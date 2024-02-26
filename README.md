@@ -5,10 +5,14 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 ## 🎓 Education
 - University of Washington - B.S  2023 - 2027 (expected).
   - GPA: 3.98
-  - Selected Course: CSE599J: Data-centric ML(PhD course), Info498B: Text Mining, CSE498: Undergrad Research, CSE492R: Research seminar
+  - Selected Course: CSE599J: Data-centric ML(PhD course), Info498B: Text Mining, CSE498: Undergrad Research, CSE492R: Research seminar, CSE414: Database
+  
+## 🏅 Awards
+- First Prize (Fujian), National Olympiad in Informatics in Provinces (NOIP) 2021
 
 ## 📍 Professional Services
 - organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
 
 ## 📫 Contact
 Email: weikaih@uw.edu
+<br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
