@@ -1,4 +1,4 @@
-Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/).
+Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
 
 **Research Interests**: My current research interests span Multimodal Learning, Data-centric Machine Learning, and Image/Video Generation, etc.
 
