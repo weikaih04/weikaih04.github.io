@@ -24,3 +24,4 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 ## 📫 Contact
 Email: weikaih@uw.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
+<br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
