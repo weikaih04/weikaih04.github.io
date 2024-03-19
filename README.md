@@ -12,7 +12,7 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 
 ## 🎓 Education
 - University of Washington - B.S  2023 - 2027 (expected).
-  - GPA: 3.99
+  - GPA: 3.99 (Dean's List)
   - Selected Course: 
     * [CSE599: Data-centric ML(PhD course)](https://koh.pw/cse599j/)
     * [CSE599: Social RL(PhD course)]()
