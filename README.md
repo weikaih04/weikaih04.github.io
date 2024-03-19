@@ -13,7 +13,12 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 ## 🎓 Education
 - University of Washington - B.S  2023 - 2027 (expected).
   - GPA: 3.99
-  - Selected Course: [CSE599: Data-centric ML(PhD course)](https://koh.pw/cse599j/), [CSE599: Social RL(PhD course)](), [CSE473: AI](https://courses.cs.washington.edu/courses/cse473/), [INFO498: Text Mining](https://llwang.net/teaching/), [CSE498: Undergrad Research](), [CSE492R: Research seminar]()
+  - Selected Course: 
+    * [CSE599: Data-centric ML(PhD course)](https://koh.pw/cse599j/)
+    * [CSE599: Social RL(PhD course)]()
+    * [CSE473: AI](https://courses.cs.washington.edu/courses/cse473/)
+    * [INFO498: Text Mining](https://llwang.net/teaching/)
+
   
 ## 🏅 Awards
 - First Prize (Fujian), National Olympiad in Informatics in Provinces (NOIP) 2021
