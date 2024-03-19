@@ -5,7 +5,7 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 ## 📝 Selected Publications
 ### Preprints
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
-<br>Zixian Ma, Weikai Huang, **Jieyu Zhang**, Tanmay Gupta, Ranjay Krishna.
+<br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna.
 
 ### Peer-reviewed
   - stay tuned!
