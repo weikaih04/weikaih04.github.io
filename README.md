@@ -11,11 +11,10 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
   - stay tuned!
 
 ## 🎓 Education
-- University of Washington - B.S  2023 - 2027 (expected).
+- University of Washington - B.S with Interdisplinary Honors  2023 - 2027 (expected).
   - GPA: 3.99 (Dean's List)
   - Selected Course: 
     - [CSE599: Data-centric ML(PhD course)](https://koh.pw/cse599j/)
-    - [CSE599: Social RL(PhD course)]()
     - [CSE473: AI](https://courses.cs.washington.edu/courses/cse473/)
     - [INFO498: Text Mining](https://llwang.net/teaching/)
 
