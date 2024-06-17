@@ -3,7 +3,11 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 **Research Interests**: My current research interests span Multimodal Learning, Data-centric Machine Learning, AI agents, Image/Video Generation, etc.
 
 ## 📝 Selected Publications
+(* denotes equal contribution)
 ### Preprints
+- [Task Me Anything]()
+<br>Jieyu Zhang, **Weikai Huang***, Zixian Ma*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
+
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
 
