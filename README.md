@@ -6,7 +6,7 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 (* denotes equal contribution)
 ### Preprints
 - [Task Me Anything]()
-<br>Jieyu Zhang, **Weikai Huang***, Zixian Ma*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
+<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
 
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
