@@ -8,11 +8,10 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 - [Task Me Anything](https://www.task-me-anything.org/)
 <br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna
 
+### Peer-reviewed
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
-
-### Peer-reviewed
-  - stay tuned!
+<br>*ECCV 2024*
 
 ## 🎓 Education
 - University of Washington - B.S with Interdisplinary Honors  2023 - 2027 (expected).
