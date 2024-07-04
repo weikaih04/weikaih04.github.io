@@ -14,19 +14,21 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 <br>*ECCV 2024*
 
 ## 🎓 Education
-- University of Washington - B.S with Interdisplinary Honors  2023 - 2027 (expected).
+- University of Washington - B.S with Interdisplinary Honors 2023 - 2027 (expected).
   - GPA: 3.99 (Dean's List)
   - Selected Course: 
     - [CSE599: Data-centric ML(PhD course)](https://koh.pw/cse599j/)
     - [CSE473: AI](https://courses.cs.washington.edu/courses/cse473/)
     - [INFO498: Text Mining](https://llwang.net/teaching/)
 
+## 📰 News
+- [2024-7] Our work [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
   
 ## 🏅 Awards
 - First Prize (Fujian), National Olympiad in Informatics in Provinces (NOIP) 2021
 
 ## 📍 Professional Services
-- Volunteer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
+- Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
 
 ## 📫 Contact
 Email: weikaih@uw.edu
