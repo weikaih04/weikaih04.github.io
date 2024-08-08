@@ -26,7 +26,7 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 - Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
 
 ## 📫 Contact
-Email: weikaih@uw.edu
+Email: weikaih@cs.washington.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
 <br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
 <br>Wechat: hwk18105962347
