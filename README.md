@@ -14,7 +14,10 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 <br>*ECCV 2024*
 
 ## 🎓 Education
-- University of Washington - B.S. in Computer Science with Interdisplinary Honors 2023 - 2027 (expected).
+- **University of Washington**  
+  *B.S. in Computer Science, Minor in Applied Mathematics*  
+  *Interdisciplinary Honors*  
+  2023 – 2027 (Expected)
   
 ## 📰 News
 - [2024-7] Our work [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
