@@ -23,7 +23,7 @@ Hi, I am a 1-st year undergrad at the University of Washington, Seattle, advised
 - [2024-7] Our work [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
   
 ## 🏅 Awards
-- First Prize (Fujian), National Olympiad in Informatics in Provinces (NOIP) 2021
+- UW CSE John and JoAnne Wisniewski Endowed Scholarship 2024
 
 ## 📍 Professional Services
 - Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
