@@ -22,7 +22,7 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
   2023 – 2027 (Expected)
   
 ## 📰 News
-- [2024-7] Our work [Task Me Anything](https://www.task-me-anything.org/) is accepted to NeurIPS 2024.
+- [2024-9] Our work [Task Me Anything](https://www.task-me-anything.org/) is accepted to NeurIPS 2024.
 - [2024-7] Our work [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
   
 ## 🏅 Awards
