@@ -5,10 +5,12 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 ## 📝 Selected Publications
 (* denotes equal contribution)
 ### Preprints
-- [Task Me Anything](https://www.task-me-anything.org/)
-<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna
+
 
 ### Peer-reviewed
+- [Task Me Anything](https://www.task-me-anything.org/)
+<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna
+<br>*NeurIPS 2024*
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
 <br>*ECCV 2024*
@@ -20,6 +22,7 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
   2023 – 2027 (Expected)
   
 ## 📰 News
+- [2024-7] Our work [Task Me Anything](https://www.task-me-anything.org/) is accepted to NeurIPS 2024.
 - [2024-7] Our work [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
   
 ## 🏅 Awards
