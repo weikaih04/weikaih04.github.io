@@ -9,8 +9,9 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 
 ### Peer-reviewed
 - [Task Me Anything](https://www.task-me-anything.org/)
-<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna
-<br>*NeurIPS 2024*
+<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
+<br><ins>*NeurIPS 2024*</ins> | <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font>
+<br><a href="https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/" style="color: red; text-decoration: underline">Blog at Snorkel AI</a> | <a href="https://www.youtube.com/watch?v=J3ECnV8Yc_g" style="color: red; text-decoration: underline">Talk at Snorkel AI</a>
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
 <br>*ECCV 2024*
