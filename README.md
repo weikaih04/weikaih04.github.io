@@ -18,7 +18,7 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 
 ## 🎓 Education
 - **University of Washington**  
-  *B.S. in Computer Science, Minor in Applied Mathematics*  
+  *B.S. in Computer Science, Minor in Applied Mathematics and Statistics*  
   2023 – 2027 (Expected)
   
 ## 📰 News
