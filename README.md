@@ -6,7 +6,7 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 (* denotes equal contribution)
 ### Preprints
 - [ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models](http://arxiv.org/abs/2412.07012)
-<br>**Jieyu Zhang**, Le Xue, Linxin Song, Jun Wang, Weikai Huang, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, silvio savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
+<br>Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, **Weikai Huang**, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, silvio savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
 
 ### Peer-reviewed
 - [Task Me Anything](https://www.task-me-anything.org/)
