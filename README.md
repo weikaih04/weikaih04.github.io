@@ -37,5 +37,4 @@ Email: weikaih@cs.washington.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
 <br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
 <br>Wechat: hwk18105962347
-<br>Instagram: [weikaih04](https://www.instagram.com/weikaihuang2347/)
 ```
