@@ -8,6 +8,8 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 
 
 ### Peer-reviewed
+- [ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models](http://arxiv.org/abs/2412.07012)
+<br>**Jieyu Zhang**, Le Xue, Linxin Song, Jun Wang, Weikai Huang, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, silvio savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
 - [Task Me Anything](https://www.task-me-anything.org/)
 <br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
 <br><ins>*NeurIPS 2024*</ins> | <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font>
@@ -36,3 +38,5 @@ Email: weikaih@cs.washington.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
 <br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
 <br>Wechat: hwk18105962347
+<br>instagram: [weikaih04](https://www.instagram.com/weikaihuang2347/)
+```
