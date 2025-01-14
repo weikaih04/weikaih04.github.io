@@ -1,6 +1,6 @@
 Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
 
-**Research Interests**: My current research interests span Data-centric AI, 2D/3D Computer Vision, Image/Video Generation, Multimodal Learning, etc.
+**Research Interests**: My current research interests span Data-centric AI, 2D/3D Tracking and Segmentation, Image/Video Generation, Multimodal Learning, etc.
 
 ## 📝 Selected Publications
 (* denotes equal contribution)
@@ -8,7 +8,8 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 - [Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming](https://generate-any-scene.github.io/)
 <br>Ziqi Gao\*, **Weikai Huang\***, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
 - [ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models](http://arxiv.org/abs/2412.07012)
-<br>Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, **Weikai Huang**, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, silvio savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
+<br>Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, **Weikai Huang**, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
+<br><a href="https://www.salesforce.com/blog/provision-multimodal-data-generation/" style="color: red; text-decoration: underline">Blog at Salesforce Research</a> | <a href="https://venturebeat.com/data-infrastructure/breaking-the-data-bottleneck-salesforces-provision-speeds-multimodal-ai-training-with-image-scene-graphs/" style="color: red; text-decoration: underline">VentureBeat</a> | <a href="https://www.marktechpost.com/2025/01/11/provision-a-scalable-programmatic-approach-to-vision-centric-instruction-data-for-multimodal-language-models/" style="color: red; text-decoration: underline">MarkTechPost</a>
 
 ### Peer-reviewed
 - [Task Me Anything](https://www.task-me-anything.org/)
@@ -39,4 +40,5 @@ Email: weikaih@cs.washington.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
 <br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
 <br>Wechat: hwk18105962347
+<br>Instagram: [@weikaih04](https://www.instagram.com/weikaih04/)
 ```
