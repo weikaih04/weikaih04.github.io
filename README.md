@@ -1,6 +1,9 @@
 Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
 
-**Research Interests**: My current research interests span Data-centric AI, 2D/3D Tracking and Segmentation, Image/Video Generation, Multimodal Learning, etc.
+**Research Interests**:
+I am interested in applying **data-centric** and **learning-based** methods to create generalized and robust foundation models for 2D/3D detection and segmentation, LLM/VLM, embodied AI, image/video editing and generation.
+
+<!-- I am looking for co-first or leading-author-level collaborators for projects over the coming years. If you are interested, please feel free to reach out. -->
 
 ## 📝 Selected Publications
 (* denotes equal contribution)
@@ -14,7 +17,7 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 ### Peer-reviewed
 - [Task Me Anything](https://www.task-me-anything.org/)
 <br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
-<br><ins>*NeurIPS 2024*</ins> | <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font>
+<br><ins>*NeurIPS 2024*</ins> (Main Conference) | <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font>
 <br><a href="https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/" style="color: red; text-decoration: underline">Blog at Snorkel AI</a> | <a href="https://www.youtube.com/watch?v=J3ECnV8Yc_g" style="color: red; text-decoration: underline">Talk at Snorkel AI</a>
 - [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)
 <br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna
@@ -33,7 +36,8 @@ Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised 
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship 2024
 
 ## 📍 Professional Services
-- Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/)]
+- Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2025.** [[website](https://syndata4cv.github.io/)]
+- Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/cvpr2024.html)]
 
 ## 📫 Contact
 Email: weikaih@cs.washington.edu
