@@ -10,11 +10,13 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 ### Preprints
 - [Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming](https://generate-any-scene.github.io/)
 <br>Ziqi Gao\*, **Weikai Huang\***, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
+
+
+### Peer-reviewed
 - [ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models](http://arxiv.org/abs/2412.07012)
 <br>Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, **Weikai Huang**, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.
 <br><a href="https://www.salesforce.com/blog/provision-multimodal-data-generation/" style="color: red; text-decoration: underline">Blog at Salesforce Research</a> | <a href="https://venturebeat.com/data-infrastructure/breaking-the-data-bottleneck-salesforces-provision-speeds-multimodal-ai-training-with-image-scene-graphs/" style="color: red; text-decoration: underline">VentureBeat</a> | <a href="https://www.marktechpost.com/2025/01/11/provision-a-scalable-programmatic-approach-to-vision-centric-instruction-data-for-multimodal-language-models/" style="color: red; text-decoration: underline">MarkTechPost</a>
-
-### Peer-reviewed
+<br>*SynthData @ ICLR 2025*
 - [Task Me Anything](https://www.task-me-anything.org/)
 <br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.
 <br><ins>*NeurIPS 2024*</ins> (Main Conference) | <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font>
