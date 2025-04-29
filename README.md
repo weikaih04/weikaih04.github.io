@@ -1,4 +1,4 @@
-Hi, I am a 2nd year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
+Hi, I am a 2nd-year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
 
 **Research Interests**:
 I am interested in applying **data-centric** and **learning-based** methods to create generalized and robust foundation models for 2D/3D detection and segmentation, LLM/VLM, embodied AI, image/video editing and generation.
@@ -27,7 +27,7 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 
 ## 🎓 Education
 - **University of Washington**  
-  *B.S. in Computer Science, Minor in Applied Mathematics and Statistics*  
+  *B.S. in Computer Science, Minor in Applied Mathematics and Music*  
   2023 – 2027 (Expected)
   
 ## 📰 News
@@ -38,8 +38,8 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship 2024
 
 ## 📍 Professional Services
-- Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2025.** [[website](https://syndata4cv.github.io/)]
-- Undergrad Organizer of **Synthetic Data for Computer Vision Workshop @ CVPR 2024.** [[website](https://syndata4cv.github.io/cvpr2024.html)]
+- Organizer of the **Synthetic Data for Computer Vision Workshop** at CVPR 2024 and CVPR 2025 ([website](https://syndata4cv.github.io/))
+- TA for **UW CSE 493G: Deep Learning**, Spring 2025 ([course page](https://courses.cs.washington.edu/courses/cse493g1/25sp/))
 
 ## 📫 Contact
 Email: weikaih@cs.washington.edu
