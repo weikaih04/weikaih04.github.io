@@ -8,13 +8,18 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 ## 📝 Selected Publications
 (* denotes equal contribution)
 
+<!-- Example of how to add images/videos to papers:
+| | |
+|:--:|:--|
+| ![Paper thumbnail](./img/paper_thumbnail.png) | **[Paper Title](paper-link)**<br>Authors...<br>Conference<br>[📹 Video](video-link) \| [📄 Paper](paper-link) \| [🌐 Project](project-link) |
+-->
+
 ### Preprints
 
 | | |
 |:---:|:---|
 | <img src="./img/papers/sos.png" width="300"> | **[SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding](paper-link)**<br>**Weikai Huang**, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna |
 | <img src="./img/papers/gas.png" width="300"> | **[Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming](https://generate-any-scene.github.io/)**<br>Ziqi Gao\*, **Weikai Huang\***, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna |
-
 
 ### Peer-reviewed
 
