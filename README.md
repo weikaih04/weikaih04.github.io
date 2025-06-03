@@ -8,26 +8,57 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 ## 📝 Selected Publications
 (* denotes equal contribution)
 
-<!-- Example of how to add images/videos to papers:
-| | |
-|:--:|:--|
-| ![Paper thumbnail](./img/paper_thumbnail.png) | **[Paper Title](paper-link)**<br>Authors...<br>Conference<br>[📹 Video](video-link) \| [📄 Paper](paper-link) \| [🌐 Project](project-link) |
--->
-
 ### Preprints
 
-| | |
-|:---:|:---|
-| <img src="./img/papers/sos.png" width="300"> | **[SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding](paper-link)**<br>**Weikai Huang**, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna |
-| <img src="./img/papers/gas.png" width="300"> | **[Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming](https://generate-any-scene.github.io/)**<br>Ziqi Gao\*, **Weikai Huang\***, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna |
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+  <img src="./img/papers/sos.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <div>
+    <strong><a href="paper-link">SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding</a></strong><br>
+    <strong>Weikai Huang</strong>, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+  <img src="./img/papers/gas.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <div>
+    <strong><a href="https://generate-any-scene.github.io/">Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming</a></strong><br>
+    Ziqi Gao*, <strong>Weikai Huang*</strong>, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
+  </div>
+</div>
 
 ### Peer-reviewed
 
-| | |
-|:---:|:---|
-| <img src="./img/papers/provision.png" width="300"> | **[ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models](http://arxiv.org/abs/2412.07012)**<br>Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, **Weikai Huang**, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.<br><a href="https://www.salesforce.com/blog/provision-multimodal-data-generation/" style="color: red; text-decoration: underline">Blog at Salesforce Research</a> \| <a href="https://venturebeat.com/data-infrastructure/breaking-the-data-bottleneck-salesforces-provision-speeds-multimodal-ai-training-with-image-scene-graphs/" style="color: red; text-decoration: underline">VentureBeat</a> \| <a href="https://www.marktechpost.com/2025/01/11/provision-a-scalable-programmatic-approach-to-vision-centric-instruction-data-for-multimodal-language-models/" style="color: red; text-decoration: underline">MarkTechPost</a><br>*SynthData @ ICLR 2025* |
-| <img src="./img/papers/tma.png" width="300"> | **[Task Me Anything](https://www.task-me-anything.org/)**<br>Jieyu Zhang, **Weikai Huang\***, Zixian Ma\*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.<br><ins>*NeurIPS 2024*</ins> (Main Conference) \| <ins>*Video-Language Models @ NeurIPS 2024*</ins>  <font color=red>Oral Presentation</font><br><a href="https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/" style="color: red; text-decoration: underline">Blog at Snorkel AI</a> \| <a href="https://www.youtube.com/watch?v=J3ECnV8Yc_g" style="color: red; text-decoration: underline">Talk at Snorkel AI</a> |
-| <img src="./img/papers/mms.png" width="300"> | **[m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)**<br>Zixian Ma, **Weikai Huang**, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna<br>*ECCV 2024* |
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+  <img src="./img/papers/provision.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <div>
+    <strong><a href="http://arxiv.org/abs/2412.07012">ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models</a></strong><br>
+    Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, <strong>Weikai Huang</strong>, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.<br>
+    <a href="https://www.salesforce.com/blog/provision-multimodal-data-generation/" style="color: red;">Blog at Salesforce Research</a> | 
+    <a href="https://venturebeat.com/data-infrastructure/breaking-the-data-bottleneck-salesforces-provision-speeds-multimodal-ai-training-with-image-scene-graphs/" style="color: red;">VentureBeat</a> | 
+    <a href="https://www.marktechpost.com/2025/01/11/provision-a-scalable-programmatic-approach-to-vision-centric-instruction-data-for-multimodal-language-models/" style="color: red;">MarkTechPost</a><br>
+    <em>SynthData @ ICLR 2025</em>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+  <img src="./img/papers/tma.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <div>
+    <strong><a href="https://www.task-me-anything.org/">Task Me Anything</a></strong><br>
+    Jieyu Zhang, <strong>Weikai Huang*</strong>, Zixian Ma*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.<br>
+    <ins><em>NeurIPS 2024</em></ins> (Main Conference) | <ins><em>Video-Language Models @ NeurIPS 2024</em></ins> <span style="color: red;">Oral Presentation</span><br>
+    <a href="https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/" style="color: red;">Blog at Snorkel AI</a> | 
+    <a href="https://www.youtube.com/watch?v=J3ECnV8Yc_g" style="color: red;">Talk at Snorkel AI</a>
+  </div>
+</div>
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+  <img src="./img/papers/mms.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <div>
+    <strong><a href="https://arxiv.org/abs/2403.11085">m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks</a></strong><br>
+    Zixian Ma, <strong>Weikai Huang</strong>, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna<br>
+    <em>ECCV 2024</em>
+  </div>
+</div>
 
 ## 🎓 Education
 - **University of Washington**  
@@ -50,4 +81,4 @@ Email: weikaih@cs.washington.edu
 <br>Twitter (X): [@weikaih04](https://twitter.com/weikaih04)
 <br>Instagram: [@weikaih04](https://www.instagram.com/weikaih04/)
 <br>Linkedin: [Weikai Huang](https://www.linkedin.com/in/weikaihuang/)
-<br>Wechat: hwk18105962347
+<br>Wechat: hwk18105962347 
