@@ -11,15 +11,15 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 ### Preprints
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/sos.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <img src="./img/papers/sos.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
-    <strong><a href="paper-link">SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding</a></strong><br>
+    <strong><a href="https://github.com/weikaih04/SOS">SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding</a></strong><br>
     <strong>Weikai Huang</strong>, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna
   </div>
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/gas.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <img src="./img/papers/gas.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
     <strong><a href="https://generate-any-scene.github.io/">Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming</a></strong><br>
     Ziqi Gao*, <strong>Weikai Huang*</strong>, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
@@ -29,7 +29,7 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 ### Peer-reviewed
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/provision.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <img src="./img/papers/provision.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
     <strong><a href="http://arxiv.org/abs/2412.07012">ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models</a></strong><br>
     Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, <strong>Weikai Huang</strong>, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.<br>
@@ -41,7 +41,7 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/tma.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <img src="./img/papers/tma.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
     <strong><a href="https://www.task-me-anything.org/">Task Me Anything</a></strong><br>
     Jieyu Zhang, <strong>Weikai Huang*</strong>, Zixian Ma*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.<br>
@@ -52,7 +52,7 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 </div>
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/mms.png" style="width: 300px; margin-right: 20px; flex-shrink: 0;">
+  <img src="./img/papers/mms.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
     <strong><a href="https://arxiv.org/abs/2403.11085">m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks</a></strong><br>
     Zixian Ma, <strong>Weikai Huang</strong>, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna<br>
