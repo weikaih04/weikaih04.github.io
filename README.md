@@ -18,15 +18,18 @@ I am interested in applying **data-centric** and **learning-based** methods to c
   </div>
 </div>
 
+
+
+### Peer-reviewed
+
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
   <img src="./img/papers/gas.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
   <div>
     <strong><a href="https://generate-any-scene.github.io/">Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming</a></strong><br>
     Ziqi Gao*, <strong>Weikai Huang*</strong>, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
+    <em>SynData4CV @ CVPR 2025</em>
   </div>
 </div>
-
-### Peer-reviewed
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
   <img src="./img/papers/provision.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
