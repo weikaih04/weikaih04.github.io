@@ -1,3 +1,31 @@
+<style>
+/* 移动端优化样式 */
+@media screen and (max-width: 768px) {
+  /* 调整flex容器在移动端的布局 */
+  div[style*="display: flex"] {
+    flex-direction: column !important;
+  }
+  
+  /* 确保图片在移动端占满宽度 */
+  div[style*="display: flex"] img {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+  
+  /* 文本内容的最小宽度调整 */
+  div[style*="min-width: 250px"] {
+    min-width: 100% !important;
+    margin-top: 0 !important;
+  }
+}
+
+/* 防止图片加载时的抖动 */
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+</style>
+
 Hi, I am a 2nd-year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
 
 **Research Interests**:
@@ -10,9 +38,9 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 
 ### Preprints
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/sos.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
-  <div>
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+  <img src="./img/papers/sos.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
+  <div style="flex: 1; min-width: 250px;">
     <strong><a href="https://github.com/weikaih04/SOS">SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding</a></strong><br>
     <strong>Weikai Huang</strong>, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna
   </div>
@@ -22,18 +50,18 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 
 ### Peer-reviewed
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/gas.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
-  <div>
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+  <img src="./img/papers/gas.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
+  <div style="flex: 1; min-width: 250px;">
     <strong><a href="https://generate-any-scene.github.io/">Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming</a></strong><br>
     Ziqi Gao*, <strong>Weikai Huang*</strong>, Jieyu Zhang, Aniruddha Kembhavi, Ranjay Krishna
     <em>SynData4CV @ CVPR 2025</em>
   </div>
 </div>
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/provision.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
-  <div>
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+  <img src="./img/papers/provision.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
+  <div style="flex: 1; min-width: 250px;">
     <strong><a href="http://arxiv.org/abs/2412.07012">ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models</a></strong><br>
     Jieyu Zhang, Le Xue, Linxin Song, Jun Wang, <strong>Weikai Huang</strong>, Manli Shu, An Yan, Zixian Ma, Juan Carlos Niebles, Silvio Savarese, Caiming Xiong, Zeyuan Chen, Ranjay Krishna, Ran Xu.<br>
     <a href="https://www.salesforce.com/blog/provision-multimodal-data-generation/" style="color: red;">Blog at Salesforce Research</a> | 
@@ -43,9 +71,9 @@ I am interested in applying **data-centric** and **learning-based** methods to c
   </div>
 </div>
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/tma.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
-  <div>
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+  <img src="./img/papers/tma.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
+  <div style="flex: 1; min-width: 250px;">
     <strong><a href="https://www.task-me-anything.org/">Task Me Anything</a></strong><br>
     Jieyu Zhang, <strong>Weikai Huang*</strong>, Zixian Ma*, Oscar Michel, Dong He, Tanmay Gupta, Wei-Chiu Ma, Ali Farhadi, Aniruddha Kembhavi, Ranjay Krishna.<br>
     <ins><em>NeurIPS 2024</em></ins> (Main Conference) | <ins><em>Video-Language Models @ NeurIPS 2024</em></ins> <span style="color: red;">Oral Presentation</span><br>
@@ -54,9 +82,9 @@ I am interested in applying **data-centric** and **learning-based** methods to c
   </div>
 </div>
 
-<div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-  <img src="./img/papers/mms.png" style="width: 400px; margin-right: 20px; flex-shrink: 0;">
-  <div>
+<div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
+  <img src="./img/papers/mms.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
+  <div style="flex: 1; min-width: 250px;">
     <strong><a href="https://arxiv.org/abs/2403.11085">m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks</a></strong><br>
     Zixian Ma, <strong>Weikai Huang</strong>, Jieyu Zhang, Tanmay Gupta, Ranjay Krishna<br>
     <em>ECCV 2024</em>
