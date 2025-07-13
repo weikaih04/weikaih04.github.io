@@ -38,17 +38,17 @@ I am interested in applying **data-centric** and **learning-based** methods to c
 
 ### Preprints
 
+
+### Peer-reviewed
+
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
   <img src="./img/papers/sos.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
   <div style="flex: 1; min-width: 250px;">
     <strong><a href="https://github.com/weikaih04/SOS">SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding</a></strong><br>
     <strong>Weikai Huang</strong>, Jieyu Zhang, Taoyang Jia, Chenhao Zheng, Ziqi Gao, Jae Sung Park, Ranjay Krishna
+    <em>ILR+G @ ICCV 2025</em>
   </div>
 </div>
-
-
-
-### Peer-reviewed
 
 <div style="display: flex; align-items: flex-start; margin-bottom: 20px; flex-wrap: wrap;">
   <img src="./img/papers/gas.png" style="width: 100%; max-width: 400px; margin-right: 20px; margin-bottom: 10px; flex-shrink: 1;">
