@@ -26,10 +26,15 @@ img {
 }
 </style>
 
-Hi, I am a 2nd-year undergrad at the University of Washington, Seattle, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/).
+Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/). Currently I am also a student collaborator at [Allen Institute for AI](https://allenai.org/) working on VLM data curation and training.
 
 **Research Interests**:
-I am interested in applying **data-centric** and **learning-based** methods to create generalized and robust foundation models for 2D/3D detection and segmentation, LLM/VLM, embodied AI, image/video editing and generation.
+
+- **2D and 3D Grounding and Tracking**: Developing robust object detection, grounding and tracking systems that can understand spatial relationships and temporal dynamics across different modalities, with applications in autonomous systems and embodied AI.
+
+- **Compositional and Scalable Synthetic Visual Data Generation**: Creating programmable and scalable synthetic data generation pipelines for computer vision tasks, focusing on scene graph programming and domain-specific data augmentation to improve model performance and generalization.
+
+- **Visual and Spatial VLM**: Advancing vision-language models to better understand complex spatial reasoning, multi-step visual tasks, and tool-use scenarios, bridging the gap between visual perception and actionable intelligence.
 
 <!-- I am looking for co-first or leading-author-level collaborators for projects over the coming years. If you are interested, please feel free to reach out. -->
 
