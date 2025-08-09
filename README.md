@@ -26,7 +26,7 @@ img {
 }
 </style>
 
-Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/). Currently I am also a student collaborator at [Allen Institute for AI](https://allenai.org/) working on VLM  and training and data curation .
+Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/). Currently I am also a student collaborator at [Allen Institute for AI](https://allenai.org/) working on VLM training and data generation.
 
 **Research Interests**:
 
@@ -110,6 +110,7 @@ Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay 
 
 ## 📍 Professional Services
 - Organizer of the **Synthetic Data for Computer Vision Workshop** at CVPR 2024 and CVPR 2025 ([website](https://syndata4cv.github.io/))
+- TA for **UW CSE 455: Computer Vision**, Autumn 2025 ([course page](https://courses.cs.washington.edu/courses/cse455/))
 - TA for **UW CSE 493G: Deep Learning**, Spring 2025 ([course page](https://courses.cs.washington.edu/courses/cse493g1/25sp/))
 
 ## 📫 Contact
