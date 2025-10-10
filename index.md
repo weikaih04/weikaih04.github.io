@@ -42,7 +42,10 @@ Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay 
 
 - **Vision and Spatial centric VLM**: Advancing vision-language models to better understand complex spatial reasoning, multi-step visual tasks, and multimodal tool-use scenarios, bridging the gap between visual perception and actionable intelligence.
 
-<!-- I am looking for co-first or leading-author-level collaborators for projects over the coming years. If you are interested, please feel free to reach out. -->
+
+<div class="announcement-banner">
+  📢 I'm applying for PhD programs in the 2027 cycle. I'm also seeking research collaborations at UW and AI2, and open to exploring other opportunities. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
+</div>
 
 ## 📝 Publications
 

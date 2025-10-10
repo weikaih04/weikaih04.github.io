@@ -446,6 +446,42 @@ footer {
   }
 }
 
+.announcement-banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  border-left: 4px solid #ffffff;
+
+  strong {
+    font-weight: 700;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.9;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .announcement-banner {
+    font-size: 0.9rem;
+    padding: 0.875rem 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
 .publication-venue strong {
   font-weight: 600;
   color: #1f2937;
