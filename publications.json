@@ -25,7 +25,8 @@
       "links": {
         "website": "https://generate-any-scene.github.io/",
         "arxiv": "https://arxiv.org/abs/2412.08221",
-        "code": "https://github.com/generate-any-scene/generate-any-scene"
+        "code": "https://github.com/RAIVNLab/GenerateAnyScene",
+        "huggingface": "https://huggingface.co/datasets/UWGZQ/GenerateAnyScene"
       },
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!"
@@ -78,7 +79,8 @@
       "links": {
         "arxiv": "https://arxiv.org/abs/2403.11085",
         "website": "https://mnms-project.github.io/",
-        "code": "https://github.com/RAIVNLab/mnms"
+        "code": "https://github.com/RAIVNLab/mnms",
+        "huggingface": "https://huggingface.co/datasets/zixianma/mnms"
       },
       "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate."
