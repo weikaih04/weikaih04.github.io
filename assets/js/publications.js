@@ -28,12 +28,76 @@ async function loadPublications() {
         const data = await response.json();
         publicationsData = data.publications;
         displayPublications();
+
+        // Fetch metrics after displaying publications
+        fetchAllMetrics();
     } catch (error) {
         console.error('Error loading publications:', error);
         // Show error message to user
         const container = document.getElementById('publicationsList');
         if (container) {
             container.innerHTML = '<p style="color: #dc2626;">Error loading publications. Please check the console for details.</p>';
+        }
+    }
+}
+
+// Fetch GitHub stars
+async function fetchGitHubStars(repo) {
+    try {
+        const response = await fetch(`https://api.github.com/repos/${repo}`);
+        if (!response.ok) return null;
+        const data = await response.json();
+        return data.stargazers_count;
+    } catch (error) {
+        console.error('Error fetching GitHub stars:', error);
+        return null;
+    }
+}
+
+// Fetch Semantic Scholar citations
+async function fetchCitations(arxivId) {
+    try {
+        const response = await fetch(`https://api.semanticscholar.org/graph/v1/paper/arXiv:${arxivId}?fields=citationCount`);
+        if (!response.ok) return null;
+        const data = await response.json();
+        return data.citationCount;
+    } catch (error) {
+        console.error('Error fetching citations:', error);
+        return null;
+    }
+}
+
+// Format number with K suffix
+function formatNumber(num) {
+    if (num >= 1000) {
+        return (num / 1000).toFixed(1) + 'K';
+    }
+    return num.toString();
+}
+
+// Fetch all metrics
+async function fetchAllMetrics() {
+    for (const pub of publicationsData) {
+        // Fetch GitHub stars
+        if (pub.github_repo) {
+            const stars = await fetchGitHubStars(pub.github_repo);
+            if (stars !== null) {
+                const starsElement = document.getElementById(`stars-${pub.id}`);
+                if (starsElement) {
+                    starsElement.textContent = ` ⭐ ${formatNumber(stars)}`;
+                }
+            }
+        }
+
+        // Fetch citations
+        if (pub.arxiv_id) {
+            const citations = await fetchCitations(pub.arxiv_id);
+            if (citations !== null) {
+                const citationsElement = document.getElementById(`citations-${pub.id}`);
+                if (citationsElement) {
+                    citationsElement.textContent = ` 📖 ${formatNumber(citations)} cite.`;
+                }
+            }
         }
     }
 }
@@ -74,20 +138,18 @@ function createPublicationHTML(pub) {
         .filter(key => pub.links && pub.links[key])
         .map(key => {
             const label = linkLabels[key] || key.charAt(0).toUpperCase() + key.slice(1);
-            // Add metrics using shields.io dynamic badges
-            let metricBadge = '';
+            // Add metric placeholder for text-based display
+            let metricSpan = '';
 
             if (key === 'code' && pub.github_repo) {
-                // GitHub stars badge
-                const starsUrl = `https://img.shields.io/github/stars/${pub.github_repo}?style=social`;
-                metricBadge = ` <img src="${starsUrl}" alt="GitHub stars" style="vertical-align: middle; margin-left: 4px;">`;
+                // GitHub stars placeholder
+                metricSpan = `<span id="stars-${pub.id}" class="metric-inline"></span>`;
             } else if ((key === 'arxiv' || key === 'paper') && pub.arxiv_id) {
-                // Citations badge using shields.io dynamic JSON
-                const citationsUrl = `https://img.shields.io/badge/dynamic/json?style=social&logo=semanticscholar&label=&url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2FarXiv%3A${pub.arxiv_id}%3Ffields%3DcitationCount&query=%24.citationCount&suffix=%20cite.&cacheSeconds=86400`;
-                metricBadge = ` <img src="${citationsUrl}" alt="Citations" style="vertical-align: middle; margin-left: 4px;">`;
+                // Citations placeholder
+                metricSpan = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
             }
 
-            return `<a href="${pub.links[key]}" target="_blank">${label}${metricBadge}</a>`;
+            return `<a href="${pub.links[key]}" target="_blank">${label}${metricSpan}</a>`;
         })
         .join('');
 
