@@ -69,7 +69,10 @@ function createPublicationHTML(pub) {
         : '';
     
     const awardHtml = pub.award ? `<span class="award">${pub.award}</span>` : '';
-    
+
+    // Additional venue (e.g., workshop)
+    const additionalVenueHtml = pub.additional_venue ? `<br><span style="color: #6b7280; font-size: 1rem;">${pub.additional_venue}</span>` : '';
+
     // Create expandable TL;DR with unique ID
     const tldrHtml = pub.tldr ? `
         <div class="publication-tldr collapsed" id="tldr-${pub.id}">
@@ -94,7 +97,7 @@ function createPublicationHTML(pub) {
                 </div>
                 <div class="publication-authors">${authorsHtml}</div>
                 <div class="publication-venue">
-                    <strong>${pub.venue}</strong> ${pub.year} ${awardHtml}
+                    <strong>${pub.venue}</strong> ${pub.year} ${awardHtml}${additionalVenueHtml}
                 </div>
                 ${linksHtml ? `<div class="publication-links">${linksHtml}</div>` : ''}
                 ${tldrHtml}

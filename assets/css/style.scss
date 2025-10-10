@@ -8,10 +8,10 @@
 body {
   background-color: #fff;
   padding:50px;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   font-size: 18px;
   line-height: 1.65;
-  color:#727272;
+  color:#5a5a5a;
   font-weight:400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -342,9 +342,9 @@ footer {
   cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   transition: all 0.2s;
-  color: #6b7280;
+  color: #5a5a5a;
 }
 
 .view-toggle button.active {
@@ -387,7 +387,7 @@ footer {
   font-weight: 600;
   color: #222;
   line-height: 1.4;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
 }
 
 .publication-title a {
@@ -401,9 +401,9 @@ footer {
 
 .publication-authors {
   font-size: 1.08rem;
-  color: #6b7280;
+  color: #5a5a5a;
   line-height: 1.5;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
 }
 
 .publication-authors strong {
@@ -413,8 +413,8 @@ footer {
 
 .publication-venue {
   font-size: 1.08rem;
-  color: #6b7280;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  color: #5a5a5a;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
 }
 
 .publication-venue strong {
@@ -448,7 +448,7 @@ footer {
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 500;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   transition: all 0.2s ease;
   line-height: 1.2;
 }
@@ -463,19 +463,19 @@ footer {
 /* Expandable TL;DR */
 .publication-tldr {
   font-size: 1rem;
-  color: #6b7280;
+  color: #5a5a5a;
   line-height: 1.6;
   padding: 0.75rem;
   background: #f9fafb;
   border-radius: 5px;
   margin-top: 0.3rem;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   position: relative;
 }
 
 .publication-tldr strong {
   color: #1f2937;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   font-size: 1rem;
 }
 
@@ -517,7 +517,7 @@ footer {
   border-radius: 4px;
   padding: 2px 8px;
   font-size: 1rem;
-  font-family: 'EB Garamond', 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
   color: #2563eb;
   cursor: pointer;
   display: inline-flex;

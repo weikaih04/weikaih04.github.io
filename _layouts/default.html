@@ -7,7 +7,7 @@
 
 {% seo %}
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!-- Add favicon link here -->
     <link rel="icon" href="{{ '/files/favicon.ico' | relative_url }}" type="image/x-icon">
@@ -20,7 +20,7 @@
     <nav>
       <div class="nav-wrapper">
         <li><a href="{{ "/" | absolute_url }}">About Me</a></li>
-        <li><a href="./cv.html">CV</a></li>
+        <!-- <li><a href="./cv.html">CV</a></li> -->
         <!-- <li><a href="./mentoring.html">Mentoring</a></li> -->
       </div>
     </nav>
@@ -41,6 +41,7 @@
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">GitHub</a></p>
         <p class="view"><a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1">Google Scholar</a></p>
+        <p class="view"><a href="/files/weikaih_cv_1222_2024.pdf">CV</a></p>
         <p class="view"><a href="https://twitter.com/weikaih04">X (Twitter)</a></p>
         {% endif %}
 

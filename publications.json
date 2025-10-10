@@ -8,7 +8,8 @@
       "year": "2025",
       "image": "img/papers/sos.png",
       "links": {
-        "code": "https://github.com/weikaih04/SOS"
+        "code": "https://github.com/weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
+        "huggingface": "https://huggingface.co/collections/weikaih/sos-synthetic-object-segments-improves-detection-segmentat-682679751d20faa20800033c"
       },
       "selected": true,
       "tldr": "We introduce a synthetic data generation pipeline that creates diverse object segments to improve detection, segmentation, and grounding performance across multiple vision tasks."
@@ -21,7 +22,9 @@
       "year": "2025",
       "image": "img/papers/gas.png",
       "links": {
-        "website": "https://generate-any-scene.github.io/"
+        "website": "https://generate-any-scene.github.io/",
+        "arxiv": "https://arxiv.org/abs/2412.07012",
+        "code": "https://github.com/generate-any-scene/generate-any-scene"
       },
       "selected": true,
       "tldr": "A scene graph programming framework that enables systematic evaluation and improvement of text-to-vision generation models through compositional scene construction."
@@ -34,7 +37,9 @@
       "year": "2025",
       "image": "img/papers/provision.png",
       "links": {
-        "arxiv": "http://arxiv.org/abs/2412.07012",
+        "arxiv": "https://arxiv.org/abs/2412.07012",
+        "code": "https://github.com/JieyuZ2/ProVision",
+        "huggingface": "https://huggingface.co/datasets/Salesforce/ProVision-10M",
         "blog": "https://www.salesforce.com/blog/provision-multimodal-data-generation/"
       },
       "selected": true,
@@ -44,12 +49,16 @@
       "id": "tma",
       "title": "Task Me Anything",
       "authors": ["Jieyu Zhang", "Weikai Huang*", "Zixian Ma*", "Oscar Michel", "Dong He", "Tanmay Gupta", "Wei-Chiu Ma", "Ali Farhadi", "Aniruddha Kembhavi", "Ranjay Krishna"],
-      "venue": "NeurIPS",
+      "venue": "NeurIPS (Main Conference)",
       "year": "2024",
-      "award": "🏆 Oral Presentation at Video-Language Models Workshop",
+      "award": null,
+      "additional_venue": "Video-Language Models Workshop (Oral)",
       "image": "img/papers/tma.png",
       "links": {
+        "arxiv": "https://arxiv.org/abs/2406.11775",
         "website": "https://www.task-me-anything.org/",
+        "code": "https://github.com/JieyuZ2/TaskMeAnything",
+        "huggingface": "https://huggingface.co/collections/jieyuz2/taskme-anything-667e1f31bdfedf6c0c3b2e03",
         "blog": "https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/",
         "talk": "https://www.youtube.com/watch?v=J3ECnV8Yc_g"
       },
@@ -64,7 +73,9 @@
       "year": "2024",
       "image": "img/papers/mms.png",
       "links": {
-        "arxiv": "https://arxiv.org/abs/2403.11085"
+        "arxiv": "https://arxiv.org/abs/2403.11085",
+        "website": "https://mnms-project.github.io/",
+        "code": "https://github.com/RAIVNLab/mnms"
       },
       "selected": true,
       "tldr": "A benchmark designed to evaluate how well multimodal models can use tools to solve complex multi-step tasks requiring both visual and textual understanding."
