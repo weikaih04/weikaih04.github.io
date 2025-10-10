@@ -8,6 +8,7 @@
       "year": "2025",
       "image": "img/papers/sos.png",
       "links": {
+        "website": "https://github.com/weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
         "code": "https://github.com/weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
         "huggingface": "https://huggingface.co/collections/weikaih/sos-synthetic-object-segments-improves-detection-segmentat-682679751d20faa20800033c"
       },
@@ -23,7 +24,7 @@
       "image": "img/papers/gas.png",
       "links": {
         "website": "https://generate-any-scene.github.io/",
-        "arxiv": "https://arxiv.org/abs/2412.07012",
+        "arxiv": "https://arxiv.org/abs/2412.08221",
         "code": "https://github.com/generate-any-scene/generate-any-scene"
       },
       "selected": true,
