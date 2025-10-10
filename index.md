@@ -36,11 +36,11 @@ Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay 
 
 - **2D and 3D Grounding and Tracking**: Developing robust object detection, grounding and tracking systems that can understand spatial relationships and temporal dynamics across different modalities, with applications in autonomous systems and embodied AI.
 
-- **Controllable Generative Models**: Building controllable and interpretable generative models for visual content creation, enabling precise control over generated outputs through structured representations and programmatic interfaces.
+- **Controllable Generative Models**: Building controllable and interpretable generative models for visual content creation, enabling precise control with more fine-grained control signal.
 
-- **Compositional and Scalable Synthetic Visual Data Generation**: Creating programmable and scalable synthetic data generation pipelines for computer vision tasks, focusing on scene graph programming and domain-specific data augmentation to improve model performance and generalization.
+- **Compositional and Scalable Synthetic Visual Data Generation**: Creating programmable and scalable synthetic data generation pipelines for Vision Foundation Model includes: VLMs, VLAs, Detectors, Generative models.
 
-- **Vision and Spatial centric VLM**: Advancing vision-language models to better understand complex spatial reasoning, multi-step visual tasks, and tool-use scenarios, bridging the gap between visual perception and actionable intelligence.
+- **Vision and Spatial centric VLM**: Advancing vision-language models to better understand complex spatial reasoning, multi-step visual tasks, and multimodal tool-use scenarios, bridging the gap between visual perception and actionable intelligence.
 
 <!-- I am looking for co-first or leading-author-level collaborators for projects over the coming years. If you are interested, please feel free to reach out. -->
 
