@@ -13,7 +13,7 @@
         "huggingface": "https://huggingface.co/collections/weikaih/sos-synthetic-object-segments-improves-detection-segmentat-682679751d20faa20800033c"
       },
       "selected": true,
-      "tldr": "20M synthetic object segments—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic data surpassing real datasets in low-data regimes."
+      "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic data surpassing real datasets in low-data regimes."
     },
     {
       "id": "gas",
