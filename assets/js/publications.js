@@ -1,7 +1,6 @@
 // Load publications from JSON
 let publicationsData = [];
 let showSelected = true;
-let metricsCache = {}; // Cache for GitHub stars and citations
 
 async function loadPublications() {
     try {
@@ -29,9 +28,6 @@ async function loadPublications() {
         const data = await response.json();
         publicationsData = data.publications;
         displayPublications();
-
-        // Fetch metrics asynchronously after initial display
-        fetchAllMetrics();
     } catch (error) {
         console.error('Error loading publications:', error);
         // Show error message to user
@@ -40,112 +36,6 @@ async function loadPublications() {
             container.innerHTML = '<p style="color: #dc2626;">Error loading publications. Please check the console for details.</p>';
         }
     }
-}
-
-// Extract GitHub repo owner and name from URL
-function parseGitHubUrl(url) {
-    if (!url) return null;
-    const match = url.match(/github\.com\/([^\/]+)\/([^\/]+)/);
-    if (match) {
-        return { owner: match[1], repo: match[2] };
-    }
-    return null;
-}
-
-// Fetch GitHub stars for a repository
-async function fetchGitHubStars(repoUrl) {
-    const parsed = parseGitHubUrl(repoUrl);
-    if (!parsed) return null;
-
-    try {
-        const response = await fetch(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}`);
-        if (!response.ok) return null;
-        const data = await response.json();
-        return data.stargazers_count;
-    } catch (error) {
-        console.error('Error fetching GitHub stars:', error);
-        return null;
-    }
-}
-
-// Extract arXiv ID from URL
-function parseArxivId(url) {
-    if (!url) return null;
-    const match = url.match(/arxiv\.org\/abs\/(\d+\.\d+)/);
-    return match ? match[1] : null;
-}
-
-// Fetch citation count from Semantic Scholar
-async function fetchSemanticScholarCitations(pub) {
-    // Try to get paper ID from arXiv
-    const arxivId = parseArxivId(pub.links?.arxiv);
-
-    if (!arxivId) return null;
-
-    try {
-        const response = await fetch(`https://api.semanticscholar.org/graph/v1/paper/arXiv:${arxivId}?fields=citationCount`);
-        if (!response.ok) return null;
-        const data = await response.json();
-        return data.citationCount;
-    } catch (error) {
-        console.error('Error fetching Semantic Scholar citations:', error);
-        return null;
-    }
-}
-
-// Fetch all metrics for all publications
-async function fetchAllMetrics() {
-    for (const pub of publicationsData) {
-        const pubId = pub.id;
-
-        // Fetch GitHub stars if code link exists
-        if (pub.links?.code) {
-            const stars = await fetchGitHubStars(pub.links.code);
-            if (stars !== null) {
-                metricsCache[`${pubId}_stars`] = stars;
-                updateMetricsDisplay(pubId);
-            }
-        }
-
-        // Fetch citations if arXiv link exists
-        if (pub.links?.arxiv) {
-            const citations = await fetchSemanticScholarCitations(pub);
-            if (citations !== null) {
-                metricsCache[`${pubId}_citations`] = citations;
-                updateMetricsDisplay(pubId);
-            }
-        }
-    }
-}
-
-// Update the metrics display for a specific publication
-function updateMetricsDisplay(pubId) {
-    const stars = metricsCache[`${pubId}_stars`];
-    const citations = metricsCache[`${pubId}_citations`];
-
-    // Update stars inside the Code link
-    if (stars !== undefined) {
-        const starsElement = document.getElementById(`stars-${pubId}`);
-        if (starsElement) {
-            starsElement.textContent = ` ⭐ ${formatNumber(stars)}`;
-        }
-    }
-
-    // Update citations inside the arXiv/Paper link with abbreviation
-    if (citations !== undefined) {
-        const citationsElement = document.getElementById(`citations-${pubId}`);
-        if (citationsElement) {
-            citationsElement.textContent = ` 📖 ${formatNumber(citations)} cite.`;
-        }
-    }
-}
-
-// Format large numbers with K suffix
-function formatNumber(num) {
-    if (num >= 1000) {
-        return (num / 1000).toFixed(1) + 'K';
-    }
-    return num.toString();
 }
 
 function displayPublications() {
@@ -184,14 +74,20 @@ function createPublicationHTML(pub) {
         .filter(key => pub.links && pub.links[key])
         .map(key => {
             const label = linkLabels[key] || key.charAt(0).toUpperCase() + key.slice(1);
-            // Add metric placeholder inside the link for Code and arXiv
-            let metricSpan = '';
-            if (key === 'code') {
-                metricSpan = `<span id="stars-${pub.id}" class="metric-inline"></span>`;
-            } else if (key === 'arxiv' || key === 'paper') {
-                metricSpan = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
+            // Add metrics using shields.io dynamic badges
+            let metricBadge = '';
+
+            if (key === 'code' && pub.github_repo) {
+                // GitHub stars badge
+                const starsUrl = `https://img.shields.io/github/stars/${pub.github_repo}?style=social`;
+                metricBadge = ` <img src="${starsUrl}" alt="GitHub stars" style="vertical-align: middle; margin-left: 4px;">`;
+            } else if ((key === 'arxiv' || key === 'paper') && pub.arxiv_id) {
+                // Citations badge using shields.io dynamic JSON
+                const citationsUrl = `https://img.shields.io/badge/dynamic/json?style=social&logo=semanticscholar&label=&url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2FarXiv%3A${pub.arxiv_id}%3Ffields%3DcitationCount&query=%24.citationCount&suffix=%20cite.&cacheSeconds=86400`;
+                metricBadge = ` <img src="${citationsUrl}" alt="Citations" style="vertical-align: middle; margin-left: 4px;">`;
             }
-            return `<a href="${pub.links[key]}" target="_blank">${label}${metricSpan}</a>`;
+
+            return `<a href="${pub.links[key]}" target="_blank">${label}${metricBadge}</a>`;
         })
         .join('');
 
