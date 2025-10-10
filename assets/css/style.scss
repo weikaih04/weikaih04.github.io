@@ -494,15 +494,6 @@ footer {
   font-size: 1rem;
 }
 
-/* Publication Metrics - Inline style */
-.metric-inline {
-  color: #6b7280;
-  font-size: 0.85rem;
-  font-weight: 400;
-  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
-  margin-left: 0.15rem;
-}
-
 /* Publication Links */
 .publication-links {
   display: flex;
@@ -532,6 +523,23 @@ footer {
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 3px 8px rgba(37, 99, 235, 0.2);
+}
+
+/* Metric badges - styled like links but non-clickable */
+.publication-links .metric-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.65rem;
+  background: #f9fafb;
+  border-radius: 16px;
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
+  line-height: 1.2;
+  cursor: default;
 }
 
 /* Expandable TL;DR */

@@ -123,19 +123,21 @@ function updateMetricsDisplay(pubId) {
     const stars = metricsCache[`${pubId}_stars`];
     const citations = metricsCache[`${pubId}_citations`];
 
-    // Update stars in the venue line
+    // Update stars in the links section
     if (stars !== undefined) {
         const starsElement = document.getElementById(`stars-${pubId}`);
         if (starsElement) {
-            starsElement.textContent = ` (⭐ ${formatNumber(stars)})`;
+            starsElement.innerHTML = `<a class="metric-badge">⭐ ${formatNumber(stars)}</a>`;
+            starsElement.style.display = 'inline';
         }
     }
 
-    // Update citations in the venue line
+    // Update citations in the links section with abbreviation
     if (citations !== undefined) {
         const citationsElement = document.getElementById(`citations-${pubId}`);
         if (citationsElement) {
-            citationsElement.textContent = ` (${formatNumber(citations)} citations)`;
+            citationsElement.innerHTML = `<a class="metric-badge">📖 ${formatNumber(citations)} cite.</a>`;
+            citationsElement.style.display = 'inline';
         }
     }
 }
@@ -165,7 +167,8 @@ function createPublicationHTML(pub) {
     ).join(', ');
 
     // Create links with better labels and ordering
-    const linkOrder = ['paper', 'arxiv', 'website', 'code', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
+    // Order: arXiv first, then Code, then others
+    const linkOrder = ['arxiv', 'code', 'paper', 'website', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
     const linkLabels = {
         'paper': 'Paper',
         'arxiv': 'arXiv',
@@ -183,16 +186,18 @@ function createPublicationHTML(pub) {
         .filter(key => pub.links && pub.links[key])
         .map(key => {
             const label = linkLabels[key] || key.charAt(0).toUpperCase() + key.slice(1);
-            // Add metrics placeholder after Code and Paper/arXiv links
-            let metricPlaceholder = '';
-            if (key === 'code') {
-                metricPlaceholder = `<span id="stars-${pub.id}" class="metric-inline"></span>`;
-            } else if (key === 'paper' || key === 'arxiv') {
-                metricPlaceholder = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
-            }
-            return `<a href="${pub.links[key]}" target="_blank">${label}</a>${metricPlaceholder}`;
+            return `<a href="${pub.links[key]}" target="_blank">${label}</a>`;
         })
         .join('');
+
+    // Add metrics placeholders as separate badges in the links section
+    let metricsHtml = '';
+    if (pub.links?.code) {
+        metricsHtml += `<span id="stars-${pub.id}" class="metric-placeholder" style="display: none;"></span>`;
+    }
+    if (pub.links?.arxiv || pub.links?.paper) {
+        metricsHtml += `<span id="citations-${pub.id}" class="metric-placeholder" style="display: none;"></span>`;
+    }
 
     const imageHtml = pub.image
         ? `<div class="publication-image">
@@ -234,7 +239,7 @@ function createPublicationHTML(pub) {
                 <div class="publication-venue">
                     <strong>${pub.venue}</strong> ${pub.year} ${awardHtml}${additionalVenueHtml}
                 </div>
-                ${linksHtml ? `<div class="publication-links">${linksHtml}</div>` : ''}
+                ${(linksHtml || metricsHtml) ? `<div class="publication-links">${linksHtml}${metricsHtml}</div>` : ''}
                 ${tldrHtml}
                 ${highlightHtml}
             </div>
