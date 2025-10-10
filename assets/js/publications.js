@@ -54,11 +54,26 @@ function createPublicationHTML(pub) {
         author.includes('Weikai Huang') ? `<strong>${author}</strong>` : author
     ).join(', ');
     
-    // Create links with icons
-    const linksHtml = Object.entries(pub.links || {})
-        .map(([key, url]) => {
-            const label = key.charAt(0).toUpperCase() + key.slice(1);
-            return `<a href="${url}" target="_blank">${label}</a>`;
+    // Create links with better labels and ordering
+    const linkOrder = ['paper', 'arxiv', 'website', 'code', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
+    const linkLabels = {
+        'paper': 'Paper',
+        'arxiv': 'arXiv',
+        'website': 'Website',
+        'code': 'Code',
+        'huggingface': 'HuggingFace',
+        'demo': 'Demo',
+        'blog': 'Blog',
+        'talk': 'Talk',
+        'data': 'Data',
+        'models': 'Models'
+    };
+
+    const linksHtml = linkOrder
+        .filter(key => pub.links && pub.links[key])
+        .map(key => {
+            const label = linkLabels[key] || key.charAt(0).toUpperCase() + key.slice(1);
+            return `<a href="${pub.links[key]}" target="_blank">${label}</a>`;
         })
         .join('');
     
@@ -71,7 +86,7 @@ function createPublicationHTML(pub) {
     const awardHtml = pub.award ? `<span class="award">${pub.award}</span>` : '';
 
     // Additional venue (e.g., workshop)
-    const additionalVenueHtml = pub.additional_venue ? `<br><span style="color: #6b7280; font-size: 1rem;">${pub.additional_venue}</span>` : '';
+    const additionalVenueHtml = pub.additional_venue ? `<br><span style="color: #5a5a5a; font-size: 1rem;">${pub.additional_venue}</span>` : '';
 
     // Create expandable TL;DR with unique ID
     const tldrHtml = pub.tldr ? `
