@@ -1,0 +1,74 @@
+{
+  "publications": [
+    {
+      "id": "sos",
+      "title": "SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding",
+      "authors": ["Weikai Huang", "Jieyu Zhang", "Taoyang Jia", "Chenhao Zheng", "Ziqi Gao", "Jae Sung Park", "Ranjay Krishna"],
+      "venue": "ILR+G @ ICCV",
+      "year": "2025",
+      "image": "img/papers/sos.png",
+      "links": {
+        "code": "https://github.com/weikaih04/SOS"
+      },
+      "selected": true,
+      "tldr": "We introduce a synthetic data generation pipeline that creates diverse object segments to improve detection, segmentation, and grounding performance across multiple vision tasks."
+    },
+    {
+      "id": "gas",
+      "title": "Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming",
+      "authors": ["Ziqi Gao*", "Weikai Huang*", "Jieyu Zhang", "Aniruddha Kembhavi", "Ranjay Krishna"],
+      "venue": "SynData4CV @ CVPR",
+      "year": "2025",
+      "image": "img/papers/gas.png",
+      "links": {
+        "website": "https://generate-any-scene.github.io/"
+      },
+      "selected": true,
+      "tldr": "A scene graph programming framework that enables systematic evaluation and improvement of text-to-vision generation models through compositional scene construction."
+    },
+    {
+      "id": "provision",
+      "title": "ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models",
+      "authors": ["Jieyu Zhang", "Le Xue", "Linxin Song", "Jun Wang", "Weikai Huang", "Manli Shu", "An Yan", "Zixian Ma", "Juan Carlos Niebles", "Silvio Savarese", "Caiming Xiong", "Zeyuan Chen", "Ranjay Krishna", "Ran Xu"],
+      "venue": "SynthData @ ICLR",
+      "year": "2025",
+      "image": "img/papers/provision.png",
+      "links": {
+        "arxiv": "http://arxiv.org/abs/2412.07012",
+        "blog": "https://www.salesforce.com/blog/provision-multimodal-data-generation/"
+      },
+      "selected": true,
+      "tldr": "A programmatic approach to scale vision-centric instruction data generation for training more capable multimodal language models, featured in VentureBeat and MarkTechPost."
+    },
+    {
+      "id": "tma",
+      "title": "Task Me Anything",
+      "authors": ["Jieyu Zhang", "Weikai Huang*", "Zixian Ma*", "Oscar Michel", "Dong He", "Tanmay Gupta", "Wei-Chiu Ma", "Ali Farhadi", "Aniruddha Kembhavi", "Ranjay Krishna"],
+      "venue": "NeurIPS",
+      "year": "2024",
+      "award": "🏆 Oral Presentation at Video-Language Models Workshop",
+      "image": "img/papers/tma.png",
+      "links": {
+        "website": "https://www.task-me-anything.org/",
+        "blog": "https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/",
+        "talk": "https://www.youtube.com/watch?v=J3ECnV8Yc_g"
+      },
+      "selected": true,
+      "tldr": "A comprehensive benchmark for evaluating multimodal models on diverse real-world tasks, with systematic evaluation across multiple dimensions of model capabilities."
+    },
+    {
+      "id": "mms",
+      "title": "m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks",
+      "authors": ["Zixian Ma", "Weikai Huang", "Jieyu Zhang", "Tanmay Gupta", "Ranjay Krishna"],
+      "venue": "ECCV",
+      "year": "2024",
+      "image": "img/papers/mms.png",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2403.11085"
+      },
+      "selected": true,
+      "tldr": "A benchmark designed to evaluate how well multimodal models can use tools to solve complex multi-step tasks requiring both visual and textual understanding."
+    }
+  ]
+}
+
