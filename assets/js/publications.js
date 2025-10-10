@@ -88,6 +88,9 @@ function createPublicationHTML(pub) {
     // Additional venue (e.g., workshop)
     const additionalVenueHtml = pub.additional_venue ? `<br><span style="color: #5a5a5a; font-size: 1rem;">${pub.additional_venue}</span>` : '';
 
+    // Highlight (e.g., used in BLIP-3)
+    const highlightHtml = pub.highlight ? `<div class="publication-highlight">${pub.highlight}</div>` : '';
+
     // Create expandable TL;DR with unique ID
     const tldrHtml = pub.tldr ? `
         <div class="publication-tldr collapsed" id="tldr-${pub.id}">
@@ -114,6 +117,7 @@ function createPublicationHTML(pub) {
                 <div class="publication-venue">
                     <strong>${pub.venue}</strong> ${pub.year} ${awardHtml}${additionalVenueHtml}
                 </div>
+                ${highlightHtml}
                 ${linksHtml ? `<div class="publication-links">${linksHtml}</div>` : ''}
                 ${tldrHtml}
             </div>

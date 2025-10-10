@@ -423,6 +423,29 @@ footer {
   font-family: 'Lora', 'Crimson Pro', Georgia, serif;
 }
 
+.publication-highlight {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.35rem 0.75rem;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: 'Lora', 'Crimson Pro', Georgia, serif;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  }
+  50% {
+    box-shadow: 0 2px 12px rgba(255, 107, 107, 0.5);
+  }
+}
+
 .publication-venue strong {
   font-weight: 600;
   color: #1f2937;
