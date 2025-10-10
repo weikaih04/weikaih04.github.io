@@ -359,10 +359,10 @@ footer {
 
 .publication-item {
   display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -372,8 +372,14 @@ footer {
 
 .publication-image img {
   width: 100%;
-  border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.publication-image img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .publication-content {
@@ -549,7 +555,7 @@ footer {
   }
 
   .publication-image {
-    max-width: 250px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
