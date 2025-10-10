@@ -4,7 +4,7 @@
       "id": "sos",
       "title": "SOS: Synthetic Object Segments Improve Detection, Segmentation, and Grounding",
       "authors": ["Weikai Huang", "Jieyu Zhang", "Taoyang Jia", "Chenhao Zheng", "Ziqi Gao", "Jae Sung Park", "Ranjay Krishna"],
-      "venue": "ILR+G @ ICCV",
+      "venue": "arXiv",
       "year": "2025",
       "image": "img/papers/sos.png",
       "links": {
@@ -12,13 +12,13 @@
         "huggingface": "https://huggingface.co/collections/weikaih/sos-synthetic-object-segments-improves-detection-segmentat-682679751d20faa20800033c"
       },
       "selected": true,
-      "tldr": "We introduce a synthetic data generation pipeline that creates diverse object segments to improve detection, segmentation, and grounding performance across multiple vision tasks."
+      "tldr": "20M synthetic object segments—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic data surpassing real datasets in low-data regimes."
     },
     {
       "id": "gas",
       "title": "Generate Any Scene: Evaluating and Improving Text-to-Vision Generation with Scene Graph Programming",
       "authors": ["Ziqi Gao*", "Weikai Huang*", "Jieyu Zhang", "Aniruddha Kembhavi", "Ranjay Krishna"],
-      "venue": "SynData4CV @ CVPR",
+      "venue": "arXiv",
       "year": "2025",
       "image": "img/papers/gas.png",
       "links": {
@@ -27,14 +27,14 @@
         "code": "https://github.com/generate-any-scene/generate-any-scene"
       },
       "selected": true,
-      "tldr": "A scene graph programming framework that enables systematic evaluation and improvement of text-to-vision generation models through compositional scene construction."
+      "tldr": "Scene graph programming generates infinite compositional scenes—systematically evaluate and improve DALL-E 3, Stable Diffusion on spatial/attribute tasks."
     },
     {
       "id": "provision",
       "title": "ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models",
       "authors": ["Jieyu Zhang", "Le Xue", "Linxin Song", "Jun Wang", "Weikai Huang", "Manli Shu", "An Yan", "Zixian Ma", "Juan Carlos Niebles", "Silvio Savarese", "Caiming Xiong", "Zeyuan Chen", "Ranjay Krishna", "Ran Xu"],
-      "venue": "SynthData @ ICLR",
-      "year": "2025",
+      "venue": "arXiv",
+      "year": "2024",
       "image": "img/papers/provision.png",
       "links": {
         "arxiv": "https://arxiv.org/abs/2412.07012",
@@ -43,7 +43,7 @@
         "blog": "https://www.salesforce.com/blog/provision-multimodal-data-generation/"
       },
       "selected": true,
-      "tldr": "A programmatic approach to scale vision-centric instruction data generation for training more capable multimodal language models, featured in VentureBeat and MarkTechPost."
+      "tldr": "10M vision-centric instructions—7% boost on CVBench 2D, 8% on 3D, 8% on Mantis-Eval. Zero manual annotation."
     },
     {
       "id": "tma",
@@ -63,7 +63,7 @@
         "talk": "https://www.youtube.com/watch?v=J3ECnV8Yc_g"
       },
       "selected": true,
-      "tldr": "A comprehensive benchmark for evaluating multimodal models on diverse real-world tasks, with systematic evaluation across multiple dimensions of model capabilities."
+      "tldr": "Provided 2D/3D assets, generate 750M+ fine-grained visual questions without any annotation—reveals GPT-4o's weaknesses."
     },
     {
       "id": "mms",
@@ -78,7 +78,7 @@
         "code": "https://github.com/RAIVNLab/mnms"
       },
       "selected": true,
-      "tldr": "A benchmark designed to evaluate how well multimodal models can use tools to solve complex multi-step tasks requiring both visual and textual understanding."
+      "tldr": "First multi-modal tool-use benchmark—4K+ tasks with 33 tools, GPT-4V achieves only 24% success rate."
     }
   ]
 }
