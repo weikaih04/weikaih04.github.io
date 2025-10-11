@@ -24,7 +24,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 22
+      "github_stars": 26
     },
     {
       "id": "gas",
@@ -49,7 +49,7 @@
       },
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!",
-      "github_stars": 46,
+      "github_stars": 54,
       "citations": 1
     },
     {
