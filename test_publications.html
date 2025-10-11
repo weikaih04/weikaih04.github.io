@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Publications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <style>
+        body {
+            font-family: 'Lora', 'Crimson Pro', Georgia, serif;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            color: #5a5a5a;
+        }
+        h1 {
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <h1>Publications Test</h1>
+    
+    <div class="section-header">
+        <span style="font-size: 0.9em; color: #5a5a5a;">(* denotes equal contribution)</span>
+        <div class="view-toggle">
+            <button id="selectedBtn" class="active">Selected</button>
+            <button id="allBtn">All Publications</button>
+        </div>
+    </div>
+
+    <div id="publicationsList" class="publications-list">
+        <!-- Publications will be loaded here dynamically -->
+    </div>
+
+    <script src="/assets/js/publications.js"></script>
+</body>
+</html>
+
