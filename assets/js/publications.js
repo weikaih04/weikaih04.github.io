@@ -29,8 +29,12 @@ async function loadPublications() {
         publicationsData = data.publications;
         displayPublications();
 
-        // Fetch metrics after displaying publications
-        fetchAllMetrics();
+        // Display pre-fetched metrics from JSON
+        displayPreFetchedMetrics();
+
+        // Optionally fetch fresh metrics in background (commented out to save API calls)
+        // Uncomment if you want to fetch fresh data on every page load
+        // fetchAllMetrics();
     } catch (error) {
         console.error('Error loading publications:', error);
         // Show error message to user
@@ -75,7 +79,28 @@ function formatNumber(num) {
     return num.toString();
 }
 
-// Fetch all metrics
+// Display pre-fetched metrics from publications.json
+function displayPreFetchedMetrics() {
+    for (const pub of publicationsData) {
+        // Display GitHub stars if available
+        if (pub.github_stars !== undefined) {
+            const starsElement = document.getElementById(`stars-${pub.id}`);
+            if (starsElement) {
+                starsElement.textContent = ` ⭐ ${formatNumber(pub.github_stars)}`;
+            }
+        }
+
+        // Display citations if available
+        if (pub.citations !== undefined) {
+            const citationsElement = document.getElementById(`citations-${pub.id}`);
+            if (citationsElement) {
+                citationsElement.textContent = ` 📖 ${formatNumber(pub.citations)} cite.`;
+            }
+        }
+    }
+}
+
+// Fetch all metrics (for manual refresh or fallback)
 async function fetchAllMetrics() {
     for (const pub of publicationsData) {
         // Fetch GitHub stars
