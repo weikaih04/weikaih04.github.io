@@ -15,9 +15,10 @@
       "venue": "arXiv",
       "year": "2025",
       "image": "img/papers/sos.png",
-      "arxiv_id": "2501.xxxxx",
+      "arxiv_id": "2510.09110",
       "github_repo": "weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
       "links": {
+        "arxiv": "https://arxiv.org/abs/2510.09110",
         "website": "https://github.com/weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
         "code": "https://github.com/weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
         "huggingface": "https://huggingface.co/collections/weikaih/sos-synthetic-object-segments-improves-detection-segmentat-682679751d20faa20800033c"
