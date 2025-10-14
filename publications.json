@@ -52,7 +52,7 @@
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!",
       "github_stars": 84,
-      "citations": 1
+      "citations": 0
     },
     {
       "id": "provision",
