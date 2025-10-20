@@ -25,7 +25,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 51,
+      "github_stars": 52,
       "citations": 0
     },
     {
