@@ -51,7 +51,7 @@
       },
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!",
-      "github_stars": 94,
+      "github_stars": 95,
       "citations": 0
     },
     {
@@ -149,7 +149,7 @@
       },
       "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
-      "github_stars": 42,
+      "github_stars": 43,
       "citations": 30
     }
   ]
