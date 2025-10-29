@@ -25,7 +25,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 76,
+      "github_stars": 77,
       "citations": 0
     },
     {
@@ -149,7 +149,7 @@
       },
       "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
-      "github_stars": 43,
+      "github_stars": 44,
       "citations": 31
     }
   ]
