@@ -150,7 +150,7 @@
       "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 44,
-      "citations": 31
+      "citations": 32
     }
   ]
 }
