@@ -91,12 +91,13 @@ function displayPreFetchedMetrics() {
         }
 
         // Display citations if available
-        if (pub.citations !== undefined) {
-            const citationsElement = document.getElementById(`citations-${pub.id}`);
-            if (citationsElement) {
-                citationsElement.textContent = ` 📖 ${formatNumber(pub.citations)} cite.`;
-            }
-        }
+        // COMMENTED OUT: Don't display citations
+        // if (pub.citations !== undefined) {
+        //     const citationsElement = document.getElementById(`citations-${pub.id}`);
+        //     if (citationsElement) {
+        //         citationsElement.textContent = ` 📖 ${formatNumber(pub.citations)} cite.`;
+        //     }
+        // }
     }
 }
 
@@ -169,10 +170,12 @@ function createPublicationHTML(pub) {
             if (key === 'code' && pub.github_repo) {
                 // GitHub stars placeholder
                 metricSpan = `<span id="stars-${pub.id}" class="metric-inline"></span>`;
-            } else if ((key === 'arxiv' || key === 'paper') && pub.arxiv_id) {
-                // Citations placeholder
-                metricSpan = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
             }
+            // COMMENTED OUT: Don't display citations placeholder
+            // else if ((key === 'arxiv' || key === 'paper') && pub.arxiv_id) {
+            //     // Citations placeholder
+            //     metricSpan = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
+            // }
 
             return `<a href="${pub.links[key]}" target="_blank">${label}${metricSpan}</a>`;
         })
