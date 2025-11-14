@@ -2,7 +2,7 @@
   "publications": [
     {
       "id": "sos",
-      "title": "Context-Harmonized Diffusion with Multi-Object Composition for Scalable and Accurate Learning in Detection, Segmentation, and Grounding",
+      "title": "Synthetic Object Compositions for Scalable and Accurate Learning in Detection, Segmentation, and Grounding",
       "authors": [
         "Weikai Huang",
         "Jieyu Zhang",
@@ -10,6 +10,7 @@
         "Chenhao Zheng",
         "Ziqi Gao",
         "Jae Sung Park",
+        "Winson Han",
         "Ranjay Krishna"
       ],
       "venue": "arXiv",
