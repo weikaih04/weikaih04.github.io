@@ -370,15 +370,29 @@ footer {
   border-bottom: none;
 }
 
-.publication-image img {
+// Unified image container with fixed aspect ratio
+.publication-image {
   width: 100%;
-  object-fit: cover;
+  height: 0;
+  padding-bottom: 56.25%; // 16:9 aspect ratio for consistency
+  position: relative;
+  overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.publication-image img:hover {
+.publication-image img {
+  position: absolute;
+  top: -2.5%;
+  left: -2.5%;
+  width: 105%;
+  height: 105%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.publication-image:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
