@@ -19,7 +19,7 @@
         "blog": "https://allenai.org/molmo"
       },
       "selected": true,
-      "tldr": "First open VLM with video understanding and grounding—8B model with open weights, data, and training code. Supports video inputs and spatial grounding.",
+      "tldr": "SOTA open-sourced VLM in video understanding and visual grounding—we open-source both data and weights. Achieves state-of-the-art performance on video QA and grounding benchmarks.",
       "github_stars": 0
     },
     {
