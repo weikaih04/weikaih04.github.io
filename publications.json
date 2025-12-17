@@ -19,7 +19,7 @@
         "blog": "https://allenai.org/molmo"
       },
       "selected": true,
-      "tldr": "SOTA open-sourced VLM in video understanding and visual grounding—we open-source both data and weights. Achieves state-of-the-art performance on video QA and grounding benchmarks.",
+      "tldr": "SOTA open-sourced VLM in video understanding and visual grounding—we open-source both data and weights. Outperforms Qwen2-VL and Eagle 2.5 on video QA and grounding benchmarks.",
       "github_stars": 0
     },
     {
