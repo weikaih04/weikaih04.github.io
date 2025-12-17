@@ -181,11 +181,30 @@ function createPublicationHTML(pub) {
         })
         .join('');
 
-    const imageHtml = pub.image
-        ? `<div class="publication-image">
-               <img src="${pub.image}" alt="${pub.title}">
-           </div>`
-        : '';
+    // Support both static images and YouTube videos
+    let imageHtml = '';
+    if (pub.video) {
+        // Extract YouTube video ID from URL
+        let videoId = '';
+        if (pub.video.includes('youtube.com') || pub.video.includes('youtu.be')) {
+            const urlParams = new URLSearchParams(new URL(pub.video).search);
+            videoId = urlParams.get('v') || pub.video.split('/').pop().split('?')[0];
+        }
+        if (videoId) {
+            imageHtml = `<div class="publication-image publication-video">
+                           <iframe
+                             src="https://www.youtube.com/embed/${videoId}"
+                             frameborder="0"
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen>
+                           </iframe>
+                         </div>`;
+        }
+    } else if (pub.image) {
+        imageHtml = `<div class="publication-image">
+                       <img src="${pub.image}" alt="${pub.title}">
+                     </div>`;
+    }
 
     const awardHtml = pub.award ? `<span class="award">${pub.award}</span>` : '';
 

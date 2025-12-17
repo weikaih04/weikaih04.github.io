@@ -1,6 +1,28 @@
 {
   "publications": [
     {
+      "id": "molmo2",
+      "title": "Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding",
+      "authors": [
+        "AI2 Prior Team"
+      ],
+      "venue": "AI2 Tech Report",
+      "year": "2025",
+      "video": "https://www.youtube.com/watch?v=Wf0ZzQqKYTo",
+      "github_repo": "allenai/molmo2",
+      "links": {
+        "paper": "https://www.datocms-assets.com/64837/1765901660-molmo_v2_2026-techreport-3.pdf",
+        "code": "https://github.com/allenai/molmo2",
+        "huggingface": "https://huggingface.co/collections/allenai/molmo2",
+        "data": "https://huggingface.co/collections/allenai/molmo2-data",
+        "demo": "https://playground.allenai.org/?model=molmo2-8b",
+        "blog": "https://allenai.org/molmo"
+      },
+      "selected": true,
+      "tldr": "First open VLM with video understanding and grounding—8B model with open weights, data, and training code. Supports video inputs and spatial grounding.",
+      "github_stars": 0
+    },
+    {
       "id": "sos",
       "title": "Synthetic Object Compositions for Scalable and Accurate Learning in Detection, Segmentation, and Grounding",
       "authors": [
