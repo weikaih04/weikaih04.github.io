@@ -34,13 +34,11 @@ Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay 
 
 **Research Interests**:
 
-- **2D and 3D Grounding and Tracking**: Developing robust object detection, grounding and tracking systems that can understand spatial relationships and temporal dynamics across different modalities, with applications in autonomous systems and embodied AI.
+- **2D/3D Perception, Grounding, and Tracking in the Wild**: Developing robust perception systems with diverse representations (points, 2D bboxes, 3D cuboids, 4D flows) that understand rigid, deformable, and articulated objects in unconstrained real-world environments. Building foundation spatial priors for downstream applications in fields like AR, autonomous systems, and embodied AI.
 
-- **Controllable Generative Models**: Building controllable and interpretable generative models for visual content creation, enabling precise control with more fine-grained control signal.
+- **Low-Level Perception and Spatial Understanding in VLMs/VLAs**: Bridging world knowledge in LLMs with in-the-wild spatial priors and perception to build generalized systems that can reason about and act in the physical world, specifically in vision-language models (VLMs) and vision-language-action models (VLAs).
 
-- **Compositional and Scalable Synthetic Visual Data Generation**: Creating programmable and scalable synthetic data generation pipelines for Vision Foundation Model includes: VLMs, VLAs, Detectors, Generative models.
-
-- **Vision and Spatial centric VLM**: Advancing vision-language models to better understand complex spatial reasoning, multi-step visual tasks, and multimodal tool-use scenarios, bridging the gap between visual perception and actionable intelligence.
+Beyond my core interests, I have worked on multi-modal agents and controllable generation and I'm always excited to explore and discuss ideas in other fields like NLP, ML, and RL.
 
 
 <div class="announcement-banner">
