@@ -74,6 +74,7 @@ Beyond my core interests, I have worked on multi-modal agents and controllable g
 ## 📍 Professional Services
 - Organizer of the **Synthetic Data for Computer Vision Workshop** at CVPR 2024 and CVPR 2025 ([website](https://syndata4cv.github.io/))
 - TA for **UW CSE 455: Computer Vision**, Autumn 2025 ([course page](https://courses.cs.washington.edu/courses/cse455/))
+- TA for **UW CSE 493G: Deep Learning**, Winter 2026 ([course page](https://courses.cs.washington.edu/courses/cse493g1/26wi/))
 - TA for **UW CSE 493G: Deep Learning**, Spring 2025 ([course page](https://courses.cs.washington.edu/courses/cse493g1/25sp/))
 
 ## 📫 Contact
