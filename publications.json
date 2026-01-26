@@ -13,7 +13,6 @@
       "github_repo": "allenai/molmo2",
       "links": {
         "arxiv": "https://arxiv.org/abs/2601.10611",
-        "paper": "https://www.datocms-assets.com/64837/1765901660-molmo_v2_2026-techreport-3.pdf",
         "code": "https://github.com/allenai/molmo2",
         "huggingface": "https://huggingface.co/collections/allenai/molmo2",
         "data": "https://huggingface.co/collections/allenai/molmo2-data",
