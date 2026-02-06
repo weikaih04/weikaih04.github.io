@@ -149,7 +149,7 @@
       "tldr": "Provided 2D/3D assets, generate 750M+ fine-grained visual questions without any human annotation—reveals SOTA VLM's weaknesses.",
       "highlight": "📰 Covered by <a href='https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/' target='_blank' style='color: #ffffff; text-decoration: underline;'>Snorkel AI</a> | 🎥 Featured <a href='https://www.youtube.com/watch?v=J3ECnV8Yc_g' target='_blank' style='color: #ffffff; text-decoration: underline;'>Talk</a>",
       "github_stars": 73,
-      "citations": 23
+      "citations": 24
     },
     {
       "id": "mms",
