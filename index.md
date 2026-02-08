@@ -49,7 +49,7 @@ h2 + ul, h2 + ul li {
 </style>
 
 <div class="bio-section">
-I am an undergraduate student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, PhD student <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I am also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>. I work on computer vision, with a particular interest in <strong>2D/3D/4D detection, tracking, and reconstruction in the wild</strong>, vision-language models, and spatial understanding for embodied AI.
+I am an undergraduate student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, PhD student <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I am also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>. I work on computer vision, with a particular interest in <strong>2D/3D/4D detection, tracking, reconstruction, and generation in the wild</strong>, vision-language models, and spatial understanding for embodied AI.
 </div>
 
 
