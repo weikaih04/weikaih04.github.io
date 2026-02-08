@@ -41,14 +41,6 @@ img {
 I am an undergraduate student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, PhD student <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I am also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>. I work on computer vision, with a particular interest in <strong>2D/3D/4D detection, tracking, and reconstruction in the wild</strong>, vision-language models, and spatial understanding for embodied AI.
 </div>
 
-**Research Interests**:
-
-- **2D/3D Perception, Grounding, and Tracking in the Wild**: Developing robust perception systems with diverse representations (points, 2D bboxes, 3D cuboids, 4D flows) that understand rigid, deformable, and articulated objects in unconstrained real-world environments. Building foundation spatial priors for downstream applications in fields like AR, autonomous systems, and embodied AI.
-
-- **Low-Level Perception and Spatial Understanding in VLMs/VLAs**: Bridging world knowledge in LLMs with in-the-wild spatial priors and perception to build generalized systems that can reason about and act in the physical world, specifically in vision-language models (VLMs) and vision-language-action models (VLAs).
-
-Beyond my core interests, I have worked on multi-modal agents and controllable generation and I'm always excited to explore and discuss ideas in other fields like NLP, ML, and RL.
-
 
 <div class="announcement-banner">
   📢 I'm applying for PhD programs in the 2027 cycle. I'm also seeking research collaborations at UW and AI2, and open to exploring other opportunities. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
