@@ -294,6 +294,13 @@ footer {
     position:static;
   }
 
+  // Optimize header links for mobile - display inline
+  header p.view {
+    display: inline-block;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    font-size: 0.9rem;
+  }
+
   pre, code {
     word-wrap:normal;
   }
