@@ -394,6 +394,12 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+// Special styling for SOS paper - use cover to zoom in and fill
+.publication-image.image-cover img {
+  object-fit: cover;
+  transform: translate(-50%, -50%) scale(1.005);
+}
+
 .publication-image:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

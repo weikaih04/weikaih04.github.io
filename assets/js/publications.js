@@ -201,7 +201,9 @@ function createPublicationHTML(pub) {
                          </div>`;
         }
     } else if (pub.image) {
-        imageHtml = `<div class="publication-image">
+        // Add special class for SOS paper to use cover instead of contain
+        const imageClass = pub.id === 'sos' ? 'publication-image image-cover' : 'publication-image';
+        imageHtml = `<div class="${imageClass}">
                        <img src="${pub.image}" alt="${pub.title}">
                      </div>`;
     }
