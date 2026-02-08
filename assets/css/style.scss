@@ -373,9 +373,9 @@ footer {
 
 // Unified image container with fixed aspect ratio
 .publication-image {
-  width: 100%;
+  width: 80%; // Reduce width by 20%
   height: 0;
-  padding-bottom: 36.5625%; // Reduced by 35% from 56.25%
+  padding-bottom: 45%; // 80% of 56.25% to maintain 16:9 ratio
   position: relative;
   overflow: hidden;
   border-radius: 8px;
@@ -402,7 +402,8 @@ footer {
 // YouTube video embed support
 .publication-video {
   position: relative;
-  padding-bottom: 36.5625%; // Reduced by 35% from 56.25%
+  width: 80%; // Reduce width by 20%
+  padding-bottom: 45%; // 80% of 56.25% to maintain 16:9 ratio
   height: 0;
   overflow: hidden;
   border-radius: 8px;
