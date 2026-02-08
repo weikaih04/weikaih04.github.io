@@ -54,7 +54,7 @@ I am an undergraduate student at the University of Washington, advised by Prof. 
 
 
 <div class="announcement-banner">
-  📢 I'm applying for PhD programs in the 2027 cycle. I'm also seeking research collaborations at UW and AI2, and open to exploring other opportunities. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
+  📢 I'm applying for PhD programs in the 2027 cycle. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
 </div>
 
 ## 📰 News
