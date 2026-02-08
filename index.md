@@ -35,6 +35,17 @@ img {
   line-height: 1.6;
   color: #374151;
 }
+
+/* Announcement banner styling - match bio font size */
+.announcement-banner {
+  font-size: 0.95em !important;
+}
+
+/* News section styling - match bio font size */
+h2 + ul, h2 + ul li {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
 </style>
 
 <div class="bio-section">
