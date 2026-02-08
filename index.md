@@ -28,9 +28,18 @@ layout: default
 img {
   aspect-ratio: attr(width) / attr(height);
 }
+
+/* Bio section styling */
+.bio-section {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #374151;
+}
 </style>
 
-Hi, I am an undergrad at the University of Washington, advised by Prof. [Ranjay Krishna](http://www.ranjaykrishna.com/index.html), PhD student [Jieyu Zhang](https://jieyuz2.github.io/), and PhD student [Zixian Ma](https://zixianma.github.io/) at [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/). Currently I am also a student collaborator at [Allen Institute for AI](https://allenai.org/) working on VLM training and data generation.
+<div class="bio-section">
+I am an undergraduate student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, PhD student <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I am also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>. I work on computer vision, with a particular interest in perception and grounding in the wild, vision-language models, and spatial understanding for embodied AI.
+</div>
 
 **Research Interests**:
 
