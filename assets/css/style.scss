@@ -673,6 +673,17 @@ footer {
     margin: 0 auto;
   }
 
+  // Ensure images are centered vertically in mobile
+  .publication-image img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .publication-image.image-cover img {
+    transform: translate(-50%, -50%) scale(1.005);
+  }
+
   .publication-tldr {
     padding-bottom: 2.5rem;
   }
