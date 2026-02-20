@@ -524,7 +524,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (orientation: portrait) {
   .announcement-banner {
     font-size: 0.9rem;
     padding: 0.875rem 1rem;
@@ -655,8 +655,8 @@ footer {
   transition: transform 0.3s ease;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* Mobile Responsive - Portrait orientation (竖屏) */
+@media (orientation: portrait) {
   .section-header {
     flex-direction: column;
     align-items: flex-start;
@@ -673,7 +673,7 @@ footer {
     margin: 0 auto;
   }
 
-  // Ensure images are centered vertically in mobile
+  // Ensure images are centered vertically in portrait mode
   .publication-image img {
     top: 50%;
     left: 50%;
