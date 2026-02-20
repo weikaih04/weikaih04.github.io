@@ -43,8 +43,6 @@ h1 {
 
 h2 {
   color:#393939;
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 h3, h4, h5, h6 {
@@ -123,6 +121,12 @@ a:hover small {
 .profile-photo img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* Section content text - match bio font size */
+h2 ~ ul, h2 ~ p {
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 blockquote {
