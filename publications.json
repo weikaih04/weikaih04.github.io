@@ -6,8 +6,8 @@
       "authors": [
         "AI2 Prior Team"
       ],
-      "venue": "AI2 Tech Report",
-      "year": "2025",
+      "venue": "CVPR",
+      "year": "2026",
       "video": "https://www.youtube.com/watch?v=Wf0ZzQqKYTo",
       "arxiv_id": "2601.10611",
       "github_repo": "allenai/molmo2",
@@ -37,8 +37,8 @@
         "Winson Han",
         "Ranjay Krishna"
       ],
-      "venue": "arXiv",
-      "year": "2025",
+      "venue": "CVPR",
+      "year": "2026",
       "image": "img/papers/sos.png",
       "arxiv_id": "2510.09110",
       "github_repo": "weikaih04/Synthetic-Detection-Segmentation-Grounding-Data",
