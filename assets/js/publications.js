@@ -211,7 +211,7 @@ function createPublicationHTML(pub) {
     const awardHtml = pub.award ? `<span class="award">${pub.award}</span>` : '';
 
     // Additional venue (e.g., workshop)
-    const additionalVenueHtml = pub.additional_venue ? ` & ${pub.additional_venue.replace(/\(Oral\)/g, '(<span style="color: #b91c1c;">Oral</span>)')}` : '';
+    const additionalVenueHtml = pub.additional_venue ? `<br>& ${pub.additional_venue.replace(/\(Oral\)/g, '(<span style="color: #b91c1c;">Oral</span>)')}` : '';
 
     // Highlight (e.g., used in BLIP-3)
     const highlightHtml = pub.highlight ? `<div class="publication-highlight">${pub.highlight}</div>` : '';
