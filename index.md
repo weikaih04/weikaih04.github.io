@@ -20,7 +20,7 @@ layout: default
 </div>
 
 ## News
-- **[2026-2]** 3 papers accepted to CVPR 2026. See you in Denver!
+- **[2026-2]** 3 papers ([SOS](https://arxiv.org/abs/2510.09110), [Molmo2](https://arxiv.org/abs/2601.10611), [TrajVit](#)) accepted to CVPR 2026. See you in Denver!
 - **[2026-1]** Our work [Generate Any Scene](https://generate-any-scene.github.io/) is accepted to ICLR 2026.
 - **[2024-9]** Our work [Task Me Anything](https://www.task-me-anything.org/) is accepted to NeurIPS 2024.
 - **[2024-7]** Our work [m&m's](https://arxiv.org/abs/2403.11085) is accepted to ECCV 2024.
