@@ -71,8 +71,10 @@
       "year": "2026",
       "image": "img/papers/trajtok.png",
       "arxiv_id": "2602.22779",
+      "github_repo": "RAIVNLab/trajvit",
       "links": {
-        "arxiv": "https://arxiv.org/abs/2602.22779"
+        "arxiv": "https://arxiv.org/abs/2602.22779",
+        "code": "https://github.com/RAIVNLab/trajvit"
       },
       "selected": true,
       "tldr": "",
