@@ -77,7 +77,7 @@
         "code": "https://github.com/RAIVNLab/trajvit"
       },
       "selected": true,
-      "tldr": "",
+      "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
       "github_stars": 116,
       "citations": 0
     },
@@ -200,7 +200,7 @@
         "code": "https://github.com/RAIVNLab/mnms",
         "huggingface": "https://huggingface.co/datasets/zixianma/mnms"
       },
-      "selected": false,
+      "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 45,
       "citations": 40
