@@ -24,7 +24,9 @@
       "arxiv_id": "2602.23543",
       "links": {
         "arxiv": "https://arxiv.org/abs/2602.23543",
-        "website": "https://uwgzq.github.io/papers/SVG2/"
+        "website": "https://uwgzq.github.io/papers/SVG2/",
+        "models": "https://huggingface.co/uwgzq/TRASER",
+        "data": "https://huggingface.co/datasets/uwgzq/SVG2"
       },
       "selected": true,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
