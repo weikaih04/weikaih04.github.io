@@ -54,7 +54,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 394,
+      "github_stars": 396,
       "citations": 16
     },
     {
@@ -111,7 +111,7 @@
       },
       "selected": true,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
-      "github_stars": 116,
+      "github_stars": 117,
       "citations": 1
     },
     {
