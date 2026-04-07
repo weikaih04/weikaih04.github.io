@@ -1,6 +1,47 @@
 {
   "publications": [
     {
+      "id": "wilddet3d",
+      "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
+      "authors": [
+        "Weikai Huang*",
+        "Jieyu Zhang*",
+        "Sijun Li",
+        "Taoyang Jia",
+        "Jiafei Duan",
+        "Yunqian Cheng",
+        "Jaemin Cho",
+        "Matthew Wallingford",
+        "Rustin Soraki",
+        "Chris Dongjoo Kim",
+        "Shuo Liu",
+        "Donovan Clay",
+        "Taira Anderson",
+        "Winson Han",
+        "Ali Farhadi",
+        "Bharath Hariharan",
+        "Zhongzheng Ren*",
+        "Ranjay Krishna*"
+      ],
+      "venue": "Arxiv",
+      "year": "2026",
+      "video": "https://www.youtube.com/watch?v=RgHKmOqb7I4",
+      "github_repo": "allenai/WildDet3D",
+      "links": {
+        "website": "https://allenai.github.io/WildDet3D/",
+        "code": "https://github.com/allenai/WildDet3D",
+        "huggingface": "https://huggingface.co/collections/allenai/wilddet3d-69d42220ec4f942f1951263e",
+        "demo": "https://huggingface.co/spaces/allenai/WildDet3D",
+        "data": "https://huggingface.co/datasets/allenai/WildDet3D-Data",
+        "blog": "https://allenai.org/blog/wilddet3d",
+        "app": "https://apps.apple.com/us/app/wilddet3d/id6760861157"
+      },
+      "selected": true,
+      "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
+      "github_stars": 0,
+      "citations": 0
+    },
+    {
       "id": "svg2",
       "title": "Synthetic Visual Genome 2: Extracting Large-scale Spatio-Temporal Scene Graphs from Videos",
       "authors": [
