@@ -4,8 +4,8 @@
       "id": "wilddet3d",
       "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
       "authors": [
-        "Weikai Huang*",
-        "Jieyu Zhang*",
+        "Weikai Huang\u2665",
+        "Jieyu Zhang\u2665",
         "Sijun Li",
         "Taoyang Jia",
         "Jiafei Duan",
@@ -20,8 +20,8 @@
         "Winson Han",
         "Ali Farhadi",
         "Bharath Hariharan",
-        "Zhongzheng Ren*",
-        "Ranjay Krishna*"
+        "Zhongzheng Ren\u2665",
+        "Ranjay Krishna\u2665"
       ],
       "venue": "Arxiv",
       "year": "2026",
