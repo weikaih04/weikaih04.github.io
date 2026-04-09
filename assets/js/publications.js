@@ -240,7 +240,7 @@ function createPublicationHTML(pub) {
                 </div>
                 <div class="publication-authors">${authorsHtml}</div>
                 <div class="publication-venue">
-                    <strong>${pub.venue}</strong> ${pub.year} ${awardHtml}${additionalVenueHtml}
+                    <strong>${pub.venue}</strong> ${pub.year}${pub.oral ? ' (<span style="color: #b91c1c;">Oral</span>)' : ''} ${awardHtml}${additionalVenueHtml}
                 </div>
                 ${linksHtml ? `<div class="publication-links">${linksHtml}</div>` : ''}
                 ${tldrHtml}
