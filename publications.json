@@ -39,7 +39,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 134,
+      "github_stars": 162,
       "citations": 0
     },
     {
@@ -126,7 +126,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 80,
+      "github_stars": 67,
       "citations": 0
     },
     {
@@ -154,7 +154,7 @@
       },
       "selected": true,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
-      "github_stars": 110,
+      "github_stars": 99,
       "citations": 1
     },
     {
@@ -180,7 +180,7 @@
       },
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!",
-      "github_stars": 106,
+      "github_stars": 96,
       "citations": 1
     },
     {
