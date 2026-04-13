@@ -39,7 +39,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 226,
+      "github_stars": 243,
       "citations": 0
     },
     {
@@ -73,7 +73,7 @@
       "selected": true,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
       "github_stars": 0,
-      "citations": 0
+      "citations": 1
     },
     {
       "id": "molmo2",
