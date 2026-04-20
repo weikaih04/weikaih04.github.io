@@ -39,7 +39,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 389,
+      "github_stars": 393,
       "citations": 0
     },
     {
@@ -126,7 +126,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 58,
+      "github_stars": 59,
       "citations": 1
     },
     {
@@ -279,7 +279,7 @@
       "selected": true,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 46,
-      "citations": 44
+      "citations": 45
     }
   ]
 }
