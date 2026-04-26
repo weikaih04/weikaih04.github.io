@@ -39,7 +39,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 509,
+      "github_stars": 510,
       "citations": 0
     },
     {
