@@ -5,18 +5,14 @@ layout: default
 <div class="profile-header">
   <div class="profile-text">
     <h1><span style="font-weight: 700;">Weikai</span> Huang</h1>
-    <p class="subtitle">Undergrad @ UW CSE RAIVN Lab</p>
-    <p class="bio">I am an undergraduate student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, PhD student <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I am also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>.</p>
+    <p class="subtitle">Incoming PhD @ UW CSE RAIVN Lab</p>
+    <p class="bio">I am an incoming PhD student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. Previously, I received my undergraduate degree from the University of Washington, where I was also a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>.</p>
     <p class="bio">I work on computer vision, with a particular interest in <strong>2D/3D/4D detection, tracking, reconstruction, and generation in the wild</strong>, vision-language models, and spatial understanding for embodied AI.</p>
     <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf" target="_blank">CV</a></p>
   </div>
   <div class="profile-photo">
     <img src="img/weikaih.jpg" alt="Weikai Huang">
   </div>
-</div>
-
-<div class="announcement-banner">
-  📢 I'm applying for PhD programs in the 2027 cycle. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
 </div>
 
 ## News
