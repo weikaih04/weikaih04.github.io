@@ -6,7 +6,7 @@ This is the source code for my personal academic website, built with Jekyll and 
 
 ## About Me
 
-I am an undergraduate student at the University of Washington, working on computer vision and multimodal AI research at the [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/) and [Allen Institute for AI](https://allenai.org/).
+I am an incoming PhD student at the University of Washington, working on computer vision and multimodal AI research at the [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/) and [Allen Institute for AI](https://allenai.org/).
 
 ## Features
 
