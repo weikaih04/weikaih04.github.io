@@ -42,7 +42,8 @@ layout: default
 </div>
 
 ## Education
-- **University of Washington** — B.S. in Computer Science, Minor in Applied Mathematics and Music, 2023–2027 (Expected)
+- **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
+- **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship, 2024
