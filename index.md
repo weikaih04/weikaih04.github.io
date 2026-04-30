@@ -15,6 +15,10 @@ layout: default
   </div>
 </div>
 
+<div class="announcement-banner">
+  📢 I am looking for motivated undergraduate and master's students at UW to work on 3D Vision / Physical AI / Generation / Embodied AI projects in the upcoming academic year. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
+</div>
+
 ## News
 - **[2026-4]** [WildDet3D](https://github.com/allenai/WildDet3D) released! Promptable 3D detection in the wild with text, box, and point prompts. Try the [demo](https://huggingface.co/spaces/allenai/WildDet3D) or download the [iPhone app](https://apps.apple.com/us/app/wilddet3d/id6760861157).
 - **[2026-4]** [Molmo2](https://arxiv.org/abs/2601.10611) is selected as an **Oral** at CVPR 2026!
