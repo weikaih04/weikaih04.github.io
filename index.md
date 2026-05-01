@@ -16,7 +16,7 @@ layout: default
 </div>
 
 <div class="announcement-banner">
-  📢 <strong>For UW students:</strong> I am looking for motivated undergraduate and master's students to work on 3D Vision / Physical AI / Generation / Embodied AI / VLM and Unified Model projects in the upcoming academic year. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
+  📢 Always happy to chat with motivated students interested in 3D Vision / Physical AI / Generation / Embodied AI / VLM and Unified Model. Feel free to <a href="mailto:weikaih@cs.washington.edu">reach out</a>!
 </div>
 
 ## News
