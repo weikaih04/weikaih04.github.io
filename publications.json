@@ -1,6 +1,57 @@
 {
   "publications": [
     {
+      "id": "molmoact2",
+      "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
+      "authors": [
+        "Haoquan Fang*♥",
+        "Jiafei Duan*♥",
+        "Donovan Clay♥",
+        "Sam Wang♥",
+        "Shuo Liu♥",
+        "Weikai Huang♥",
+        "Xiang Fan♥",
+        "Wei-Chuan Tsai♥",
+        "Shirui Chen♥",
+        "Yi Ru Wang♥",
+        "Shanli Xing",
+        "Jaemin Cho",
+        "Jae Sung Park",
+        "Ainaz Eftekhar",
+        "Peter Sushko",
+        "Karen Farley",
+        "Angad Wadhwa",
+        "Cole Harrison",
+        "Winson Han",
+        "Ying-Chun Lee",
+        "Eli VanderBilt",
+        "Rose Hendrix",
+        "Suveen Ellawela",
+        "Lucas Ngoo",
+        "Joyce Chai",
+        "Zhongzheng Ren",
+        "Ali Farhadi",
+        "Dieter Fox",
+        "Ranjay Krishna"
+      ],
+      "venue": "Arxiv",
+      "year": "2026",
+      "image": "img/papers/molmoact2.gif",
+      "github_repo": "allenai/molmoact2",
+      "links": {
+        "paper": "https://arxiv.org/pdf/2605.02881",
+        "code": "https://github.com/allenai/molmoact2",
+        "website": "https://allenai.org/blog/molmoact2",
+        "models": "https://huggingface.co/collections/allenai/molmoact2-finetuned-models",
+        "data": "https://huggingface.co/collections/allenai/molmoact2-bimanualyam-dataset",
+        "blog": "https://allenai.org/blog/molmoact2"
+      },
+      "selected": true,
+      "tldr": "Action Reasoning Models for real-world robot deployment. Built on Molmo2-ER with the MolmoAct2-Bimanual YAM dataset—720+ hours of two-armed demonstrations, the largest open-source bimanual robot dataset to date. Up to 37× faster than MolmoAct on real-world tasks; piloted at Stanford Medicine's Cong Lab.",
+      "github_stars": 0,
+      "citations": 0
+    },
+    {
       "id": "wilddet3d",
       "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
       "authors": [
