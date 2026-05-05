@@ -79,7 +79,7 @@
       "video": "https://www.youtube.com/watch?v=RgHKmOqb7I4",
       "github_repo": "allenai/WildDet3D",
       "links": {
-        "paper": "https://allenai.org/papers/wilddet3d",
+        "arxiv": "https://arxiv.org/abs/2604.08626",
         "website": "https://allenai.github.io/WildDet3D/",
         "code": "https://github.com/allenai/WildDet3D",
         "huggingface": "https://huggingface.co/collections/allenai/wilddet3d-69d42220ec4f942f1951263e",
