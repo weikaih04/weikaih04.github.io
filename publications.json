@@ -36,7 +36,7 @@
       ],
       "venue": "Arxiv",
       "year": "2026",
-      "image": "img/papers/molmoact2.gif",
+      "local_video": "img/papers/molmoact2.mp4",
       "github_repo": "allenai/molmoact2",
       "links": {
         "paper": "https://arxiv.org/pdf/2605.02881",
@@ -76,7 +76,7 @@
       ],
       "venue": "Arxiv",
       "year": "2026",
-      "video": "https://www.youtube.com/watch?v=RgHKmOqb7I4",
+      "local_video": "img/papers/wilddet3d.mp4",
       "github_repo": "allenai/WildDet3D",
       "links": {
         "arxiv": "https://arxiv.org/abs/2604.08626",
@@ -121,7 +121,7 @@
         "models": "https://huggingface.co/uwgzq/TRASER",
         "data": "https://huggingface.co/datasets/uwgzq/SVG2"
       },
-      "selected": true,
+      "selected": false,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
       "github_stars": 0,
       "citations": 1
@@ -130,12 +130,19 @@
       "id": "molmo2",
       "title": "Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding",
       "authors": [
-        "AI2 PRIOR team"
+        "Christopher Clark*",
+        "Jieyu Zhang*",
+        "Zixian Ma*",
+        "...",
+        "Weikai Huang",
+        "...",
+        "Ali Farhadi",
+        "Ranjay Krishna"
       ],
       "venue": "CVPR",
       "year": "2026",
       "oral": true,
-      "video": "https://www.youtube.com/watch?v=Wf0ZzQqKYTo",
+      "local_video": "img/papers/molmo2.mp4",
       "arxiv_id": "2601.10611",
       "github_repo": "allenai/molmo2",
       "links": {
@@ -203,7 +210,7 @@
         "arxiv": "https://arxiv.org/abs/2602.22779",
         "code": "https://github.com/RAIVNLab/trajvit"
       },
-      "selected": true,
+      "selected": false,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
       "github_stars": 69,
       "citations": 1
@@ -300,7 +307,7 @@
         "blog": "https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/",
         "talk": "https://www.youtube.com/watch?v=J3ECnV8Yc_g"
       },
-      "selected": true,
+      "selected": false,
       "tldr": "Provided 2D/3D assets, generate 750M+ fine-grained visual questions without any human annotation—reveals SOTA VLM's weaknesses.",
       "highlight": "📰 Covered by <a href='https://snorkel.ai/blog/task-me-anything-innovating-multimodal-model-benchmarks/' target='_blank' style='color: #ffffff; text-decoration: underline;'>Snorkel AI</a> | 🎥 Featured <a href='https://www.youtube.com/watch?v=J3ECnV8Yc_g' target='_blank' style='color: #ffffff; text-decoration: underline;'>Talk</a>",
       "github_stars": 72,
@@ -327,7 +334,7 @@
         "code": "https://github.com/RAIVNLab/mnms",
         "huggingface": "https://huggingface.co/datasets/zixianma/mnms"
       },
-      "selected": true,
+      "selected": false,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 46,
       "citations": 45

@@ -131,12 +131,30 @@ async function fetchAllMetrics() {
 function displayPublications() {
     const container = document.getElementById('publicationsList');
     if (!container) return;
-    
-    const publications = showSelected 
-        ? publicationsData.filter(pub => pub.selected) 
+
+    const publications = showSelected
+        ? publicationsData.filter(pub => pub.selected)
         : publicationsData;
-    
+
     container.innerHTML = publications.map(pub => createPublicationHTML(pub)).join('');
+    applyVideoPlaybackRates(container);
+}
+
+// Apply data-playback-rate to <video> elements. Browser resets playbackRate to 1
+// on metadata load and on each loop, so we reapply on those events.
+function applyVideoPlaybackRates(root) {
+    const videos = root.querySelectorAll('video[data-playback-rate]');
+    videos.forEach(video => {
+        const rate = parseFloat(video.dataset.playbackRate);
+        if (!isFinite(rate) || rate <= 0) return;
+        const setRate = () => { video.playbackRate = rate; };
+        setRate();
+        video.addEventListener('loadedmetadata', setRate);
+        video.addEventListener('play', setRate);
+        video.addEventListener('ratechange', () => {
+            if (Math.abs(video.playbackRate - rate) > 0.01) setRate();
+        });
+    });
 }
 
 function createPublicationHTML(pub) {
@@ -181,9 +199,21 @@ function createPublicationHTML(pub) {
         })
         .join('');
 
-    // Support both static images and YouTube videos
+    // Support local autoplay video, YouTube embeds, and static images
     let imageHtml = '';
-    if (pub.video) {
+    if (pub.local_video) {
+        const rate = pub.playback_rate || 3;
+        imageHtml = `<div class="publication-image publication-video">
+                       <video class="publication-card__video"
+                              src="${pub.local_video}"
+                              autoplay muted loop playsinline webkit-playsinline
+                              disablepictureinpicture
+                              preload="metadata"
+                              data-playback-rate="${rate}"
+                              aria-label="${pub.title} teaser video">
+                       </video>
+                     </div>`;
+    } else if (pub.video) {
         // Extract YouTube video ID from URL
         let videoId = '';
         if (pub.video.includes('youtube.com') || pub.video.includes('youtu.be')) {
