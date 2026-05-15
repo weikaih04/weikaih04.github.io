@@ -48,7 +48,7 @@
       },
       "selected": true,
       "tldr": "Action Reasoning Models for real-world robot deployment. Built on Molmo2-ER with the MolmoAct2-Bimanual YAM dataset—720+ hours of two-armed demonstrations, the largest open-source bimanual robot dataset to date. Up to 37× faster than MolmoAct on real-world tasks; piloted at Stanford Medicine's Cong Lab.",
-      "github_stars": 353,
+      "github_stars": 363,
       "citations": 0
     },
     {
@@ -90,7 +90,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 547,
+      "github_stars": 548,
       "citations": 0
     },
     {
@@ -155,7 +155,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 537,
+      "github_stars": 539,
       "citations": 46
     },
     {
@@ -212,7 +212,7 @@
       },
       "selected": false,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
-      "github_stars": 70,
+      "github_stars": 71,
       "citations": 1
     },
     {
