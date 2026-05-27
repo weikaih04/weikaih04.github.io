@@ -62,9 +62,9 @@ layout: default
 
 ## Professional Services
 - Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024 & 2025
-- Teaching Assistant: [Computer Vision (CSE 455)](https://courses.cs.washington.edu/courses/cse455/), Autumn 2025
-- Teaching Assistant: [Deep Learning (CSE 493G)](https://courses.cs.washington.edu/courses/cse493g1/26wi/), Winter 2026
-- Teaching Assistant: [Deep Learning (CSE 493G)](https://courses.cs.washington.edu/courses/cse493g1/25sp/), Spring 2025
+- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 455: Computer Vision](https://courses.cs.washington.edu/courses/cse455/), Autumn 2025
+- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/26wi/), Winter 2026
+- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/25sp/), Spring 2025
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>
