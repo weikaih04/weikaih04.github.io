@@ -57,14 +57,17 @@ layout: default
 - <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
+- CVPR 2026 Best Paper Candidate, Molmo2
 - CVPR 2026 Outstanding Reviewer
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship, 2024
 
-## Professional Services
-- Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024 & 2025
+## Teaching
 - Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 455: Computer Vision](https://courses.cs.washington.edu/courses/cse455/), Autumn 2025
 - Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/26wi/), Winter 2026
 - Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/25sp/), Spring 2025
+
+## Professional Services
+- Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024 & 2025
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>
