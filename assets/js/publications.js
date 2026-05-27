@@ -158,9 +158,11 @@ function applyVideoPlaybackRates(root) {
 }
 
 function createPublicationHTML(pub) {
-    const authorsHtml = pub.authors.map(author =>
-        author.includes('Weikai Huang') ? `<strong>${author}</strong>` : author
-    ).join(', ');
+    const formatAuthor = (author) => author.replace(/♥/g, '<span style="color:#F26035">&hearts;</span>');
+    const authorsHtml = pub.authors.map(author => {
+        const formattedAuthor = formatAuthor(author);
+        return author.includes('Weikai Huang') ? `<strong>${formattedAuthor}</strong>` : formattedAuthor;
+    }).join(', ');
 
     // Create links with better labels and ordering
     // Order: arXiv first, then Code, then others
