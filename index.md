@@ -47,6 +47,7 @@ layout: default
 - **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
+- CVPR 2026 Outstanding Reviewer
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship, 2024
 
 ## Professional Services
