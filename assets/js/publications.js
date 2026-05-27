@@ -238,7 +238,7 @@ function createPublicationHTML(pub) {
                      </div>`;
     }
 
-    const awardHtml = pub.award ? `<span class="award">${pub.award}</span>` : '';
+    const awardHtml = pub.award ? ` (<span style="color: #b91c1c;">${pub.award}</span>)` : '';
 
     // Additional venue (e.g., workshop)
     const additionalVenueHtml = pub.additional_venue ? `<br>& ${pub.additional_venue.replace(/\(Oral\)/g, '(<span style="color: #b91c1c;">Oral</span>)')}` : '';
