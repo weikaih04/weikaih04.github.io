@@ -142,6 +142,7 @@
       "venue": "CVPR",
       "year": "2026",
       "oral": true,
+      "award": "Best Paper Candidate",
       "local_video": "img/papers/molmo2.mp4",
       "arxiv_id": "2601.10611",
       "github_repo": "allenai/molmo2",
