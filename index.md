@@ -49,7 +49,7 @@ layout: default
 </div>
 
 ## Industry Experience
-- **Salesforce AI Research** — Incoming Research Intern, Palo Alto, CA, June–September 2026
+- **Salesforce AI Research** — Research Intern (Incoming), Palo Alto, CA, June–September 2026
 - **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
 
 ## Education
