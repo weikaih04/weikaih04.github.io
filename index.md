@@ -49,12 +49,12 @@ layout: default
 </div>
 
 ## Industry Experience
-- <img class="affiliation-icon" src="img/icons/salesforce.svg" alt="Salesforce"> **Salesforce AI Research** — Research Intern (Incoming), Palo Alto, CA, June–September 2026
-- <img class="affiliation-icon" src="img/icons/ai2.svg" alt="AI2"> **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
+- <img class="affiliation-icon" src="img/icons/salesforce.png" alt="Salesforce"> **Salesforce AI Research** — Research Intern (Incoming), Palo Alto, CA, June–September 2026
+- <img class="affiliation-icon" src="img/icons/ai2.png" alt="AI2"> **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
 
 ## Education
-- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
-- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
+- <img class="affiliation-icon" src="img/icons/uw.png" alt="UW"> **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
+- <img class="affiliation-icon" src="img/icons/uw.png" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
 - CVPR 2026 Outstanding Reviewer
