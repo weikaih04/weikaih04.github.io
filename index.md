@@ -25,6 +25,7 @@ layout: default
 </div>
 
 ## News
+- **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
 - **[2026-5]** [MolmoAct2](https://allenai.org/blog/molmoact2) released! Action Reasoning Models for real-world robot deployment — see the [paper](https://arxiv.org/pdf/2605.02881), [code](https://github.com/allenai/molmoact2), [models](https://huggingface.co/collections/allenai/molmoact2-finetuned-models), and [data](https://huggingface.co/collections/allenai/molmoact2-bimanualyam-dataset).
 - **[2026-4]** [WildDet3D](https://github.com/allenai/WildDet3D) released! Promptable 3D detection in the wild with text, box, and point prompts. Try the [demo](https://huggingface.co/spaces/allenai/WildDet3D) or download the [iPhone app](https://apps.apple.com/us/app/wilddet3d/id6760861157).
 - **[2026-4]** [Molmo2](https://arxiv.org/abs/2601.10611) is selected as an **Oral / Best Paper Candidate** at CVPR 2026!
@@ -50,6 +51,9 @@ layout: default
 ## Education
 - **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
 - **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
+
+## Industry Experience
+- **Salesforce AI Research** — Research Intern, Palo Alto, CA, June–September 2026
 
 ## Awards
 - CVPR 2026 Outstanding Reviewer
