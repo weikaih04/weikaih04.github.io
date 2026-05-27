@@ -48,12 +48,13 @@ layout: default
   <!-- Publications will be loaded here dynamically -->
 </div>
 
+## Industry Experience
+- **Salesforce AI Research** — Incoming Research Intern, Palo Alto, CA, June–September 2026
+- **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
+
 ## Education
 - **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
 - **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
-
-## Industry Experience
-- **Salesforce AI Research** — Research Intern, Palo Alto, CA, June–September 2026
 
 ## Awards
 - CVPR 2026 Outstanding Reviewer
