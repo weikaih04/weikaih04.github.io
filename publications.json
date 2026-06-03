@@ -97,9 +97,9 @@
       "id": "ipt",
       "title": "Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models",
       "authors": [
-        "Mahtab Bigverdi",
-        "Linjie Li",
-        "Weikai Huang",
+        "Mahtab Bigverdi*",
+        "Linjie Li*",
+        "Weikai Huang*",
         "Yiming Liu",
         "Jaemin Cho",
         "Jieyu Zhang",
@@ -109,7 +109,7 @@
         "Linda Shapiro",
         "Ranjay Krishna"
       ],
-      "venue": "ECCV (Under Review)",
+      "venue": "CVPR MUSI Workshop",
       "year": "2026",
       "image": "img/papers/ipt.png",
       "selected": true,
