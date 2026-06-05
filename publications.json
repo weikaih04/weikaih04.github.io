@@ -111,13 +111,19 @@
       ],
       "venue": "CVPR MUSI Workshop",
       "year": "2026",
-      "image": "img/papers/ipt.png",
       "links": {
-        "arxiv": "https://arxiv.org/pdf/2606.03988v1"
+        "arxiv": "https://arxiv.org/pdf/2606.03988v1",
+        "code": "https://github.com/weikaih04/Spatial-Imaginative-Token",
+        "eval": "https://github.com/weikaih04/SpatialReasoning_Eval",
+        "website": "https://mahtabbigverdi.github.io/Imaginative-tokens.github.io/",
+        "data": "https://huggingface.co/collections/weikaih/spatial-imaginative-token-mvc-pet-pt-datasets"
       },
       "arxiv_id": "2606.03988",
       "selected": true,
-      "tldr": "Imaginative Perception Tokens supervise VLMs to reason about unobserved spatial structure across perspective taking, path tracing, and multiview counting. Using BAGEL as the backbone, IPT improves spatial reasoning and outperforms text chain-of-thought on spatial tasks, even without generating images at inference time."
+      "tldr": "Imaginative Perception Tokens supervise VLMs to reason about unobserved spatial structure across perspective taking, path tracing, and multiview counting. Using BAGEL as the backbone, IPT improves spatial reasoning and outperforms text chain-of-thought on spatial tasks, even without generating images at inference time.",
+      "local_video": "img/papers/ipt.mp4",
+      "playback_rate": 1,
+      "github_repo": "weikaih04/Spatial-Imaginative-Token"
     },
     {
       "id": "svg2",
