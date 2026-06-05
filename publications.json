@@ -120,7 +120,7 @@
       },
       "arxiv_id": "2606.03988",
       "selected": true,
-      "tldr": "Imaginative Perception Tokens supervise VLMs to reason about unobserved spatial structure across perspective taking, path tracing, and multiview counting. Using BAGEL as the backbone, IPT improves spatial reasoning and outperforms text chain-of-thought on spatial tasks, even without generating images at inference time.",
+      "tldr": "Imaginative Perception Tokens teach VLMs to reason about hidden 3D structure without generating images at inference time.",
       "local_video": "img/papers/ipt.mp4",
       "playback_rate": 1,
       "github_repo": "weikaih04/Spatial-Imaginative-Token"
