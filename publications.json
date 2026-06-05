@@ -112,6 +112,10 @@
       "venue": "CVPR MUSI Workshop",
       "year": "2026",
       "image": "img/papers/ipt.png",
+      "links": {
+        "arxiv": "https://arxiv.org/pdf/2606.03988v1"
+      },
+      "arxiv_id": "2606.03988",
       "selected": true,
       "tldr": "Imaginative Perception Tokens supervise VLMs to reason about unobserved spatial structure across perspective taking, path tracing, and multiview counting. Using BAGEL as the backbone, IPT improves spatial reasoning and outperforms text chain-of-thought on spatial tasks, even without generating images at inference time."
     },
