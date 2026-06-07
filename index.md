@@ -26,6 +26,7 @@ layout: default
 
 ## News
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
+- **[2026-6]** [Molmo2](https://arxiv.org/abs/2601.10611) received the **CVPR 2026 Compute Transparency Champion** award.
 - **[2026-5]** [MolmoAct2](https://allenai.org/blog/molmoact2) released! Action Reasoning Models for real-world robot deployment — see the [paper](https://arxiv.org/pdf/2605.02881), [code](https://github.com/allenai/molmoact2), [models](https://huggingface.co/collections/allenai/molmoact2-finetuned-models), and [data](https://huggingface.co/collections/allenai/molmoact2-bimanualyam-dataset).
 - **[2026-4]** [WildDet3D](https://github.com/allenai/WildDet3D) released! Promptable 3D detection in the wild with text, box, and point prompts. Try the [demo](https://huggingface.co/spaces/allenai/WildDet3D) or download the [iPhone app](https://apps.apple.com/us/app/wilddet3d/id6760861157).
 - **[2026-4]** [Molmo2](https://arxiv.org/abs/2601.10611) is selected as a **Best Paper Candidate** at CVPR 2026!
@@ -58,6 +59,7 @@ layout: default
 
 ## Awards
 - Outstanding Allen School Senior Award, 2026
+- CVPR 2026 Compute Transparency Champion, Molmo2
 - CVPR 2026 Best Paper Candidate, Molmo2
 - CVPR 2026 Outstanding Reviewer
 - UW CSE John and JoAnne Wisniewski Endowed Scholarship, 2024
@@ -68,7 +70,7 @@ layout: default
 - Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/25sp/), Spring 2025
 
 ## Professional Services
-- Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024 & 2025
+- Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024, 2025 & 2026
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>

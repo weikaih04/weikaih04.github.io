@@ -176,7 +176,7 @@
       "venue": "CVPR",
       "year": "2026",
       "oral": false,
-      "award": "Best Paper Candidate",
+      "award": "Best Paper Candidate; Compute Transparency Champion",
       "local_video": "img/papers/molmo2.mp4",
       "arxiv_id": "2601.10611",
       "github_repo": "allenai/molmo2",
