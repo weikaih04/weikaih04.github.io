@@ -48,7 +48,7 @@
       },
       "selected": true,
       "tldr": "Action Reasoning Models for real-world robot deployment. Built on Molmo2-ER with the MolmoAct2-Bimanual YAM dataset—720+ hours of two-armed demonstrations, the largest open-source bimanual robot dataset to date. Up to 37× faster than MolmoAct on real-world tasks; piloted at Stanford Medicine's Cong Lab.",
-      "github_stars": 603,
+      "github_stars": 604,
       "citations": 0
     },
     {
@@ -90,7 +90,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 575,
+      "github_stars": 576,
       "citations": 0
     },
     {
@@ -124,7 +124,7 @@
       "local_video": "img/papers/ipt.mp4",
       "playback_rate": 1,
       "github_repo": "weikaih04/Spatial-Imaginative-Token",
-      "github_stars": 36,
+      "github_stars": 37,
       "citations": 0
     },
     {
@@ -158,7 +158,7 @@
       "selected": false,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
       "github_stars": 0,
-      "citations": 1
+      "citations": 2
     },
     {
       "id": "molmo2",
