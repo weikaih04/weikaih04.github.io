@@ -109,10 +109,10 @@
         "Linda Shapiro",
         "Ranjay Krishna"
       ],
-      "venue": "arXiv",
+      "venue": "ECCV",
       "year": "2026",
       "links": {
-        "arxiv": "https://arxiv.org/pdf/2606.03988v1",
+        "arxiv": "https://arxiv.org/abs/2606.03988",
         "code": "https://github.com/weikaih04/Spatial-Imaginative-Token",
         "eval": "https://github.com/weikaih04/SpatialReasoning_Eval",
         "website": "https://mahtabbigverdi.github.io/Imaginative-tokens.github.io/",
@@ -145,7 +145,7 @@
         "Rajat Saini",
         "Ranjay Krishna"
       ],
-      "venue": "Arxiv",
+      "venue": "ECCV",
       "year": "2026",
       "image": "img/papers/svg2.png",
       "arxiv_id": "2602.23543",

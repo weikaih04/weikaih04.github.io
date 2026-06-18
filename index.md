@@ -25,6 +25,7 @@ layout: default
 </div>
 
 ## News
+- **[2026-6]** 2 papers ([IPT](https://arxiv.org/abs/2606.03988) and [Synthetic Visual Genome 2](https://arxiv.org/abs/2602.23543)) accepted to ECCV 2026.
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
 - **[2026-6]** [Molmo2](https://arxiv.org/abs/2601.10611) received the **CVPR 2026 Compute Transparency Champion** award.
 - **[2026-5]** [MolmoAct2](https://allenai.org/blog/molmoact2) released! Action Reasoning Models for real-world robot deployment — see the [paper](https://arxiv.org/pdf/2605.02881), [code](https://github.com/allenai/molmoact2), [models](https://huggingface.co/collections/allenai/molmoact2-finetuned-models), and [data](https://huggingface.co/collections/allenai/molmoact2-bimanualyam-dataset).
