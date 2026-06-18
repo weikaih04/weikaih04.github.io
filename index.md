@@ -58,7 +58,7 @@ layout: default
 - <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
-- Outstanding Allen School Senior Award, 2026
+- Outstanding Computer Science & Engineering Senior Award, University of Washington — one of three recipients selected from the graduating CSE senior class, 2026
 - CVPR 2026 Compute Transparency Champion, Molmo2
 - CVPR 2026 Best Paper Candidate, Molmo2
 - CVPR 2026 Outstanding Reviewer
