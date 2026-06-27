@@ -7,7 +7,7 @@ layout: default
     <h1><span style="font-weight: 700;">Weikai</span> Huang</h1>
     <p class="subtitle">Incoming PhD @ UW CSE RAIVN Lab</p>
     <p class="bio">I am an incoming PhD student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I have also been fortunate to work closely with Prof. <a href="https://jason718.github.io/">Jason Ren</a>, Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, Prof. <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>, Dr. <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a>. Previously, I received my undergraduate degree from the University of Washington, where I was a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>.</p>
-    <p class="bio">My research focuses on <strong>developing generalized visual and spatial representations and models</strong> for perception for robotics, manipulation, and embodied agents:</p>
+    <p class="bio">My research focuses on <strong>developing generalized visual and spatial representations and models</strong> for robotics and embodied agents:</p>
     <ul class="bio research-interests">
       <li><strong>2D/3D/4D vision in the wild</strong>: detection, tracking, reconstruction, and generation (e.g., <em>WildDet3D</em>, <em>SOC</em>, <em>Generate Any Scene</em>).</li>
       <li><strong>Vision-centric policies for robotics</strong> (e.g., <em>MolmoAct2</em>).</li>
