@@ -39,7 +39,7 @@
       "local_video": "img/papers/molmoact2.mp4",
       "github_repo": "allenai/molmoact2",
       "links": {
-        "paper": "https://arxiv.org/pdf/2605.02881",
+        "arxiv": "https://arxiv.org/abs/2605.02881",
         "code": "https://github.com/allenai/molmoact2",
         "website": "https://allenai.org/blog/molmoact2",
         "models": "https://huggingface.co/collections/allenai/molmoact2-finetuned-models",
