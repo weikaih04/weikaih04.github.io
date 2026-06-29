@@ -51,11 +51,11 @@ layout: default
 </div>
 
 ## Industry Experience
-- <img class="affiliation-icon" src="img/icons/salesforce.svg" alt="Salesforce"> **Salesforce AI Research** — Research Intern (Incoming), Palo Alto, CA, June–September 2026
+- <img class="affiliation-icon" src="img/icons/salesforce.svg" alt="Salesforce"> **Salesforce AI Research** — Research Intern, Palo Alto, CA, June–September 2026
 - <img class="affiliation-icon" src="img/icons/ai2.svg" alt="AI2"> **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
 
 ## Education
-- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — Ph.D. in Computer Science, 2026–Present (Expected 2031)
+- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — Ph.D. in Computer Science
 - <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
 
 ## Awards
@@ -67,12 +67,11 @@ layout: default
 
 ## Teaching
 - Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 455: Computer Vision](https://courses.cs.washington.edu/courses/cse455/), Autumn 2025
-- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/26wi/), Winter 2026
-- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/25sp/), Spring 2025
+- Teaching Assistant: <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — [CSE 493G: Deep Learning](https://courses.cs.washington.edu/courses/cse493g1/26wi/), Spring 2025; Winter 2026
 
 ## Professional Services
 - Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024, 2025 & 2026
-- Conference Reviewer: BMVC, NeurIPS/NIPS, CVPR, AAAI
+- Conference/Journal Reviewer: IEEE Robotics and Automation Letters (RA-L), BMVC, NeurIPS/NIPS, CVPR, AAAI
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>
