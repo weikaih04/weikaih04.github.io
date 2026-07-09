@@ -90,7 +90,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 590,
+      "github_stars": 591,
       "citations": 0
     },
     {
@@ -372,7 +372,7 @@
       "selected": false,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 46,
-      "citations": 50
+      "citations": 51
     }
   ]
 }
