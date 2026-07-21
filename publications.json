@@ -90,7 +90,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 597,
+      "github_stars": 598,
       "citations": 0
     },
     {
@@ -219,7 +219,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 49,
+      "github_stars": 50,
       "citations": 1
     },
     {
