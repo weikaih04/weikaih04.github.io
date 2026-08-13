@@ -39,7 +39,7 @@ layout: default
 ## Publications
 
 <div class="section-header">
-  <span style="font-size: 0.85em; color: #888;">(* denotes equal contribution, <span style="color:#F26035">&sect;</span> denotes core contributor)</span>
+  <span style="font-size: 0.85em; color: #888;">(* denotes equal contribution, <sup class="author-contribution-mark">&sect;</sup> denotes core contributor)</span>
   <div class="view-toggle">
     <button id="selectedBtn" class="active">Selected</button>
     <button id="allBtn">All Publications</button>
