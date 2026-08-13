@@ -158,7 +158,10 @@ function applyVideoPlaybackRates(root) {
 }
 
 function createPublicationHTML(pub) {
-    const formatAuthor = (author) => author.replace(/§/g, '<span style="color:#F26035">&sect;</span>');
+    const formatAuthor = (author) => author.replace(
+        /§/g,
+        '<sup class="author-contribution-mark">&sect;</sup>'
+    );
     const authorsHtml = pub.authors.map(author => {
         const formattedAuthor = formatAuthor(author);
         return author.includes('Weikai Huang') ? `<strong>${formattedAuthor}</strong>` : formattedAuthor;
