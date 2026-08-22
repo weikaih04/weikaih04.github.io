@@ -86,7 +86,7 @@ function displayPreFetchedMetrics() {
         if (pub.github_stars !== undefined) {
             const starsElement = document.getElementById(`stars-${pub.id}`);
             if (starsElement) {
-                starsElement.textContent = ` · ${formatNumber(pub.github_stars)}`;
+                starsElement.textContent = ` ⭐ ${formatNumber(pub.github_stars)}`;
             }
         }
 
@@ -95,7 +95,7 @@ function displayPreFetchedMetrics() {
         // if (pub.citations !== undefined) {
         //     const citationsElement = document.getElementById(`citations-${pub.id}`);
         //     if (citationsElement) {
-        //         citationsElement.textContent = ` · ${formatNumber(pub.citations)} cite.`;
+        //         citationsElement.textContent = ` 📖 ${formatNumber(pub.citations)} cite.`;
         //     }
         // }
     }
