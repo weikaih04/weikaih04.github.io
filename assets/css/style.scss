@@ -857,6 +857,9 @@ h2[id],
 }
 
 .research-section {
+  float: none;
+  display: block;
+  width: auto;
   padding: 76px 0 72px;
   border-bottom: 1px solid var(--line);
 }
