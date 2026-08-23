@@ -71,7 +71,7 @@ layout: default
 
 ## Professional Services
 - Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024, 2025 & 2026
-- Conference/Journal Reviewer: CVPR, BMVC, NeurIPS, WACV, ECCV, SynData4CV, E2E3D, IEEE RA-L
+- Conference/Journal Reviewer: CVPR, BMVC, NeurIPS, WACV, ECCV, IEEE RA-L
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>
