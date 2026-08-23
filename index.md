@@ -71,7 +71,7 @@ layout: default
 
 ## Professional Services
 - Workshop Organizer: [Synthetic Data for Computer Vision](https://syndata4cv.github.io/) @ CVPR 2024, 2025 & 2026
-- Conference/Journal Reviewer: IEEE Robotics and Automation Letters (RA-L), BMVC, NeurIPS/NIPS, CVPR, AAAI
+- Conference/Journal Reviewer (19 papers): CVPR 2025–2026, BMVC 2026, NeurIPS 2026 Evaluations and Datasets Track, WACV 2027, ECCV 2026 ILRnG Workshop, SynData4CV 2026, E2E3D 2026, IEEE RA-L
 
 <div style="height: 0; overflow: hidden;">
 <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=U6jyNUSkFAg6AyYZ-kAl7bKNT5ujdGb6t2fMv3qiARo&cl=ffffff&w=a"></script>
