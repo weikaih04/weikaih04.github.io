@@ -13,7 +13,7 @@ layout: default
       <li><strong>Vision-centric policies for robotics</strong> (e.g., <em>MolmoAct2</em>).</li>
       <li><strong>Unified multimodal training and representation learning</strong> (e.g., <em>Molmo2</em>, <em>IPT</em>).</li>
     </ul>
-    <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260823" target="_blank">CV</a></p>
+    <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260825" target="_blank">CV</a></p>
   </div>
   <div class="profile-photo">
     <img src="img/weikaih.jpg" alt="Weikai Huang">
@@ -56,7 +56,7 @@ layout: default
 
 ## Education
 - <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — Ph.D. in Computer Science
-- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors) in Computer Science, 2023–2026
+- <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — B.S. (with Honors, cum laude) in Computer Science, 2023–2026
 
 ## Awards
 - Outstanding Computer Science & Engineering Senior Award, University of Washington — one of three recipients selected from the graduating CSE senior class, 2026
