@@ -638,6 +638,32 @@ hr {
   }
 }
 
+/* Wide screens: the 800px column reads as a sliver past ~1400px */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 880px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 960px;
+    padding-top: 56px;
+  }
+
+  .profile-photo {
+    width: 200px;
+  }
+
+  .profile-header {
+    gap: 36px;
+  }
+}
+
 @media print {
   body {
     font-size: 12pt;
