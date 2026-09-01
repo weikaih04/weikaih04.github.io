@@ -7,12 +7,12 @@ layout: default
     <h1><span style="font-weight: 700;">Weikai</span> Huang</h1>
     <p class="subtitle">PhD Student @ UW CSE RAIVN Lab</p>
     <p class="bio">I am a PhD student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I have also been fortunate to work closely with Prof. <a href="https://jason718.github.io/">Jason Ren</a>, Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, Prof. <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>, Dr. <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a>. Previously, I received my undergraduate degree from the University of Washington, where I was a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>.</p>
-    <p class="bio">My research focuses on <strong>developing generalized visual representations</strong> for robotics:</p>
-    <ul class="bio research-interests">
-      <li><strong>2D/3D/4D vision in the wild</strong>: detection, tracking, reconstruction, and generation (e.g., <em>WildDet3D</em>, <em>SOC</em>, <em>Generate Any Scene</em>).</li>
-      <li><strong>Vision-centric policies for robotics</strong> (e.g., <em>MolmoAct2</em>).</li>
-      <li><strong>Unified multimodal training and representation learning</strong> (e.g., <em>Molmo2</em>, <em>IPT</em>).</li>
-    </ul>
+    <p class="bio">My research focuses on building vision models that understand the physical world and act in it:</p>
+    <ol class="bio research-threads">
+      <li><strong>2D/3D perception and generation in the wild.</strong> I work on open-vocabulary detection, segmentation, and grounding, promptable 3D detection from everyday images, and compositional scene generation — scaling each to the long tail of real-world objects and scenes (see <a href="#pub-wilddet3d">WildDet3D</a>, <a href="#pub-sos">SOC</a>, <a href="#pub-gas">Generate Any Scene</a>).</li>
+      <li><strong>Vision-centric policies for robotics.</strong> I build robot policies that reason in visual and spatial space before acting, so that stronger perception translates directly into better control (see <a href="#pub-molmoact2">MolmoAct2</a>).</li>
+      <li><strong>Unified multimodal training and representation learning.</strong> I am interested in how visual understanding — video, grounding, and spatial reasoning — fits into modern multimodal pretraining, from fully open data and weights to new perception tokens that let VLMs reason about 3D structure they cannot see (see <a href="#pub-molmo2">Molmo2</a>, <a href="#pub-ipt">IPT</a>).</li>
+    </ol>
     <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260825" target="_blank">CV</a></p>
   </div>
   <div class="profile-photo">

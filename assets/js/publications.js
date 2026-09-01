@@ -268,7 +268,7 @@ function createPublicationHTML(pub) {
     ` : '';
 
     return `
-        <div class="publication-item">
+        <div class="publication-item" id="pub-${pub.id}">
             ${imageHtml}
             <div class="publication-content">
                 <div class="publication-title">

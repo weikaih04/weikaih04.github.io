@@ -144,6 +144,37 @@ a small {
   border-radius: 10px;
 }
 
+/* Research threads: "1)" style numbering, muted */
+.research-threads {
+  list-style: none;
+  padding-left: 1.5rem;
+  counter-reset: thread;
+}
+
+.research-threads li {
+  counter-increment: thread;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.research-threads li::before {
+  content: counter(thread) ")";
+  position: absolute;
+  left: -1.5rem;
+  color: var(--muted);
+}
+
+/* "see X" links in the bio jump to publication cards */
+.publication-item {
+  scroll-margin-top: 1.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* Section content text - match bio font size */
 h2 ~ ul, h2 ~ p {
   font-size: 0.95rem;
