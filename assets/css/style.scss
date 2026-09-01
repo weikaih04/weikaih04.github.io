@@ -462,6 +462,16 @@ hr {
   border-radius: 6px;
 }
 
+.publication-highlight a {
+  color: inherit;             /* pill is light now; links must not be white */
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.publication-highlight a:hover {
+  color: #991b1b;
+}
+
 .award {
   color: var(--red);
   font-weight: 600;
