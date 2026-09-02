@@ -212,6 +212,34 @@ h2 ~ ul li {
 }
 
 /* ---------------------------------------------------------------------------
+   News: collapsed to the 5 most recent items (see assets/js/news.js)
+--------------------------------------------------------------------------- */
+.news-list.is-collapsed li:nth-child(n+6) {
+  display: none;
+}
+
+.news-list {
+  margin-bottom: 0.6rem;
+}
+
+.news-toggle {
+  margin: 0 0 20px;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.news-toggle:hover {
+  background: var(--surface);
+}
+
+/* ---------------------------------------------------------------------------
    Generic elements
 --------------------------------------------------------------------------- */
 blockquote {
