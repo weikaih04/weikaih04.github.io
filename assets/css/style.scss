@@ -668,18 +668,22 @@ hr {
 
 /* Wide screens: the 800px column reads as a sliver past ~1400px */
 @media screen and (min-width: 1024px) {
-  .container {
-    max-width: 880px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
   body {
     font-size: 17px;
   }
 
   .container {
-    max-width: 960px;
+    max-width: 920px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1040px;
     padding-top: 56px;
   }
 
