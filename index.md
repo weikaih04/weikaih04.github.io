@@ -13,7 +13,7 @@ layout: default
       <li><strong>Vision-centric policies for robotics.</strong> I build robot policies that reason in visual and spatial space before acting, so that stronger perception translates directly into better control. My work includes action reasoning models (<a href="#pub-molmoact2">MolmoAct2</a>).</li>
       <li><strong>Unified multimodal training and representation learning.</strong> More broadly, I am interested in how visual understanding — video, grounding, and spatial reasoning — fits into modern multimodal pretraining. My work includes fully open vision-language models (<a href="#pub-molmo2">Molmo2</a>) and spatial reasoning in VLMs (<a href="#pub-ipt">IPT</a>).</li>
     </ol>
-    <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260825" target="_blank">CV</a></p>
+    <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260905" target="_blank">CV</a></p>
   </div>
   <div class="profile-photo">
     <img src="img/weikaih.jpg" alt="Weikai Huang">
@@ -25,6 +25,7 @@ layout: default
 </div>
 
 ## News
+- **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026.
 - **[2026-6]** 2 papers ([IPT](https://arxiv.org/abs/2606.03988) and [Synthetic Visual Genome 2](https://arxiv.org/abs/2602.23543)) accepted to ECCV 2026.
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
 - **[2026-6]** [Molmo2](https://arxiv.org/abs/2601.10611) received the **CVPR 2026 Compute Transparency Champion** award.
