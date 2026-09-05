@@ -25,7 +25,7 @@ layout: default
 </div>
 
 ## News
-- **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026.
+- **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026. See you in Austin!
 - **[2026-6]** 2 papers ([IPT](https://arxiv.org/abs/2606.03988) and [Synthetic Visual Genome 2](https://arxiv.org/abs/2602.23543)) accepted to ECCV 2026.
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
 - **[2026-6]** [Molmo2](https://arxiv.org/abs/2601.10611) received the **CVPR 2026 Compute Transparency Champion** award.
