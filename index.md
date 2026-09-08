@@ -52,8 +52,10 @@ layout: default
 </div>
 
 ## Industry Experience
-- <img class="affiliation-icon" src="img/icons/salesforce.svg" alt="Salesforce"> **Salesforce AI Research** — Research Intern, Palo Alto, CA, June–September 2026
-- <img class="affiliation-icon" src="img/icons/ai2.svg" alt="AI2"> **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026
+- <img class="affiliation-icon" src="img/icons/salesforce.svg" alt="Salesforce"> **Salesforce AI Research** — Research Intern, Palo Alto, CA, June–September 2026<br>
+  Mentors: [Ran Xu](https://xurantju.github.io/), [Zeyuan Chen](https://scholar.google.com/citations?user=znf-4mgAAAAJ), [Silvio Savarese](https://profiles.stanford.edu/silvio-savarese), [An Yan](https://www.linkedin.com/in/an-yan-990987113/), [Luyu Yang](https://luluyuyuyang.github.io/).
+- <img class="affiliation-icon" src="img/icons/ai2.svg" alt="AI2"> **Allen Institute for AI (AI2)** — Student Researcher, June 2025–June 2026<br>
+  Mentors: [Ranjay Krishna](https://www.ranjaykrishna.com/index.html), [Ali Farhadi](https://homes.cs.washington.edu/~ali/), [Christopher Clark](https://chrisc36.github.io/), [Sangho Lee](https://sangho-vision.github.io/).
 
 ## Education
 - <img class="affiliation-icon" src="img/icons/uw.svg" alt="UW"> **University of Washington** — Ph.D. in Computer Science
