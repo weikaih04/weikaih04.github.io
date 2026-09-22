@@ -1,6 +1,31 @@
 {
   "publications": [
     {
+      "id": "gam",
+      "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
+      "authors": [
+        "Gehao Zhang",
+        "Weikai Huang",
+        "Shailesh Shailesh",
+        "Yiyan Peng",
+        "Jiafei Duan",
+        "Ranjay Krishna"
+      ],
+      "venue": "arXiv",
+      "year": "2026",
+      "local_video": "img/papers/gam.mp4",
+      "playback_rate": 1,
+      "arxiv_id": "2609.23863",
+      "github_repo": "GehaoZhang6/Grounded-Action-Model",
+      "links": {
+        "arxiv": "https://arxiv.org/abs/2609.23863",
+        "website": "https://grounded-action-model.github.io/",
+        "code": "https://github.com/GehaoZhang6/Grounded-Action-Model"
+      },
+      "selected": true,
+      "tldr": "Builds robot policies on pretrained 3D grounding, using language, point, or box prompts to identify target objects and generalize across visual changes."
+    },
+    {
       "id": "molmoact2",
       "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
       "authors": [
