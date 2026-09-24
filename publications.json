@@ -24,7 +24,7 @@
       },
       "selected": true,
       "tldr": "Builds robot policies on pretrained 3D grounding, using language, point, or box prompts to identify target objects and generalize across visual changes.",
-      "github_stars": 23,
+      "github_stars": 24,
       "citations": 0
     },
     {
@@ -117,7 +117,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 629,
+      "github_stars": 630,
       "citations": 0
     },
     {
