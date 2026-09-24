@@ -24,7 +24,7 @@
       },
       "selected": true,
       "tldr": "Builds robot policies on pretrained 3D grounding, using language, point, or box prompts to identify target objects and generalize across visual changes.",
-      "github_stars": 21,
+      "github_stars": 23,
       "citations": 0
     },
     {
