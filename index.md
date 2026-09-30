@@ -6,6 +6,7 @@ layout: default
   <div class="profile-text">
     <h1><span style="font-weight: 700;">Weikai</span> Huang</h1>
     <p class="subtitle">PhD Student @ UW CSE RAIVN Lab</p>
+    <p class="bio">Office: CSE 382, Desk 20</p>
     <p class="bio">I am a PhD student at the University of Washington, advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a>. I have also been fortunate to work closely with Prof. <a href="https://jason718.github.io/">Jason Ren</a>, Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, Prof. <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>, Dr. <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a>. Previously, I received my undergraduate degree from the University of Washington, where I was a student researcher at <a href="https://allenai.org/">Allen Institute for AI</a>.</p>
     <p class="bio">I am broadly interested in computer vision for the physical world — perceiving it, generating it, and acting in it. My current research interests:</p>
     <ol class="bio research-threads">
@@ -25,7 +26,7 @@ layout: default
 </div>
 
 ## News
-- **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026. See you in Austin!
+- **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026 as a **Spotlight**. See you in Austin!
 - **[2026-6]** 2 papers ([IPT](https://arxiv.org/abs/2606.03988) and [Synthetic Visual Genome 2](https://arxiv.org/abs/2602.23543)) accepted to ECCV 2026.
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.
 - **[2026-6]** [Molmo2](https://arxiv.org/abs/2601.10611) received the **CVPR 2026 Compute Transparency Champion** award.
