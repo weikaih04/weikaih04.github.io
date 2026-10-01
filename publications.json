@@ -24,7 +24,7 @@
       },
       "selected": true,
       "tldr": "Builds robot policies on pretrained 3D grounding, using language, point, or box prompts to identify target objects and generalize across visual changes.",
-      "github_stars": 26,
+      "github_stars": 27,
       "citations": 0
     },
     {
@@ -118,7 +118,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 631,
+      "github_stars": 624,
       "citations": 0
     },
     {
@@ -231,7 +231,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 734,
+      "github_stars": 735,
       "citations": 141
     },
     {
@@ -260,7 +260,7 @@
       },
       "selected": true,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 52,
+      "github_stars": 48,
       "citations": 1
     },
     {
@@ -288,7 +288,7 @@
       },
       "selected": false,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
-      "github_stars": 67,
+      "github_stars": 63,
       "citations": 3
     },
     {
@@ -314,7 +314,7 @@
       },
       "selected": true,
       "tldr": "Scene graph programming generates infinite compositional scenes—systematically improves text-to-image, text-to-video and text-to-3D models. Also support RL training!",
-      "github_stars": 63,
+      "github_stars": 59,
       "citations": 3
     },
     {
@@ -413,7 +413,7 @@
       "selected": false,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 46,
-      "citations": 55
+      "citations": 56
     }
   ]
 }
