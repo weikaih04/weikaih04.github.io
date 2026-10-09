@@ -103,7 +103,7 @@
       },
       "selected": true,
       "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
-      "github_stars": 800,
+      "github_stars": 801,
       "citations": 0
     },
     {
