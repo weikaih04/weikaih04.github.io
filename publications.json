@@ -1,6 +1,32 @@
 {
   "publications": [
     {
+      "id": "reflex",
+      "title": "Reflex: Visually Grounded Reactive Humanoid Control",
+      "authors": [
+        "Taoyang Jia*",
+        "Weikai Huang*",
+        "Linxin Song*",
+        "Jared Darlington",
+        "Jieyu Zhao",
+        "Yue Wang",
+        "Jiafei Duan",
+        "Zhongzheng Ren",
+        "Ranjay Krishna"
+      ],
+      "venue": "Preprint",
+      "year": "2026",
+      "local_video": "img/papers/reflex.mp4",
+      "playback_rate": 1,
+      "links": {
+        "website": "https://toberj.github.io/reflex/",
+        "paper": "https://toberj.github.io/reflex/static/paper/reflex.pdf?v=1008n",
+        "video": "https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t"
+      },
+      "selected": true,
+      "tldr": "Enables a humanoid to catch human-thrown boxes using onboard RGB-D vision and reactive whole-body control, with about one second to respond."
+    },
+    {
       "id": "gam",
       "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
       "authors": [

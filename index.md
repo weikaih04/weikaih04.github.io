@@ -11,7 +11,7 @@ layout: default
     <p class="bio">I am broadly interested in computer vision for the physical world — perceiving it, generating it, and acting in it. My current research interests:</p>
     <ol class="bio research-threads">
       <li><strong>2D/3D perception and generation in the wild.</strong> I am interested in scaling perception and generation to the long tail of real-world objects and scenes. My work includes promptable 3D detection (<a href="#pub-wilddet3d">WildDet3D</a>), synthetic object compositions for detection, segmentation, and grounding (<a href="#pub-sos">SOC</a>), and scene-graph-driven visual generation (<a href="#pub-gas">Generate Any Scene</a>).</li>
-      <li><strong>Vision-centric policies for robotics.</strong> I build robot policies that reason in visual and spatial space before acting, so that stronger perception translates directly into better control. My work includes action reasoning models (<a href="#pub-molmoact2">MolmoAct2</a>).</li>
+      <li><strong>Vision-centric policies for robotics.</strong> I build robot policies that reason in visual and spatial space before acting, so that stronger perception translates directly into better control. My work includes action reasoning models (<a href="#pub-molmoact2">MolmoAct2</a>) and visually grounded reactive humanoid control (<a href="#pub-reflex">Reflex</a>).</li>
       <li><strong>Unified multimodal training and representation learning.</strong> More broadly, I am interested in how visual understanding — video, grounding, and spatial reasoning — fits into modern multimodal pretraining. My work includes fully open vision-language models (<a href="#pub-molmo2">Molmo2</a>) and spatial reasoning in VLMs (<a href="#pub-ipt">IPT</a>).</li>
     </ol>
     <p class="profile-links"><a href="mailto:weikaih@cs.washington.edu">Email</a> / <a href="https://github.com/weikaih04" target="_blank">GitHub</a> / <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&hl=en&authuser=1" target="_blank">Google Scholar</a> / <a href="https://twitter.com/weikaih04" target="_blank">X (Twitter)</a> / <a href="/files/weikai_cv.pdf?v=20260905" target="_blank">CV</a></p>
@@ -26,6 +26,7 @@ layout: default
 </div>
 
 ## News
+- **[2026-10]** [Reflex](https://toberj.github.io/reflex/): visually grounded reactive humanoid control for catching human-thrown boxes.
 - **[2026-9]** [MolmoAct2](https://arxiv.org/abs/2605.02881) accepted to CoRL 2026 as a **Spotlight**. See you in Austin!
 - **[2026-6]** 2 papers ([IPT](https://arxiv.org/abs/2606.03988) and [Synthetic Visual Genome 2](https://arxiv.org/abs/2602.23543)) accepted to ECCV 2026.
 - **[2026-6]** I will be joining Salesforce AI Research as a Research Intern in Palo Alto from June to September 2026.

@@ -169,9 +169,10 @@ function createPublicationHTML(pub) {
 
     // Create links with better labels and ordering
     // Order: arXiv first, then Code, then others
-    const linkOrder = ['arxiv', 'code', 'eval', 'paper', 'website', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
+    const linkOrder = ['arxiv', 'code', 'eval', 'paper', 'video', 'website', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
     const linkLabels = {
         'paper': 'Paper',
+        'video': 'Video',
         'arxiv': 'arXiv',
         'website': 'Website',
         'code': 'Code',
