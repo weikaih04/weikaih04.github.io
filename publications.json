@@ -21,10 +21,11 @@
       "links": {
         "website": "https://toberj.github.io/reflex/",
         "paper": "https://toberj.github.io/reflex/static/paper/reflex.pdf?v=1008n",
-        "video": "https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t"
+        "video": "https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t",
+        "code": "https://github.com/ToberJ/reflex"
       },
       "selected": true,
-      "tldr": "Enables a humanoid to catch human-thrown boxes using onboard RGB-D vision and reactive whole-body control, with about one second to respond."
+      "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m."
     },
     {
       "id": "gam",
@@ -49,7 +50,7 @@
         "code": "https://github.com/GehaoZhang6/Grounded-Action-Model"
       },
       "selected": true,
-      "tldr": "Builds robot policies on pretrained 3D grounding, using language, point, or box prompts to identify target objects and generalize across visual changes.",
+      "tldr": "Turns 3D grounding (WildDet3D) into strong robot policies—controlled through point and box prompts. SOTA on LIBERO-PRO: 61% vs. 53% for π0.5; 17/20 vs. 4/20 successes on a real YAM under visual shift.",
       "github_stars": 31,
       "citations": 0
     },
@@ -101,7 +102,7 @@
         "blog": "https://allenai.org/blog/molmoact2"
       },
       "selected": true,
-      "tldr": "Action Reasoning Models for real-world robot deployment. Built on Molmo2-ER with the MolmoAct2-Bimanual YAM dataset—720+ hours of two-armed demonstrations, the largest open-source bimanual robot dataset to date. Up to 37× faster than MolmoAct on real-world tasks; piloted at Stanford Medicine's Cong Lab.",
+      "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
       "github_stars": 800,
       "citations": 0
     },
