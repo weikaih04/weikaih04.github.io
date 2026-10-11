@@ -103,7 +103,7 @@
       },
       "selected": true,
       "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
-      "github_stars": 802,
+      "github_stars": 803,
       "citations": 0
     },
     {
@@ -258,7 +258,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 739,
+      "github_stars": 740,
       "citations": 149
     },
     {
