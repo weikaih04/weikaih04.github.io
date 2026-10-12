@@ -27,10 +27,8 @@ async function loadPublications() {
 
         const data = await response.json();
         publicationsData = data.publications;
-        displayPublications();
-
-        // Display pre-fetched metrics from JSON
-        displayPreFetchedMetrics();
+        setPublicationView(showSelected);
+        revealPublicationFromHash();
 
         // Optionally fetch fresh metrics in background (commented out to save API calls)
         // Uncomment if you want to fetch fresh data on every page load
@@ -136,8 +134,41 @@ function displayPublications() {
         ? publicationsData.filter(pub => pub.selected)
         : publicationsData;
 
-    container.innerHTML = publications.map(pub => createPublicationHTML(pub)).join('');
+    // Filtering preserves the source order within each category. Older entries
+    // without category metadata belong to Vision.
+    container.innerHTML = `<div class="publication-categories">${['Robotics', 'Vision'].map(category => {
+        const headingId = `publication-category-${category.toLowerCase()}`;
+        const papers = publications.filter(pub => (pub.category === 'Robotics' ? 'Robotics' : 'Vision') === category);
+        return `<section class="publication-category" aria-labelledby="${headingId}">
+            <h3 id="${headingId}">${category}</h3>
+            ${papers.map(pub => createPublicationHTML(pub)).join('')}
+        </section>`;
+    }).join('')}</div>`;
     applyVideoPlaybackRates(container);
+}
+
+// Both categories use the same filter and retain metrics after every render.
+function setPublicationView(selected) {
+    showSelected = selected;
+    for (const [id, active] of [['selectedBtn', selected], ['allBtn', !selected]]) {
+        const button = document.getElementById(id);
+        if (!button) continue;
+        if (active) button.classList.add('active');
+        else button.classList.remove('active');
+        button.setAttribute('aria-pressed', String(active));
+    }
+    displayPublications();
+    displayPreFetchedMetrics();
+}
+
+// Publication anchors also work before JSON loads and for unselected papers.
+function revealPublicationFromHash(hash = window.location.hash) {
+    if (!hash.startsWith('#pub-')) return;
+    const pub = publicationsData.find(pub => `#pub-${pub.id}` === hash);
+    if (!pub) return;
+    if (showSelected && !pub.selected) setPublicationView(false);
+    const card = document.getElementById(`pub-${pub.id}`);
+    if (card) card.scrollIntoView({ block: 'start' });
 }
 
 // Apply data-playback-rate to <video> elements. Browser resets playbackRate to 1
@@ -316,18 +347,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (selectedBtn && allBtn) {
         selectedBtn.addEventListener('click', () => {
-            showSelected = true;
-            selectedBtn.classList.add('active');
-            allBtn.classList.remove('active');
-            displayPublications();
+            setPublicationView(true);
         });
         
         allBtn.addEventListener('click', () => {
-            showSelected = false;
-            allBtn.classList.add('active');
-            selectedBtn.classList.remove('active');
-            displayPublications();
+            setPublicationView(false);
         });
     }
+});
+
+window.addEventListener('hashchange', () => revealPublicationFromHash());
+// Clicking an already-current hash does not fire hashchange. Reveal the card
+// here as well, so biography links still work after selecting the default view.
+document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#pub-"]');
+    if (link) revealPublicationFromHash(link.getAttribute('href'));
 });
 

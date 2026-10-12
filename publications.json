@@ -2,6 +2,7 @@
   "publications": [
     {
       "id": "reflex",
+      "category": "Robotics",
       "title": "Reflex: Visually Grounded Reactive Humanoid Control",
       "authors": [
         "Taoyang Jia*",
@@ -29,6 +30,7 @@
     },
     {
       "id": "gam",
+      "category": "Robotics",
       "title": "Grounded Action Model: 3D Grounding as a Foundation for Robotics",
       "authors": [
         "Gehao Zhang",
@@ -56,6 +58,7 @@
     },
     {
       "id": "molmoact2",
+      "category": "Robotics",
       "title": "MolmoAct2: Action Reasoning Models for Real-world Deployment",
       "authors": [
         "Haoquan Fang*§",
@@ -108,6 +111,7 @@
     },
     {
       "id": "wilddet3d",
+      "category": "Vision",
       "title": "WildDet3D: Scaling Promptable 3D Detection in the Wild",
       "authors": [
         "Weikai Huang§",
@@ -150,6 +154,7 @@
     },
     {
       "id": "ipt",
+      "category": "Vision",
       "title": "Imaginative Perception Tokens Enhance Spatial Reasoning in Multimodal Language Models",
       "authors": [
         "Mahtab Bigverdi*",
@@ -184,6 +189,7 @@
     },
     {
       "id": "svg2",
+      "category": "Vision",
       "title": "Synthetic Visual Genome 2: Extracting Large-scale Spatio-Temporal Scene Graphs from Videos",
       "authors": [
         "Ziqi Gao",
@@ -217,6 +223,7 @@
     },
     {
       "id": "molmo2",
+      "category": "Vision",
       "title": "Molmo2: Open Weights and Data for Vision-Language Models with Video Understanding and Grounding",
       "authors": [
         "Christopher Clark*§",
@@ -263,6 +270,7 @@
     },
     {
       "id": "sos",
+      "category": "Vision",
       "title": "Synthetic Object Compositions for Scalable and Accurate Learning in Detection, Segmentation, and Grounding",
       "authors": [
         "Weikai Huang",
@@ -292,6 +300,7 @@
     },
     {
       "id": "trajtok",
+      "category": "Vision",
       "title": "TrajTok: Learning Trajectory Tokens Enhances Video Understanding",
       "authors": [
         "Chenhao Zheng",
@@ -320,6 +329,7 @@
     },
     {
       "id": "gas",
+      "category": "Vision",
       "title": "Generate Any Scene: Scene Graph Driven Data Synthesis for Visual Generation Training",
       "authors": [
         "Ziqi Gao*",
@@ -346,6 +356,7 @@
     },
     {
       "id": "provision",
+      "category": "Vision",
       "title": "ProVision: Programmatically Scaling Vision-centric Instruction Data for Multimodal Language Models",
       "authors": [
         "Jieyu Zhang",
@@ -381,6 +392,7 @@
     },
     {
       "id": "tma",
+      "category": "Vision",
       "title": "Task Me Anything",
       "authors": [
         "Jieyu Zhang",
@@ -416,6 +428,7 @@
     },
     {
       "id": "mms",
+      "category": "Vision",
       "title": "m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks",
       "authors": [
         "Zixian Ma",
