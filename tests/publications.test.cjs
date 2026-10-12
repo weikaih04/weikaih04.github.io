@@ -94,7 +94,7 @@ function groups(html) {
 
 function assertGroups(app, expectedVision) {
     const sections = groups(app.container.innerHTML);
-    assert.deepEqual(sections.map(section => section.heading), ['Robotics', 'Vision']);
+    assert.deepEqual(sections.map(section => section.heading), ['Robotics', '3D Vision &amp; Unified Models']);
     assert.deepEqual(sections.map(section => section.ids), [robotics, expectedVision]);
     for (const section of sections) {
         assert.match(app.container.innerHTML, new RegExp(`<h3 id="${section.headingId}">`));

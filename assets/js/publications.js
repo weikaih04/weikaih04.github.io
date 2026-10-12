@@ -140,7 +140,7 @@ function displayPublications() {
         const headingId = `publication-category-${category.toLowerCase()}`;
         const papers = publications.filter(pub => (pub.category === 'Robotics' ? 'Robotics' : 'Vision') === category);
         return `<section class="publication-category" aria-labelledby="${headingId}">
-            <h3 id="${headingId}">${category}</h3>
+            <h3 id="${headingId}">${category === 'Vision' ? '3D Vision &amp; Unified Models' : category}</h3>
             ${papers.map(pub => createPublicationHTML(pub)).join('')}
         </section>`;
     }).join('')}</div>`;

@@ -116,7 +116,7 @@ class PublicationLayout(unittest.TestCase):
             self.assertAlmostEqual(ar["left"], br["left"], delta=1)
             self.assertAlmostEqual(ar["width"], layout["list"]["width"], delta=1)
         self.assertLessEqual(layout["documentWidth"], layout["viewport"])
-        self.assertEqual([g["heading"] for g in layout["groups"]], ["Robotics", "Vision"])
+        self.assertEqual([g["heading"] for g in layout["groups"]], ["Robotics", "3D Vision & Unified Models"])
         self.assertEqual([len(g["cards"]) for g in layout["groups"]], [3, 3 if mode == "selected" else 10])
         for group in layout["groups"]:
             self.assert_inside(group["rect"], layout["list"], "category inside publication container")
