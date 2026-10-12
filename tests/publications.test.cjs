@@ -201,3 +201,84 @@ test('unknown hash leaves the selected filter alone', async () => {
     await app.start();
     assertGroups(app, ['wilddet3d', 'ipt', 'molmo2']);
 });
+
+test('research bio preserves the intro and uses the exact requested bold headings and copy', async () => {
+    const homepage = fs.readFileSync(path.join(root, 'index.md'), 'utf8');
+    assert.ok(homepage.includes('<p class="bio">I am broadly interested in computer vision for the physical world — perceiving it, generating it, and acting in it. My current research interests include:</p>'));
+    const threads = homepage.match(/<ol class="bio research-threads">([\s\S]*?)<\/ol>/);
+    assert.ok(threads, 'research interests retain their HTML list');
+    const items = [...threads[1].matchAll(/<li><strong>([^<]+)<\/strong> ([\s\S]*?)<\/li>/g)];
+    assert.deepEqual(items.map(item => item[1]), [
+        '3D perception and generation in the wild.',
+        'Vision-centric policies for robotics.',
+        'Unified multimodal models and representation learning.'
+    ]);
+    assert.deepEqual(items.map(item => item[2].replace(/<[^>]+>/g, '')), [
+        'I am interested in learning representations that capture the geometry and dynamics of real-world objects and scenes, and in scaling visual perception and generation beyond fixed categories and curated environments. My work includes promptable 3D detection (WildDet3D).',
+        'I study how visual and spatial representations can serve as a foundation for robot learning, from 3D-grounded manipulation (GAM) and action reasoning (MolmoAct2) to fast, visually reactive whole-body control (Reflex).',
+        'I am interested in bringing visual understanding, generation, and action into a shared modeling framework. My work includes open vision-language models for video understanding and grounding (Molmo2) and learning visual representations for spatial reasoning (IPT).'
+    ]);
+    assert.deepEqual(items.map(item => [...item[2].matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)].map(link => [link[1], link[2]])), [
+        [['#pub-wilddet3d', 'WildDet3D']],
+        [['#pub-gam', 'GAM'], ['#pub-molmoact2', 'MolmoAct2'], ['#pub-reflex', 'Reflex']],
+        [['#pub-molmo2', 'Molmo2'], ['#pub-ipt', 'IPT']]
+    ]);
+    const app = browser();
+    await app.start();
+    app.click('allBtn');
+    const cards = app.container.innerHTML;
+    for (const link of threads[1].matchAll(/href="#([^"]+)"/g)) {
+        assert.equal([...cards.matchAll(new RegExp(`id="${link[1]}"`, 'g'))].length, 1, `${link[1]} resolves to one card`);
+    }
+});
+
+test('SOC and Generate Any Scene are removed only from research interests and retained in News and papers', async () => {
+    const homepage = fs.readFileSync(path.join(root, 'index.md'), 'utf8');
+    const threads = homepage.match(/<ol class="bio research-threads">([\s\S]*?)<\/ol>/);
+    assert.ok(threads);
+    assert.doesNotMatch(threads[1], /SOC|Generate Any Scene|#pub-sos|#pub-gas/);
+    const news = homepage.match(/## News\n([\s\S]*?)\n## Publications/);
+    assert.ok(news);
+    assert.ok(news[1].includes('- **[2026-2]** 3 papers ([SOC](https://arxiv.org/abs/2510.09110), [Molmo2](https://arxiv.org/abs/2601.10611), [TrajTok](https://arxiv.org/abs/2602.22779)) accepted to CVPR 2026. See you in Denver!'));
+    assert.ok(news[1].includes('- **[2026-1]** Our work [Generate Any Scene](https://generate-any-scene.github.io/) is accepted to ICLR 2026.'));
+    const app = browser();
+    await app.start();
+    app.click('allBtn');
+    for (const [id, title] of [
+        ['sos', 'Synthetic Object Compositions for Scalable and Accurate Learning in Detection, Segmentation, and Grounding'],
+        ['gas', 'Generate Any Scene: Scene Graph Driven Data Synthesis for Visual Generation Training']
+    ]) {
+        const entries = data.publications.filter(pub => pub.id === id);
+        assert.equal(entries.length, 1);
+        assert.equal(entries[0].title, title);
+        assert.ok(app.nodes.has(`pub-${id}`));
+        assert.ok(app.container.innerHTML.includes(title));
+    }
+});
+
+test('Reflex uses its exact arXiv metadata and rendered link without the old project PDF', async () => {
+    const entries = data.publications.filter(pub => pub.id === 'reflex');
+    assert.equal(entries.length, 1, 'Reflex remains a single publication');
+    const reflex = entries[0];
+    assert.equal(reflex.venue, 'arXiv');
+    assert.equal(reflex.arxiv_id, '2610.12772');
+    assert.equal(reflex.links.arxiv, 'https://arxiv.org/abs/2610.12772');
+    assert.equal(Object.hasOwn(reflex.links, 'paper'), false);
+    assert.deepEqual(reflex.authors, [
+        'Taoyang Jia*', 'Weikai Huang*', 'Linxin Song*', 'Jared Darlington',
+        'Jieyu Zhao', 'Yue Wang', 'Jiafei Duan', 'Zhongzheng Ren', 'Ranjay Krishna'
+    ]);
+    assert.equal(reflex.local_video, 'img/papers/reflex.mp4');
+    assert.equal(reflex.playback_rate, 1);
+    assert.equal(reflex.selected, true);
+    assert.equal(reflex.links.website, 'https://toberj.github.io/reflex/');
+    assert.equal(reflex.links.video, 'https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t');
+    assert.equal(reflex.links.code, 'https://github.com/ToberJ/reflex');
+    const app = browser();
+    await app.start();
+    const card = vm.runInContext(`createPublicationHTML(${JSON.stringify(reflex)})`, app.context);
+    assert.ok(app.container.innerHTML.includes(card));
+    assert.ok(card.includes('<a href="https://arxiv.org/abs/2610.12772" target="_blank">arXiv</a>'));
+    assert.ok(card.includes(`<a href="https://arxiv.org/abs/2610.12772" target="_blank">${reflex.title}</a>`));
+    assert.doesNotMatch(card, /https:\/\/toberj\.github\.io\/reflex\/static\/paper\/reflex\.pdf|>Paper<|abstract/i);
+});

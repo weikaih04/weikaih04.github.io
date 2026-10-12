@@ -15,13 +15,14 @@
         "Zhongzheng Ren",
         "Ranjay Krishna"
       ],
-      "venue": "Preprint",
+      "venue": "arXiv",
       "year": "2026",
       "local_video": "img/papers/reflex.mp4",
       "playback_rate": 1,
+      "arxiv_id": "2610.12772",
       "links": {
         "website": "https://toberj.github.io/reflex/",
-        "paper": "https://toberj.github.io/reflex/static/paper/reflex.pdf?v=1008n",
+        "arxiv": "https://arxiv.org/abs/2610.12772",
         "video": "https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t",
         "code": "https://github.com/ToberJ/reflex"
       },
