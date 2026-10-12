@@ -1,0 +1,23 @@
+/* Jekyll Minimal's legacy section rules, loaded BEFORE the site's stylesheet.
+   Keep the desktop width/float and responsive border/padding/margin leak here:
+   omitting them hides the production publication-category overlap. */
+section {
+  width: 500px;
+  float: right;
+  padding-bottom: 50px;
+}
+
+@media print, screen and (max-width: 960px) {
+  header, section, footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  section {
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    padding: 20px 0;
+    margin: 0 0 20px;
+  }
+}

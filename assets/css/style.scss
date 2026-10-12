@@ -362,7 +362,16 @@ hr {
 }
 
 .publication-category {
+  // These are sections, but must not inherit Minimal's sidebar layout rules.
+  width: auto;
+  max-width: 100%;
   min-width: 0;
+  box-sizing: border-box;
+  float: none;
+  position: static;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .publication-category h3 {
@@ -372,7 +381,10 @@ hr {
 
 .publication-item {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   align-items: start;
   gap: 1.5rem;
   margin-bottom: 1.25rem;
@@ -455,17 +467,19 @@ hr {
   overflow-wrap: break-word;
 }
 
-// The existing desktop content cap is 920px (1040px on wider screens).
-// At 880px of available space, each column gets at least 424px after the gap.
-// Contained cards keep the existing type sizes and compact 16:9 media.
-@container publications (min-width: 880px) {
-  .publication-categories {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+// Portrait always stacks. Landscape also needs enough actual content width:
+// 912px gives two 424px columns with a comfortable 64px gutter.
+@media screen and (orientation: landscape) {
+  @container publications (min-width: 912px) {
+    .publication-categories {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 4rem;
+    }
 
-  .publication-item {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 0.85rem;
+    .publication-item {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 0.85rem;
+    }
   }
 }
 
