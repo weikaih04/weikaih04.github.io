@@ -54,7 +54,7 @@
       },
       "selected": true,
       "tldr": "Turns 3D grounding (WildDet3D) into strong robot policies—controlled through point and box prompts. SOTA on LIBERO-PRO: 61% vs. 53% for π0.5; 17/20 vs. 4/20 successes on a real YAM under visual shift.",
-      "github_stars": 31,
+      "github_stars": 36,
       "citations": 0
     },
     {
@@ -107,7 +107,7 @@
       },
       "selected": true,
       "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
-      "github_stars": 804,
+      "github_stars": 806,
       "citations": 0
     },
     {
