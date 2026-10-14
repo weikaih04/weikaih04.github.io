@@ -1,0 +1,103 @@
+---
+layout: default
+---
+
+<div class="page">
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Weikai Huang</h1>
+      <p class="role">PhD Student · UW CSE, <a href="https://raivn.cs.washington.edu/">RAIVN Lab</a></p>
+      <p class="lead">I am a PhD student at <img class="inl" src="img/icons/uw.svg" alt="">UW, working on <strong>Computer Vision</strong> and <strong>Robotics</strong>.</p>
+      <p class="bio">I'm advised by Prof. <a href="http://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>, and have worked closely with Prof. <a href="https://jason718.github.io/">Jason Ren</a>, Prof. <a href="https://www.cs.cornell.edu/~bharathh/">Bharath Hariharan</a>, Prof. <a href="https://homes.cs.washington.edu/~ali/">Ali Farhadi</a>, Dr. <a href="https://jieyuz2.github.io/">Jieyu Zhang</a>, and PhD student <a href="https://zixianma.github.io/">Zixian Ma</a>. I am also currently a research intern at <a href="https://www.salesforceairesearch.com/"><img class="inl" src="img/icons/salesforce.svg" alt="">Salesforce AI Research</a>. Before the PhD I did my B.S. at <img class="inl" src="img/icons/uw.svg" alt="">UW and was a student researcher at <a href="https://allenai.org/"><img class="inl" src="img/icons/ai2.svg" alt="">AI2</a>.</p>
+      <p class="links">
+        <a href="mailto:weikaih@cs.washington.edu">weikaih@cs.washington.edu</a>
+        <a href="https://scholar.google.com/citations?user=myeLQPEAAAAJ&amp;hl=en">Scholar</a>
+        <a href="https://github.com/weikaih04">GitHub</a>
+        <a href="https://twitter.com/weikaih04">X</a>
+        <a href="/files/weikai_cv.pdf?v=20260905">CV</a>
+      </p>
+    </div>
+    <img class="photo" src="img/weikaih.jpg" alt="Weikai Huang">
+  </header>
+
+  <div class="themes" id="themes"></div>
+  <p class="note">Happy to chat with students interested in 3D vision, embodied AI, generation, and unified models. <a href="mailto:weikaih@cs.washington.edu">Reach out</a>.</p>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news" id="newsList">
+      <li><span class="date">Oct 2026</span><span class="txt"><a href="https://toberj.github.io/reflex/">Reflex</a> is out: visually grounded reactive humanoid control for catching human-thrown boxes.</span></li>
+      <li><span class="date">Sep 2026</span><span class="txt"><a href="https://arxiv.org/abs/2605.02881">MolmoAct2</a> accepted to CoRL 2026 as a <b>Spotlight</b>. See you in Austin!</span></li>
+      <li><span class="date">Jun 2026</span><span class="txt">Two papers, <a href="https://arxiv.org/abs/2606.03988">IPT</a> and <a href="https://arxiv.org/abs/2602.23543">Synthetic Visual Genome 2</a>, accepted to ECCV 2026.</span></li>
+      <li><span class="date">Jun 2026</span><span class="txt">Joining Salesforce AI Research as a Research Intern in Palo Alto, June–September 2026.</span></li>
+      <li><span class="date">Jun 2026</span><span class="txt"><a href="https://arxiv.org/abs/2601.10611">Molmo2</a> received the <b>CVPR 2026 Compute Transparency Champion</b> award.</span></li>
+      <li><span class="date">May 2026</span><span class="txt"><a href="https://allenai.org/blog/molmoact2">MolmoAct2</a> released: action reasoning models for real-world robot deployment, with <a href="https://github.com/allenai/molmoact2">code</a>, <a href="https://huggingface.co/collections/allenai/molmoact2-finetuned-models">models</a>, and <a href="https://huggingface.co/collections/allenai/molmoact2-bimanualyam-dataset">data</a>.</span></li>
+      <li><span class="date">Apr 2026</span><span class="txt"><a href="https://github.com/allenai/WildDet3D">WildDet3D</a> released: promptable 3D detection in the wild. Try the <a href="https://huggingface.co/spaces/allenai/WildDet3D">demo</a> or the <a href="https://apps.apple.com/us/app/wilddet3d/id6760861157">iPhone app</a>.</span></li>
+      <li><span class="date">Apr 2026</span><span class="txt"><a href="https://arxiv.org/abs/2601.10611">Molmo2</a> selected as a <b>Best Paper Candidate</b> at CVPR 2026.</span></li>
+      <li><span class="date">Feb 2026</span><span class="txt">Three papers, <a href="https://arxiv.org/abs/2510.09110">SOC</a>, <a href="https://arxiv.org/abs/2601.10611">Molmo2</a>, and <a href="https://arxiv.org/abs/2602.22779">TrajTok</a>, accepted to CVPR 2026.</span></li>
+      <li><span class="date">Jan 2026</span><span class="txt"><a href="https://generate-any-scene.github.io/">Generate Any Scene</a> accepted to ICLR 2026.</span></li>
+      <li><span class="date">Sep 2024</span><span class="txt"><a href="https://www.task-me-anything.org/">Task Me Anything</a> accepted to NeurIPS 2024.</span></li>
+      <li><span class="date">Jul 2024</span><span class="txt"><a href="https://arxiv.org/abs/2403.11085">m&amp;m's</a> accepted to ECCV 2024.</span></li>
+    </ul>
+    <button class="more-btn" id="newsMore" type="button" aria-expanded="false">Show all 12</button>
+  </section>
+
+  <section id="publications">
+    <h2>Publications <span class="legend">* equal contribution · § core contributor</span></h2>
+    <div class="filters" id="filters" role="group" aria-label="Filter publications"></div>
+    <div id="pubList"></div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h3>Experience</h3>
+      <ul class="rows">
+        <li><span class="logo"><img src="img/icons/salesforce.svg" alt=""></span><span class="main">Salesforce AI Research<span class="sub">Research Intern · with Ran Xu, Zeyuan Chen, Silvio Savarese, An Yan, Luyu Yang</span></span><span class="when">2026–</span></li>
+        <li><span class="logo"><img src="img/icons/ai2.svg" alt=""></span><span class="main">Allen Institute for AI<span class="sub">Student Researcher · with Ranjay Krishna, Ali Farhadi, Dieter Fox, Christopher Clark, Sangho Lee</span></span><span class="when">2025–26</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <ul class="rows">
+        <li><span class="logo"><img src="img/icons/uw.svg" alt=""></span><span class="main">University of Washington<span class="sub">Ph.D. in Computer Science</span></span><span class="when">2026–</span></li>
+        <li><span class="logo"><img src="img/icons/uw.svg" alt=""></span><span class="main">University of Washington<span class="sub">B.S. in Computer Science, with Honors, cum laude</span></span><span class="when">2023–26</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>Awards</h3>
+    <ul class="rows plain">
+      <li><span class="main">JPMorgan Scholarship, UW</span><span class="when">2026</span></li>
+      <li><span class="main">Outstanding CSE Senior Award, UW<span class="sub">One of three recipients from the graduating class</span></span><span class="when">2026</span></li>
+      <li><span class="main">Compute Transparency Champion, CVPR (<a href="#pub-molmo2">Molmo2</a>)</span><span class="when">2026</span></li>
+      <li><span class="main">Best Paper Candidate, CVPR (<a href="#pub-molmo2">Molmo2</a>)</span><span class="when">2026</span></li>
+      <li><span class="main">Outstanding Reviewer, CVPR</span><span class="when">2026</span></li>
+      <li><span class="main">John and JoAnne Wisniewski Endowed Scholarship, UW CSE</span><span class="when">2024</span></li>
+    </ul>
+  </section>
+
+  <section class="two">
+    <div>
+      <h3>Teaching</h3>
+      <ul class="rows plain">
+        <li><span class="main">TA, <a href="https://courses.cs.washington.edu/courses/cse455/">CSE 455 Computer Vision</a></span><span class="when">Au 25</span></li>
+        <li><span class="main">TA, <a href="https://courses.cs.washington.edu/courses/cse493g1/26wi/">CSE 493G Deep Learning</a></span><span class="when">Sp 25, Wi 26</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Service</h3>
+      <ul class="rows plain">
+        <li><span class="main">Organizer, <a href="https://syndata4cv.github.io/">SynData4CV</a> @ CVPR</span><span class="when">2024–26</span></li>
+        <li><span class="main">Reviewer<span class="sub">CVPR, ECCV, NeurIPS, CoRL, AAAI, WACV, BMVC, RA-L</span></span><span class="when"></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Last updated October 2026</footer>
+</div>
+
+<dialog id="lightbox">
+  <button class="close" type="button" id="lbClose">Close ✕</button>
+  <video id="lbVideo" controls muted loop playsinline></video>
+</dialog>

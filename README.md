@@ -6,15 +6,16 @@ This is the source code for my personal academic website, built with Jekyll and 
 
 ## About Me
 
-I am an incoming PhD student at the University of Washington, working on computer vision and multimodal AI research at the [UW CSE RAIVN Lab](https://raivn.cs.washington.edu/) and [Allen Institute for AI](https://allenai.org/).
+I am a PhD student at the University of Washington ([UW CSE RAIVN Lab](https://raivn.cs.washington.edu/)), working on computer vision and robotics.
 
 ## Features
 
-- 📝 Dynamic publications list with Selected/All toggle
-- 💡 TL;DR summaries for papers (expandable)
-- 🎨 Elegant EB Garamond font
-- 📱 Fully responsive design
-- 🔄 JSON-based publication management
+- Research themes at the top; clicking one filters the publication list
+- Single-column publication list with autoplaying (on-screen only) teaser videos and a click-to-expand lightbox
+- Filters: Selected / All / 3D Vision / Robotics / Multimodal (a paper can be in several)
+- Long author lists collapse to six names (your own name is always kept visible)
+- Source Serif 4 typography, warm off-white palette
+- JSON-based publication management; stars and citations auto-updated by a GitHub Action
 
 ## Quick Start
 
@@ -51,6 +52,7 @@ Edit `publications.json` to add or update publications:
   "image": "img/papers/image.png",
   "arxiv_id": "2610.12345",
   "github_repo": "owner/repo",
+  "themes": ["3d", "robotics"],
   "links": {
     "arxiv": "url",
     "code": "url"
@@ -67,34 +69,30 @@ The GitHub Action (`.github/workflows/update-metrics.yml`) runs `update_metrics.
 - **`github_repo`**: `"owner/repo"` (e.g. `"ToberJ/reflex"`), not the full URL. Without it, the Code link shows no ★ star count.
 - **`arxiv_id`**: e.g. `"2610.12772"`. Without it, citation counts are not fetched.
 
-Do not write `github_stars` or `citations` by hand; the Action fills them in.
+Also set **`themes`** to one or more of `"3d"`, `"robotics"`, `"multimodal"`. This decides which filter buttons show the paper; papers with `"selected": true` also appear as tags under their research theme at the top of the page. Theme names and descriptions live at the top of `assets/js/publications.js`, as does the short tag name for each paper (`SHORT`).
 
-See `USAGE_GUIDE.md` for detailed instructions.
+Use `"local_video"` (an `.mp4` in `img/papers/`) for an autoplaying teaser, or `"image"` for a still. Awards go in `"award"`, separated by `;`.
+
+Do not write `github_stars` or `citations` by hand; the Action fills them in.
 
 ## File Structure
 
 ```
-├── _layouts/          # Jekyll layouts
-├── assets/
-│   ├── css/          # Stylesheets
-│   └── js/           # JavaScript files
-├── img/              # Images
-│   └── papers/       # Publication images
-├── publications.json # Publication data
-├── index.md          # Main page
-└── _config.yml       # Jekyll configuration
+├── _layouts/default.html    # Page shell (fonts, stylesheet, script)
+├── index.html               # Page content: bio, news, experience, awards, ...
+├── assets/css/style.scss    # All styles (no theme CSS is imported)
+├── assets/js/publications.js# Research themes, publication list, news toggle, video lightbox
+├── img/papers/              # Teaser videos and images
+├── publications.json        # Publication data
+├── update_metrics.py        # Fetches GitHub stars / citations (run by the Action)
+└── _config.yml              # Jekyll configuration
 ```
-
-## Documentation
-
-- **USAGE_GUIDE.md** - Comprehensive usage guide
-- **CHANGES.md** - Recent changes and updates
 
 ## Technologies
 
 - Jekyll (Static Site Generator)
 - GitHub Pages (Hosting)
-- EB Garamond (Typography)
+- Source Serif 4 (Typography)
 - Vanilla JavaScript (Interactivity)
 
 ## Contact
@@ -109,4 +107,4 @@ Feel free to use this template for your own website. Attribution appreciated but
 
 ---
 
-Last updated: October 2025
+Last updated: October 2026

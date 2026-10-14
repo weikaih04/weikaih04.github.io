@@ -1,366 +1,264 @@
-// Load publications from JSON
-let publicationsData = [];
-let showSelected = true;
-
-async function loadPublications() {
-    try {
-        // Try multiple possible paths for the JSON file
-        let response;
-        const possiblePaths = [
-            'publications.json',
-            '/publications.json',
-            './publications.json'
-        ];
-
-        for (const path of possiblePaths) {
-            try {
-                response = await fetch(path);
-                if (response.ok) break;
-            } catch (e) {
-                continue;
-            }
-        }
-
-        if (!response || !response.ok) {
-            throw new Error('Could not load publications.json');
-        }
-
-        const data = await response.json();
-        publicationsData = data.publications;
-        setPublicationView(showSelected);
-        revealPublicationFromHash();
-
-        // Optionally fetch fresh metrics in background (commented out to save API calls)
-        // Uncomment if you want to fetch fresh data on every page load
-        // fetchAllMetrics();
-    } catch (error) {
-        console.error('Error loading publications:', error);
-        // Show error message to user
-        const container = document.getElementById('publicationsList');
-        if (container) {
-            container.innerHTML = '<p style="color: #dc2626;">Error loading publications. Please check the console for details.</p>';
-        }
+// Renders research themes, the publication list, the news toggle and the video lightbox.
+// Data comes from publications.json; each paper lists its research areas in "themes".
+(function () {
+  const THEMES = {
+    "3d": {
+      name: "3D perception & generation in the wild",
+      filter: "3D Vision",
+      blurb: "Truly generalized 3D/4D representations that can scale past fixed categories and curated scenes."
+    },
+    robotics: {
+      name: "Vision-centric robot policies",
+      filter: "Robotics",
+      blurb: "Visual and spatial representations as the foundation for manipulation and whole-body control."
+    },
+    multimodal: {
+      name: "Unified multimodal models",
+      filter: "Multimodal",
+      blurb: "Unified representations that understand, reason about, generate, and act on the physical world."
     }
-}
+  };
+  // Short names used for the paper tags under each research theme
+  const SHORT = {
+    wilddet3d: "WildDet3D", sos: "SOC", gas: "Generate Any Scene", reflex: "Reflex", gam: "GAM",
+    molmoact2: "MolmoAct2", molmo2: "Molmo2", ipt: "IPT", svg2: "SVG2", trajtok: "TrajTok",
+    provision: "ProVision", tma: "Task Me Anything", mms: "m&m's"
+  };
+  const LINK_LABEL = {
+    arxiv: "arXiv", code: "Code", website: "Website", huggingface: "HF", demo: "Demo", data: "Data",
+    blog: "Blog", app: "App", models: "Models", eval: "Eval", talk: "Talk", video: "Video", paper: "Paper"
+  };
+  const LINK_ORDER = ["website", "arxiv", "code"];
+  const ME = "Weikai Huang";
+  const MAX_AUTHORS = 6;
+  const NEWS_VISIBLE = 5;
 
-// Fetch GitHub stars
-async function fetchGitHubStars(repo) {
-    try {
-        const response = await fetch(`https://api.github.com/repos/${repo}`);
-        if (!response.ok) return null;
-        const data = await response.json();
-        return data.stargazers_count;
-    } catch (error) {
-        console.error('Error fetching GitHub stars:', error);
-        return null;
-    }
-}
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const inTheme = (p, k) => (p.themes || []).includes(k);
+  const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Fetch Semantic Scholar citations
-async function fetchCitations(arxivId) {
-    try {
-        const response = await fetch(`https://api.semanticscholar.org/graph/v1/paper/arXiv:${arxivId}?fields=citationCount`);
-        if (!response.ok) return null;
-        const data = await response.json();
-        return data.citationCount;
-    } catch (error) {
-        console.error('Error fetching citations:', error);
-        return null;
-    }
-}
+  let PUBS = [];
+  let filter = "selected";
+  let io = null;
 
-// Format number with K suffix
-function formatNumber(num) {
-    if (num >= 1000) {
-        return (num / 1000).toFixed(1) + 'K';
-    }
-    return num.toString();
-}
+  const FILTERS = () => [
+    ["selected", "Selected", p => p.selected],
+    ["all", "All", () => true],
+    null,
+    ...Object.entries(THEMES).map(([k, t]) => [k, t.filter, p => inTheme(p, k)])
+  ];
+  const filterFn = key => (FILTERS().find(f => f && f[0] === key) || FILTERS()[1])[2];
 
-// Display pre-fetched metrics from publications.json
-function displayPreFetchedMetrics() {
-    for (const pub of publicationsData) {
-        // Display GitHub stars if available
-        if (pub.github_stars !== undefined) {
-            const starsElement = document.getElementById(`stars-${pub.id}`);
-            if (starsElement) {
-                starsElement.textContent = ` ⭐ ${formatNumber(pub.github_stars)}`;
-            }
-        }
-
-        // Display citations if available
-        // COMMENTED OUT: Don't display citations
-        // if (pub.citations !== undefined) {
-        //     const citationsElement = document.getElementById(`citations-${pub.id}`);
-        //     if (citationsElement) {
-        //         citationsElement.textContent = ` 📖 ${formatNumber(pub.citations)} cite.`;
-        //     }
-        // }
-    }
-}
-
-// Fetch all metrics (for manual refresh or fallback)
-async function fetchAllMetrics() {
-    for (const pub of publicationsData) {
-        // Fetch GitHub stars
-        if (pub.github_repo) {
-            const stars = await fetchGitHubStars(pub.github_repo);
-            if (stars !== null) {
-                const starsElement = document.getElementById(`stars-${pub.id}`);
-                if (starsElement) {
-                    starsElement.textContent = ` ⭐ ${formatNumber(stars)}`;
-                }
-            }
-        }
-
-        // Fetch citations
-        if (pub.arxiv_id) {
-            const citations = await fetchCitations(pub.arxiv_id);
-            if (citations !== null) {
-                const citationsElement = document.getElementById(`citations-${pub.id}`);
-                if (citationsElement) {
-                    citationsElement.textContent = ` 📖 ${formatNumber(citations)} cite.`;
-                }
-            }
-        }
-    }
-}
-
-function displayPublications() {
-    const container = document.getElementById('publicationsList');
-    if (!container) return;
-
-    const publications = showSelected
-        ? publicationsData.filter(pub => pub.selected)
-        : publicationsData;
-
-    // Filtering preserves the source order within each category. Older entries
-    // without category metadata belong to Vision.
-    container.innerHTML = `<div class="publication-categories">${['Robotics', 'Vision'].map(category => {
-        const headingId = `publication-category-${category.toLowerCase()}`;
-        const papers = publications.filter(pub => (pub.category === 'Robotics' ? 'Robotics' : 'Vision') === category);
-        return `<section class="publication-category" aria-labelledby="${headingId}">
-            <h3 id="${headingId}">${category === 'Vision' ? '3D Vision &amp; Unified Models' : category}</h3>
-            ${papers.map(pub => createPublicationHTML(pub)).join('')}
-        </section>`;
-    }).join('')}</div>`;
-    applyVideoPlaybackRates(container);
-}
-
-// Both categories use the same filter and retain metrics after every render.
-function setPublicationView(selected) {
-    showSelected = selected;
-    for (const [id, active] of [['selectedBtn', selected], ['allBtn', !selected]]) {
-        const button = document.getElementById(id);
-        if (!button) continue;
-        if (active) button.classList.add('active');
-        else button.classList.remove('active');
-        button.setAttribute('aria-pressed', String(active));
-    }
-    displayPublications();
-    displayPreFetchedMetrics();
-}
-
-// Publication anchors also work before JSON loads and for unselected papers.
-function revealPublicationFromHash(hash = window.location.hash) {
-    if (!hash.startsWith('#pub-')) return;
-    const pub = publicationsData.find(pub => `#pub-${pub.id}` === hash);
-    if (!pub) return;
-    if (showSelected && !pub.selected) setPublicationView(false);
-    const card = document.getElementById(`pub-${pub.id}`);
-    if (card) card.scrollIntoView({ block: 'start' });
-}
-
-// Apply data-playback-rate to <video> elements. Browser resets playbackRate to 1
-// on metadata load and on each loop, so we reapply on those events.
-function applyVideoPlaybackRates(root) {
-    const videos = root.querySelectorAll('video[data-playback-rate]');
-    videos.forEach(video => {
-        const rate = parseFloat(video.dataset.playbackRate);
-        if (!isFinite(rate) || rate <= 0) return;
-        const setRate = () => { video.playbackRate = rate; };
-        setRate();
-        video.addEventListener('loadedmetadata', setRate);
-        video.addEventListener('play', setRate);
-        video.addEventListener('ratechange', () => {
-            if (Math.abs(video.playbackRate - rate) > 0.01) setRate();
-        });
+  /* ---------- Research themes ---------- */
+  function renderThemes() {
+    const el = document.getElementById("themes");
+    if (!el) return;
+    el.innerHTML = Object.entries(THEMES).map(([k, t]) => {
+      const tags = PUBS.filter(p => inTheme(p, k) && p.selected)
+        .map(p => `<a class="tag" href="#pub-${esc(p.id)}" data-jump="${esc(p.id)}">${esc(SHORT[p.id] || p.id)}</a>`).join("");
+      return `<div class="theme">
+        <button class="theme-name" type="button" data-theme-filter="${k}">${esc(t.name)}</button>
+        <div class="theme-body"><p>${esc(t.blurb)}</p><div class="tags">${tags}</div></div></div>`;
+    }).join("");
+    el.addEventListener("click", e => {
+      const t = e.target.closest("[data-theme-filter]");
+      if (t) {
+        filter = t.dataset.themeFilter; render();
+        document.getElementById("publications").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+        return;
+      }
+      const j = e.target.closest("[data-jump]");
+      if (j) { e.preventDefault(); revealPub(j.dataset.jump, true); }
     });
-}
+  }
 
-function createPublicationHTML(pub) {
-    const formatAuthor = (author) => author.replace(
-        /§/g,
-        '<sup class="author-contribution-mark">&sect;</sup>'
-    );
-    const authorsHtml = pub.authors.map(author => {
-        const formattedAuthor = formatAuthor(author);
-        return author.includes('Weikai Huang') ? `<strong>${formattedAuthor}</strong>` : formattedAuthor;
-    }).join(', ');
+  /* ---------- Filters ---------- */
+  function renderFilters() {
+    const el = document.getElementById("filters");
+    if (!el) return;
+    el.innerHTML = FILTERS().map(f => f
+      ? `<button class="chip" type="button" data-f="${f[0]}" aria-pressed="false">${esc(f[1])}</button>`
+      : `<span class="sep" aria-hidden="true"></span>`).join("");
+    el.addEventListener("click", e => {
+      const b = e.target.closest(".chip");
+      if (b) { filter = b.dataset.f; render(); }
+    });
+  }
 
-    // Create links with better labels and ordering
-    // Order: arXiv first, then Code, then others
-    const linkOrder = ['arxiv', 'code', 'eval', 'paper', 'video', 'website', 'huggingface', 'demo', 'blog', 'talk', 'data', 'models'];
-    const linkLabels = {
-        'paper': 'Paper',
-        'video': 'Video',
-        'arxiv': 'arXiv',
-        'website': 'Website',
-        'code': 'Code',
-        'eval': 'Eval',
-        'huggingface': 'HuggingFace',
-        'demo': 'Demo',
-        'blog': 'Blog',
-        'talk': 'Talk',
-        'data': 'Data',
-        'models': 'Models'
-    };
-
-    const linksHtml = linkOrder
-        .filter(key => pub.links && pub.links[key])
-        .map(key => {
-            const label = linkLabels[key] || key.charAt(0).toUpperCase() + key.slice(1);
-            // Add metric placeholder for text-based display
-            let metricSpan = '';
-
-            if (key === 'code' && pub.github_repo) {
-                // GitHub stars placeholder
-                metricSpan = `<span id="stars-${pub.id}" class="metric-inline"></span>`;
-            }
-            // COMMENTED OUT: Don't display citations placeholder
-            // else if ((key === 'arxiv' || key === 'paper') && pub.arxiv_id) {
-            //     // Citations placeholder
-            //     metricSpan = `<span id="citations-${pub.id}" class="metric-inline"></span>`;
-            // }
-
-            return `<a href="${pub.links[key]}" target="_blank">${label}${metricSpan}</a>`;
-        })
-        .join('');
-
-    // Support local autoplay video, YouTube embeds, and static images
-    let imageHtml = '';
-    if (pub.local_video) {
-        const rate = pub.playback_rate || 3;
-        imageHtml = `<div class="publication-image publication-video">
-                       <video class="publication-card__video"
-                              src="${pub.local_video}"
-                              autoplay muted loop playsinline webkit-playsinline
-                              disablepictureinpicture
-                              preload="metadata"
-                              data-playback-rate="${rate}"
-                              aria-label="${pub.title} teaser video">
-                       </video>
-                     </div>`;
-    } else if (pub.video) {
-        // Extract YouTube video ID from URL
-        let videoId = '';
-        if (pub.video.includes('youtube.com') || pub.video.includes('youtu.be')) {
-            const urlParams = new URLSearchParams(new URL(pub.video).search);
-            videoId = urlParams.get('v') || pub.video.split('/').pop().split('?')[0];
-        }
-        if (videoId) {
-            imageHtml = `<div class="publication-image publication-video">
-                           <iframe
-                             src="https://www.youtube.com/embed/${videoId}"
-                             frameborder="0"
-                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                             allowfullscreen>
-                           </iframe>
-                         </div>`;
-        }
-    } else if (pub.image) {
-        // Add special class for SOS paper to use cover instead of contain
-        const imageClass = pub.id === 'sos' ? 'publication-image image-cover' : 'publication-image';
-        imageHtml = `<div class="${imageClass}">
-                       <img src="${pub.image}" alt="${pub.title}">
-                     </div>`;
+  /* ---------- Authors ---------- */
+  const cleanName = a => a.replace(/[*§]/g, "").trim();
+  function authorHTML(a) {
+    const marks = (a.match(/[*§]/g) || []).join("");
+    const name = cleanName(a);
+    const cls = name === ME ? ' class="me"' : "";
+    return `<span${cls}>${esc(name)}</span>${marks ? `<sup>${marks}</sup>` : ""}`;
+  }
+  function authorsBlock(p) {
+    const all = p.authors || [];
+    const full = all.map(authorHTML).join(", ");
+    if (all.length <= MAX_AUTHORS) return full;
+    const meIdx = all.findIndex(a => cleanName(a) === ME);
+    let shown = all.slice(0, MAX_AUTHORS).map(authorHTML).join(", ");
+    if (meIdx >= MAX_AUTHORS) {
+      shown = all.slice(0, MAX_AUTHORS - 1).map(authorHTML).join(", ") + ", …, " + authorHTML(all[meIdx]);
     }
+    const hidden = all.length - MAX_AUTHORS;
+    return `<span class="short">${shown} <button class="toggle" type="button" data-expand>+${hidden} more</button></span>` +
+      `<span class="full" hidden>${full} <button class="toggle" type="button" data-collapse>less</button></span>`;
+  }
 
-    const awardHtml = pub.award ? ` (<span style="color: #b91c1c;">${pub.award}</span>)` : '';
-
-    // Additional venue (e.g., workshop)
-    const additionalVenueHtml = pub.additional_venue ? `<br>& ${pub.additional_venue.replace(/\(Oral\)/g, '(<span style="color: #b91c1c;">Oral</span>)')}` : '';
-
-    // Highlight (e.g., used in BLIP-3)
-    const highlightHtml = pub.highlight ? `<div class="publication-highlight">${pub.highlight}</div>` : '';
-
-    // Create expandable TL;DR with unique ID
-    const tldrHtml = pub.tldr ? `
-        <div class="publication-tldr collapsed" id="tldr-${pub.id}">
-            <div class="tldr-content">
-                <strong>TL;DR:</strong> ${pub.tldr}
-            </div>
-            <button class="tldr-toggle" onclick="toggleTldr('${pub.id}')" aria-label="Expand">
-                <span class="toggle-text">more</span>
-                <svg class="toggle-icon" width="12" height="12" viewBox="0 0 12 12">
-                    <path d="M6 9L3 6h6z" fill="currentColor"/>
-                </svg>
-            </button>
-        </div>
-    ` : '';
-
-    return `
-        <div class="publication-item" id="pub-${pub.id}">
-            ${imageHtml}
-            <div class="publication-content">
-                <div class="publication-title">
-                    <a href="${pub.links?.paper || pub.links?.arxiv || pub.links?.website || '#'}" target="_blank">${pub.title}</a>
-                </div>
-                <div class="publication-authors">${authorsHtml}</div>
-                <div class="publication-venue">
-                    <strong>${pub.venue}</strong> ${pub.year}${pub.oral ? ' (<span style="color: #b91c1c;">Oral</span>)' : ''} ${awardHtml}${additionalVenueHtml}
-                </div>
-                ${linksHtml ? `<div class="publication-links">${linksHtml}</div>` : ''}
-                ${tldrHtml}
-                ${highlightHtml}
-            </div>
-        </div>
-    `;
-}
-
-// Toggle TL;DR expansion
-function toggleTldr(pubId) {
-    const tldrElement = document.getElementById(`tldr-${pubId}`);
-    if (!tldrElement) return;
-    
-    const isCollapsed = tldrElement.classList.contains('collapsed');
-    
-    if (isCollapsed) {
-        tldrElement.classList.remove('collapsed');
-        tldrElement.classList.add('expanded');
-        const toggleBtn = tldrElement.querySelector('.tldr-toggle .toggle-text');
-        if (toggleBtn) toggleBtn.textContent = 'less';
-    } else {
-        tldrElement.classList.add('collapsed');
-        tldrElement.classList.remove('expanded');
-        const toggleBtn = tldrElement.querySelector('.tldr-toggle .toggle-text');
-        if (toggleBtn) toggleBtn.textContent = 'more';
+  /* ---------- Publication rows ---------- */
+  function mediaHTML(p) {
+    if (p.local_video) {
+      const label = `Play ${SHORT[p.id] || p.title} video larger`;
+      return `<button class="media" type="button" data-video="${esc(p.local_video)}" aria-label="${esc(label)}">
+        <video src="${esc(p.local_video)}" muted loop playsinline preload="metadata" data-rate="${p.playback_rate || 1}"></video><span class="expand">Expand</span></button>`;
     }
-}
+    if (p.image) return `<span class="media"><img src="${esc(p.image)}" alt="" loading="lazy"></span>`;
+    return `<span class="media"></span>`;
+  }
+  function venueHTML(p) {
+    const venue = (p.venue === "Arxiv" ? "arXiv" : p.venue || "").replace(" (Main Conference)", "");
+    const extra = p.additional_venue ? `<span class="extra">${esc(p.additional_venue)}</span>` : "";
+    const awards = (p.award || "").split(";").map(s => s.trim()).filter(Boolean)
+      .map(a => `<span class="award">${esc(a)}</span>`).join("");
+    return `<p class="venue"><span class="v">${esc(`${venue} ${p.year || ""}`.trim())}</span>${extra}${awards}</p>`;
+  }
+  function linksHTML(p) {
+    const rank = k => { const i = LINK_ORDER.indexOf(k); return i < 0 ? LINK_ORDER.length : i; };
+    const entries = Object.entries(p.links || {})
+      .map((e, i) => [e, i]).sort((x, y) => rank(x[0][0]) - rank(y[0][0]) || x[1] - y[1]).map(x => x[0]);
+    const seen = new Set();
+    return `<p class="plinks">${entries.filter(([k, u]) => {
+      if (seen.has(u) && k !== "code") return false;
+      seen.add(u); return true;
+    }).map(([k, u]) => {
+      const stars = k === "code" && p.github_stars ? `<span class="stars">★ ${p.github_stars}</span>` : "";
+      return `<a href="${esc(u)}">${LINK_LABEL[k] || esc(k)}${stars}</a>`;
+    }).join("")}</p>`;
+  }
+  function pubHTML(p) {
+    const href = (p.links && (p.links.website || p.links.arxiv)) || "#";
+    return `<article class="pub" id="pub-${esc(p.id)}">
+      ${mediaHTML(p)}
+      <div class="pub-text">
+        <h4 class="pub-title"><a href="${esc(href)}">${esc(p.title)}</a></h4>
+        <p class="authors">${authorsBlock(p)}</p>
+        ${venueHTML(p)}
+        ${linksHTML(p)}
+        ${p.tldr ? `<button class="tldr" type="button" aria-expanded="false"><b>TL;DR</b>${esc(p.tldr)}</button>` : ""}
+      </div></article>`;
+  }
 
-// Toggle between selected and all publications
-document.addEventListener('DOMContentLoaded', () => {
-    loadPublications();
-    
-    const selectedBtn = document.getElementById('selectedBtn');
-    const allBtn = document.getElementById('allBtn');
-    
-    if (selectedBtn && allBtn) {
-        selectedBtn.addEventListener('click', () => {
-            setPublicationView(true);
-        });
-        
-        allBtn.addEventListener('click', () => {
-            setPublicationView(false);
-        });
+  function render() {
+    const list = document.getElementById("pubList");
+    if (!list) return;
+    const items = PUBS.filter(filterFn(filter));
+    let html = "", year = null;
+    for (const p of items) {
+      if (p.year !== year) { year = p.year; html += `<div class="year">${esc(year)}</div>`; }
+      html += pubHTML(p);
     }
-});
+    list.innerHTML = html;
+    document.querySelectorAll("#filters .chip").forEach(c => c.setAttribute("aria-pressed", String(c.dataset.f === filter)));
+    observeVideos(list);
+  }
 
-window.addEventListener('hashchange', () => revealPublicationFromHash());
-// Clicking an already-current hash does not fire hashchange. Reveal the card
-// here as well, so biography links still work after selecting the default view.
-document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#pub-"]');
-    if (link) revealPublicationFromHash(link.getAttribute('href'));
-});
+  // Autoplay videos only while on screen; respect reduced motion
+  function observeVideos(list) {
+    if (io) io.disconnect();
+    const vids = list.querySelectorAll(".media video");
+    vids.forEach(v => { v.playbackRate = Number(v.dataset.rate) || 1; });
+    if (reduce || !("IntersectionObserver" in window)) return;
+    io = new IntersectionObserver(entries => entries.forEach(e => {
+      const v = e.target;
+      if (e.isIntersecting) { const r = v.play(); if (r) r.catch(() => {}); } else v.pause();
+    }), { threshold: 0.35 });
+    vids.forEach(v => io.observe(v));
+  }
 
+  function revealPub(id, flash) {
+    const p = PUBS.find(x => x.id === id);
+    if (!p) return;
+    if (!filterFn(filter)(p)) { filter = (p.themes && p.themes[0]) || "all"; render(); }
+    const el = document.getElementById("pub-" + id);
+    if (!el) return;
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "center" });
+    if (flash) { el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+  }
+
+  function bindListEvents() {
+    const list = document.getElementById("pubList");
+    if (!list) return;
+    list.addEventListener("click", e => {
+      const ex = e.target.closest("[data-expand]"), co = e.target.closest("[data-collapse]");
+      if (ex || co) {
+        const a = (ex || co).closest(".authors");
+        a.querySelector(".short").hidden = !!ex;
+        a.querySelector(".full").hidden = !ex;
+        return;
+      }
+      const t = e.target.closest(".tldr");
+      if (t) { const o = t.classList.toggle("open"); t.setAttribute("aria-expanded", String(o)); return; }
+      const m = e.target.closest("[data-video]");
+      if (m) openLightbox(m.dataset.video);
+    });
+  }
+
+  /* ---------- Lightbox ---------- */
+  const lb = document.getElementById("lightbox");
+  const lbv = document.getElementById("lbVideo");
+  function openLightbox(src) {
+    if (!lb || !lbv) return;
+    lbv.src = src;
+    if (typeof lb.showModal === "function") lb.showModal(); else lb.setAttribute("open", "");
+    const r = lbv.play(); if (r) r.catch(() => {});
+  }
+  function closeLightbox() {
+    lbv.pause(); lbv.removeAttribute("src"); lbv.load();
+    if (lb.open) lb.close(); else lb.removeAttribute("open");
+  }
+  if (lb && lbv) {
+    document.getElementById("lbClose").addEventListener("click", closeLightbox);
+    lb.addEventListener("click", e => { if (e.target === lb) closeLightbox(); });
+    lb.addEventListener("close", () => lbv.pause());
+  }
+
+  /* ---------- News ---------- */
+  const newsItems = [...document.querySelectorAll("#newsList li")];
+  const newsBtn = document.getElementById("newsMore");
+  function setNews(open) {
+    newsItems.forEach((li, i) => { li.hidden = !open && i >= NEWS_VISIBLE; });
+    newsBtn.textContent = open ? "Show fewer" : `Show all ${newsItems.length}`;
+    newsBtn.setAttribute("aria-expanded", String(open));
+  }
+  if (newsBtn) {
+    if (newsItems.length <= NEWS_VISIBLE) newsBtn.hidden = true;
+    else {
+      newsBtn.addEventListener("click", () => setNews(newsBtn.getAttribute("aria-expanded") !== "true"));
+      setNews(false);
+    }
+  }
+
+  /* ---------- Load ---------- */
+  renderFilters();
+  bindListEvents();
+  fetch("publications.json")
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(data => {
+      PUBS = data.publications || [];
+      renderThemes();
+      render();
+      const fromHash = flash => {
+        const m = location.hash.match(/^#pub-([\w-]+)$/);
+        if (m) revealPub(m[1], flash);
+      };
+      fromHash(false);
+      window.addEventListener("hashchange", () => fromHash(true));
+    })
+    .catch(err => {
+      console.error("Could not load publications.json", err);
+      const list = document.getElementById("pubList");
+      if (list) list.innerHTML = "<p>Publications failed to load. Please refresh the page.</p>";
+    });
+})();
