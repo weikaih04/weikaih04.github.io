@@ -119,7 +119,7 @@
       },
       "selected": true,
       "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
-      "github_stars": 806,
+      "github_stars": 807,
       "citations": 0
     },
     {
@@ -323,7 +323,7 @@
       },
       "selected": false,
       "tldr": "1M diverse and dense-annotated synthetic images composed by 20M synthetic object—boost GroundingDINO, Mask2Former on LVIS, gRefCOCO. First synthetic dataset surpassing real datasets in different models / benchmarks.",
-      "github_stars": 48,
+      "github_stars": 49,
       "citations": 1
     },
     {
