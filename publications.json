@@ -26,6 +26,7 @@
         "video": "https://toberj.github.io/reflex/static/videos/teaser.mp4?v=1008t",
         "code": "https://github.com/ToberJ/reflex"
       },
+      "github_repo": "ToberJ/reflex",
       "selected": true,
       "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m."
     },

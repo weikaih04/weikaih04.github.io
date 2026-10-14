@@ -49,14 +49,25 @@ Edit `publications.json` to add or update publications:
   "venue": "Conference Name",
   "year": "2025",
   "image": "img/papers/image.png",
+  "arxiv_id": "2610.12345",
+  "github_repo": "owner/repo",
   "links": {
-    "paper": "url",
+    "arxiv": "url",
     "code": "url"
   },
   "selected": true,
   "tldr": "Brief summary of the paper..."
 }
 ```
+
+### ⚠️ Checklist for every new paper
+
+The GitHub Action (`.github/workflows/update-metrics.yml`) runs `update_metrics.py` every 6 hours. It only fills in metrics for papers that have these two fields, so **add both whenever you add a paper**:
+
+- **`github_repo`**: `"owner/repo"` (e.g. `"ToberJ/reflex"`), not the full URL. Without it, the Code link shows no ★ star count.
+- **`arxiv_id`**: e.g. `"2610.12772"`. Without it, citation counts are not fetched.
+
+Do not write `github_stars` or `citations` by hand; the Action fills them in.
 
 See `USAGE_GUIDE.md` for detailed instructions.
 
