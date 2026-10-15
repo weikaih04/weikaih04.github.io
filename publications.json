@@ -32,7 +32,7 @@
       "github_repo": "ToberJ/reflex",
       "selected": true,
       "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m.",
-      "github_stars": 26,
+      "github_stars": 29,
       "citations": 0
     },
     {
@@ -64,7 +64,7 @@
       },
       "selected": true,
       "tldr": "Turns 3D grounding (WildDet3D) into strong robot policies—controlled through point and box prompts. SOTA on LIBERO-PRO: 61% vs. 53% for π0.5; 17/20 vs. 4/20 successes on a real YAM under visual shift.",
-      "github_stars": 45,
+      "github_stars": 46,
       "citations": 0
     },
     {
@@ -166,7 +166,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 629,
+      "github_stars": 630,
       "citations": 0
     },
     {
@@ -291,7 +291,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 743,
+      "github_stars": 744,
       "citations": 149
     },
     {
