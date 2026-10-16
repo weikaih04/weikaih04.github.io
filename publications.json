@@ -465,7 +465,7 @@
       "selected": false,
       "tldr": "Provided 2D/3D assets, generate 750M+ fine-grained visual questions without any human annotation—reveals SOTA VLM's weaknesses.",
       "github_stars": 71,
-      "citations": 29
+      "citations": 30
     },
     {
       "id": "mms",
