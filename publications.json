@@ -32,7 +32,7 @@
       "github_repo": "ToberJ/reflex",
       "selected": true,
       "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m.",
-      "github_stars": 32,
+      "github_stars": 33,
       "citations": 0
     },
     {
@@ -64,7 +64,7 @@
       },
       "selected": true,
       "tldr": "Turns 3D grounding (WildDet3D) into strong robot policies—controlled through point and box prompts. SOTA on LIBERO-PRO: 61% vs. 53% for π0.5; 17/20 vs. 4/20 successes on a real YAM under visual shift.",
-      "github_stars": 49,
+      "github_stars": 50,
       "citations": 0
     },
     {
