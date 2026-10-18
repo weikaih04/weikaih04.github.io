@@ -13,9 +13,10 @@
       blurb: "Visual and spatial representations as the foundation for manipulation and whole-body control."
     },
     multimodal: {
-      name: "Unified multimodal models",
+      name: "VLMs for Embodied Reasoning",
       filter: "Multimodal",
-      blurb: "Unified representations that understand, reason about, generate, and act on the physical world."
+      blurb: "Understanding the physical world and reasoning about how to interact with it.",
+      tags: [{ id: "molmoact2", label: "Molmo ER" }, { id: "molmo2" }, { id: "provision" }]
     }
   };
   // Short names used for the paper tags under each research theme
@@ -54,8 +55,10 @@
     const el = document.getElementById("themes");
     if (!el) return;
     el.innerHTML = Object.entries(THEMES).map(([k, t]) => {
-      const tags = PUBS.filter(p => inTheme(p, k) && p.selected)
-        .map(p => `<a class="tag" href="#pub-${esc(p.id)}" data-jump="${esc(p.id)}">${esc(SHORT[p.id] || p.id)}</a>`).join("");
+      const tagItems = t.tags || PUBS.filter(p => inTheme(p, k) && p.selected).map(p => ({ id: p.id }));
+      const tags = tagItems.map(p => p.id
+        ? `<a class="tag" href="#pub-${esc(p.id)}" data-jump="${esc(p.id)}">${esc(p.label || SHORT[p.id] || p.id)}</a>`
+        : `<span class="tag">${esc(p.label)}</span>`).join("");
       return `<div class="theme">
         <button class="theme-name" type="button" data-theme-filter="${k}">${esc(t.name)}</button>
         <div class="theme-body"><p>${esc(t.blurb)}</p><div class="tags">${tags}</div></div></div>`;
