@@ -16,7 +16,7 @@
       name: "VLMs for Embodied Reasoning",
       filter: "Multimodal",
       blurb: "Understanding the physical world and reasoning about how to interact with it.",
-      tags: [{ id: "molmoact2", label: "Molmo ER" }, { id: "molmo2" }, { id: "provision" }]
+      tags: [{ id: "molmoact2", label: "Molmo-ER" }, { id: "molmo2" }, { id: "provision" }]
     }
   };
   // Short names used for the paper tags under each research theme
