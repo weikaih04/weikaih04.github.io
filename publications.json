@@ -32,7 +32,7 @@
       "github_repo": "ToberJ/reflex",
       "selected": true,
       "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m.",
-      "github_stars": 33,
+      "github_stars": 34,
       "citations": 0
     },
     {
@@ -291,7 +291,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 747,
+      "github_stars": 748,
       "citations": 154
     },
     {
