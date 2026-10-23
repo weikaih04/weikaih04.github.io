@@ -32,7 +32,7 @@
       "github_repo": "ToberJ/reflex",
       "selected": true,
       "tldr": "Within 1 s, a humanoid sees a flying box, anticipates its motion, and reacts with whole-body reflexes to catch it. Near-privileged-state performance in simulation (85.7% vs. 87.9%); real G1 demos with throws from 2.5–7 m.",
-      "github_stars": 36,
+      "github_stars": 37,
       "citations": 0
     },
     {
@@ -357,7 +357,7 @@
       "selected": false,
       "tldr": "Don't patchify videos—tokenize by trajectory. TrajTok learns object trajectories end-to-end via implicit spatiotemporal clustering, decoupling token count from video duration. Efficient yet performant: TrajViT2 achieves best accuracy at scale on video classification & retrieval with efficiency on par with token-merging methods; TrajVLM shows strong long-video reasoning as a VLM connector.",
       "github_stars": 63,
-      "citations": 4
+      "citations": 5
     },
     {
       "id": "gas",
