@@ -242,7 +242,7 @@
       "selected": false,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
       "github_stars": 0,
-      "citations": 3
+      "citations": 4
     },
     {
       "id": "molmo2",
@@ -291,7 +291,7 @@
       },
       "selected": true,
       "tldr": "SOTA open-sourced VLM in video understanding and visual grounding by AI2—we open-source both data and weights to facilitate fully open research. Outperforms Qwen3-VL and Eagle 2.5 on video QA and grounding benchmarks. Try out our <a href='https://playground.allenai.org/?model=molmo2-8b' target='_blank' style='color: #2563eb; text-decoration: underline;'>interactive demo</a>!",
-      "github_stars": 750,
+      "github_stars": 751,
       "citations": 160
     },
     {
@@ -465,7 +465,7 @@
       "selected": false,
       "tldr": "Provided 2D/3D assets, generate 750M+ fine-grained visual questions without any human annotation—reveals SOTA VLM's weaknesses.",
       "github_stars": 71,
-      "citations": 30
+      "citations": 31
     },
     {
       "id": "mms",
