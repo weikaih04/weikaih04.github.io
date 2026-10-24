@@ -47,10 +47,10 @@ h1 { font: 600 2.7rem/1.1 var(--display); letter-spacing: -0.02em; margin: 0 0 6
 
 .themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-block: 36px 24px; }
 .theme { min-width: 0; }
-.theme-media { position: relative; aspect-ratio: 16 / 9; }
+.theme-media { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; }
 .theme-media video { display: block; width: 100%; height: 100%; object-fit: contain; }
 .theme-caption {
-  position: absolute; bottom: 26px; left: 8px;
+  position: absolute; bottom: 6px; left: 8px;
   font: 400 .75rem/1.3 var(--display); color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .65);
 }

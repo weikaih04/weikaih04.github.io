@@ -81,7 +81,7 @@ test("research rows align across desktop wraps and flow naturally on mobile", as
         assert.ok(card.tags.top >= card.blurb.bottom + 13, "links stay below the longest blurb");
       }
       cards.forEach(card => {
-        near(card.media.bottom - card.caption.bottom, 26, "common caption bottom offset");
+        near(card.media.bottom - card.caption.bottom, 6, "common caption bottom offset");
         near(card.caption.left - card.media.left, 8, "common caption left offset");
       });
     }

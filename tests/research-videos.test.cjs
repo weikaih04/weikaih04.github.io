@@ -406,17 +406,26 @@ test("caption uses the paper display font and overlays the intact canvas without
   assert.match(title, /font:\s*600 .*var\(--display\)/);
   assert.match(caption, /font:\s*400 \.75rem\/1\.3 var\(--display\)/);
   assert.match(caption, /position:\s*absolute/);
-  assert.match(caption, /bottom:\s*26px; left:\s*8px/);
+  assert.match(caption, /bottom:\s*6px; left:\s*8px/);
   assert.match(caption, /color:\s*#fff/);
   assert.match(caption, /text-shadow:\s*0 1px 2px rgba\(0, 0, 0, \.65\)/);
   assert.doesNotMatch(caption, /background|padding|border|height|width/);
   assert.match(css, /\.theme-media video\s*\{[^}]*width: 100%; height: 100%; object-fit: contain/);
 });
 
-test("all three captions share a baseline above original logos without a special 3D offset", () => {
+test("research media clips to the same 8px rounded rectangle as publication media", () => {
+  const css = readFileSync(join(root, "assets/css/style.scss"), "utf8");
+  for (const selector of ["theme-media", "media"]) {
+    const media = css.match(new RegExp(`\\.${selector}\\s*\\{([^}]+)\\}`))[1];
+    assert.match(media, /border-radius:\s*8px\s*;/);
+    assert.match(media, /overflow:\s*hidden\s*;/);
+  }
+});
+
+test("all three captions share a 6px bottom offset without theme-specific offsets", () => {
   const css = readFileSync(join(root, "assets/css/style.scss"), "utf8");
   const caption = css.match(/\.theme-caption\s*\{([^}]+)\}/)[1];
-  assert.match(caption, /bottom:\s*26px; left:\s*8px/);
+  assert.match(caption, /bottom:\s*6px; left:\s*8px/);
   assert.match(caption, /font:\s*400 \.75rem\/1\.3 var\(--display\)/);
   assert.equal((css.match(/\.theme-caption\s*\{/g) || []).length, 1);
   assert.doesNotMatch(css, /\.theme-media:has\(video\[data-theme="3d"\]\) \.theme-caption/);
