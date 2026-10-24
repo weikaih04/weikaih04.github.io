@@ -1,0 +1,98 @@
+{
+  "width": 768,
+  "height": 432,
+  "fps": 24,
+  "playback_rate": 1,
+  "fit": "contain",
+  "overlays": false,
+  "audio": false,
+  "transition": "hard cut",
+  "themes": {
+    "3d": {
+      "video": "img/research/3d.mp4",
+      "poster": "img/research/3d.jpg",
+      "poster_seconds": 1.5,
+      "duration": 12,
+      "segments": [
+        {
+          "paper_id": "wilddet3d",
+          "source": "img/papers/wilddet3d.mp4",
+          "start": 28,
+          "length": 4
+        },
+        {
+          "paper_id": "wilddet3d",
+          "source": "img/papers/wilddet3d.mp4",
+          "start": 36,
+          "length": 4
+        },
+        {
+          "paper_id": "wilddet3d",
+          "source": "img/papers/wilddet3d.mp4",
+          "start": 44,
+          "length": 4
+        }
+      ]
+    },
+    "robotics": {
+      "video": "img/research/robotics.mp4",
+      "poster": "img/research/robotics.jpg",
+      "poster_seconds": 1.5,
+      "duration": 12,
+      "segments": [
+        {
+          "paper_id": "reflex",
+          "source": "img/papers/reflex.mp4",
+          "start": 0,
+          "length": 4
+        },
+        {
+          "paper_id": "gam",
+          "source": "img/papers/gam.mp4",
+          "start": 19,
+          "length": 4
+        },
+        {
+          "paper_id": "molmoact2",
+          "source": "img/papers/molmoact2.mp4",
+          "start": 35,
+          "length": 4
+        }
+      ]
+    },
+    "multimodal": {
+      "video": "img/research/multimodal.mp4",
+      "poster": "img/research/multimodal.jpg",
+      "poster_seconds": 9.5,
+      "duration": 15,
+      "segments": [
+        {
+          "paper_id": "ipt",
+          "source": "img/papers/ipt.mp4",
+          "start": 11,
+          "length": 4
+        },
+        {
+          "paper_id": "molmo2",
+          "source": "img/papers/molmo2.mp4",
+          "start": 46,
+          "length": 4
+        },
+        {
+          "paper_id": "molmo2",
+          "source": "img/papers/molmo2.mp4",
+          "start": 51,
+          "length": 7
+        }
+      ]
+    }
+  },
+  "source_sha256": {
+    "img/papers/gam.mp4": "51e98ccf547c5feb8d3897c350cadde92aadb2539767dfa0de5d6a0a212e2b27",
+    "img/papers/ipt.mp4": "720cd60c50df090d512a1f5b0d4bc05942bf847d7a5dcedb13ffe074136971c3",
+    "img/papers/molmo2.mp4": "e1cdfafc239be72851a0330f0ff07863958f8ea0b3600426c9d9b2bbb5ceb405",
+    "img/papers/molmoact2.mp4": "507dcc84fc5056b8f05a76da4ff703395450a4542bcdaec1dfd7d299dc33fc2e",
+    "img/papers/reflex.mp4": "fadb94d3e5bb89d20927b88ce7ad5ffd6eb57510d5116d8c40f6e03690fbcd9b",
+    "img/papers/wilddet3d.mp4": "2408d008c6641b5fe8ac8901487cca2b23b56ca3f1454b94abe7015f1abf86b3"
+  }
+}

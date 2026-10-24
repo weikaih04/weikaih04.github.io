@@ -45,11 +45,20 @@ h1 { font: 600 2.7rem/1.1 var(--display); letter-spacing: -0.02em; margin: 0 0 6
 .links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.9rem; margin: 0; }
 .photo { width: 148px; aspect-ratio: 1; border-radius: 10px; object-fit: cover; max-width: 100%; }
 
-.themes { margin-top: 24px; border-top: 1px solid var(--line); }
-.theme {
-  display: grid; grid-template-columns: 210px 1fr; gap: 20px;
-  padding-block: 8px; border-bottom: 1px solid var(--line);
+.themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-block: 36px 24px; }
+.theme { min-width: 0; }
+.theme-media { position: relative; aspect-ratio: 16 / 9; }
+.theme-media video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.theme-caption {
+  position: absolute; bottom: 26px; left: 8px;
+  font: 400 .75rem/1.3 var(--display); color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .65);
 }
+.theme-media video[hidden], .theme-controls[hidden] { display: none; }
+.theme-fallback { margin: 0; padding: 16px; font-size: 0.85rem; color: var(--muted); }
+.theme-controls { display: flex; justify-content: space-between; gap: 12px; margin-block: 6px 14px; font-size: 0.78rem; color: var(--muted); }
+.theme-controls button:hover { color: var(--accent); text-decoration: underline; }
+.theme h3 { margin: 0 0 10px; font-size: 1.15rem; }
 .theme-name {
   text-align: left; font: 600 1.15rem/1.35 var(--display); color: var(--ink);
 }
@@ -57,12 +66,23 @@ h1 { font: 600 2.7rem/1.1 var(--display); letter-spacing: -0.02em; margin: 0 0 6
 .theme-body { min-width: 0; font-size: 0.9rem; color: var(--ink-soft); }
 .theme-body p { margin: 0 0 4px; line-height: 1.5; text-wrap: balance; }
 p, .tldr.open { text-wrap: pretty; }
-.tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag {
-  font: 500 0.8rem/1 var(--body); padding: 6px 10px; border-radius: 5px;
-  background: var(--surface); color: var(--ink-soft);
+.theme .tags { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 10px; }
+.theme .tag { font-size: 0.82rem; color: var(--muted); }
+.theme .tag:hover { color: var(--accent); }
+
+@media (min-width: 681px) {
+  /* Share content-sized rows so heading and blurb wraps align every column. */
+  .themes { grid-template-rows: repeat(5, auto); row-gap: 0; }
+  .theme {
+    display: grid; grid-row: span 5; grid-template-rows: subgrid; align-items: start;
+  }
+  .theme-body { display: contents; }
+  .theme-media { grid-row: 1; }
+  .theme-controls { grid-row: 2; }
+  .theme h3 { grid-row: 3; }
+  .theme-body > p { grid-row: 4; }
+  .theme .tags { grid-row: 5; }
 }
-.tag:hover { background: var(--accent-soft); color: var(--accent); text-decoration: none; }
 
 .note { margin-top: 14px; font-size: 0.88rem; color: var(--muted); }
 
@@ -162,7 +182,7 @@ dialog .close { position: absolute; top: -34px; right: 0; color: #fff; font-size
   .hero { grid-template-columns: 1fr; gap: 20px; }
   .photo { width: 96px; order: -1; }
   h1 { font-size: 2.1rem; }
-  .theme { grid-template-columns: 1fr; gap: 6px; }
+  .themes { grid-template-columns: 1fr; gap: 32px; }
   .pub { grid-template-columns: 1fr; gap: 14px; }
   .news li { grid-template-columns: 64px 1fr; gap: 10px; }
 }

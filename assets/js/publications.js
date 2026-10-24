@@ -5,7 +5,8 @@
     "3d": {
       name: "3D perception & generation in the wild",
       filter: "3D Vision",
-      blurb: "Truly generalized 3D/4D representations that can scale past fixed categories and curated scenes."
+      blurb: "Truly generalized 3D/4D representations that can scale past fixed categories and curated scenes.",
+      tags: [{ id: "wilddet3d" }]
     },
     robotics: {
       name: "Vision-centric robot policies",
@@ -39,6 +40,7 @@
   const reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let PUBS = [];
+  let MONTAGES = {};
   let filter = "selected";
   let io = null;
 
@@ -55,12 +57,25 @@
     const el = document.getElementById("themes");
     if (!el) return;
     el.innerHTML = Object.entries(THEMES).map(([k, t]) => {
+      const media = MONTAGES[k];
+      if (!media) return "";
+      const posterPaper = montagePaper(media, media.poster_seconds);
       const tagItems = t.tags || PUBS.filter(p => inTheme(p, k) && p.selected).map(p => ({ id: p.id }));
       const tags = tagItems.map(p => p.id
         ? `<a class="tag" href="#pub-${esc(p.id)}" data-jump="${esc(p.id)}">${esc(p.label || SHORT[p.id] || p.id)}</a>`
         : `<span class="tag">${esc(p.label)}</span>`).join("");
+      const label = `${t.name} overview`;
+      const video = `<div class="theme-media">
+        <video id="theme-video-${k}" src="${esc(media.video)}" muted loop playsinline preload="auto" aria-label="${esc(label)} video" poster="${esc(media.poster)}" data-theme="${k}">Your browser does not support embedded video.</video>
+        <a class="theme-caption" href="#pub-${esc(posterPaper)}" data-jump="${esc(posterPaper)}">${esc(SHORT[posterPaper] || posterPaper)}</a>
+        <p class="theme-fallback" hidden>Video unavailable. <button class="theme-name" type="button" data-theme-filter="${k}">View ${esc(t.filter)} publications</button>.</p>
+        </div><div class="theme-controls">
+          <button type="button" data-theme-play aria-controls="theme-video-${k}" aria-label="Play ${esc(label)} video" data-label="${esc(label)}">Play</button>
+          <button type="button" data-video="${esc(media.video)}" aria-label="Expand ${esc(label)} video">Expand</button>
+        </div>`;
       return `<div class="theme">
-        <button class="theme-name" type="button" data-theme-filter="${k}">${esc(t.name)}</button>
+        ${video}
+        <h3><button class="theme-name" type="button" data-theme-filter="${k}">${esc(t.name)}</button></h3>
         <div class="theme-body"><p>${esc(t.blurb)}</p><div class="tags">${tags}</div></div></div>`;
     }).join("");
     el.addEventListener("click", e => {
@@ -72,6 +87,83 @@
       }
       const j = e.target.closest("[data-jump]");
       if (j) { e.preventDefault(); revealPub(j.dataset.jump, true); }
+      const m = e.target.closest("[data-video]");
+      if (m) openLightbox(m.dataset.video);
+    });
+    observeThemeVideos(el);
+  }
+
+  // Use the same segment lengths and paper IDs that built the encoded montage.
+  function montagePaper(media, seconds) {
+    let end = 0;
+    for (const segment of media.segments) {
+      end += segment.length;
+      if (seconds < end) return segment.paper_id;
+    }
+    return media.segments[media.segments.length - 1].paper_id;
+  }
+
+  // Theme playback has its own observer: publication filter renders must not disconnect it.
+  function observeThemeVideos(el) {
+    const states = new Map();
+    const motion = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+    const observer = "IntersectionObserver" in window ? new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        const state = states.get(e.target);
+        state.visible = e.isIntersecting && e.intersectionRatio >= 0.35;
+        state.update();
+      });
+    }, { threshold: [0, 0.35] }) : null;
+
+    el.querySelectorAll(".theme video").forEach(video => {
+      const theme = video.closest(".theme");
+      const button = theme.querySelector("[data-theme-play]");
+      const caption = theme.querySelector(".theme-caption");
+      const media = MONTAGES[video.dataset.theme];
+      const syncCaption = () => {
+        const id = montagePaper(media, video.currentTime);
+        caption.textContent = SHORT[id] || id;
+        caption.dataset.jump = id;
+        caption.setAttribute("href", `#pub-${id}`);
+      };
+      ["loadeddata", "timeupdate", "seeking", "seeked", "play", "ended"].forEach(event => {
+        video.addEventListener(event, syncCaption);
+      });
+      if (video.readyState >= 2) syncCaption();
+      const state = { visible: !observer, userPaused: false, manualPlay: false };
+      const play = () => { const result = video.play(); if (result) result.catch(() => {}); };
+      state.update = () => {
+        const automatic = observer && !(motion && motion.matches);
+        if (state.visible && !state.userPaused && (automatic || state.manualPlay)) play();
+        else video.pause();
+      };
+      states.set(video, state);
+      video.muted = true;
+      video.defaultPlaybackRate = video.playbackRate = 1;
+      const syncButton = () => {
+        const action = video.paused ? "Play" : "Pause";
+        button.textContent = action;
+        button.setAttribute("aria-label", `${action} ${button.dataset.label} video`);
+      };
+      video.addEventListener("play", syncButton);
+      video.addEventListener("pause", syncButton);
+      button.addEventListener("click", () => {
+        state.userPaused = !video.paused;
+        state.manualPlay = !state.userPaused;
+        if (state.userPaused) video.pause(); else play();
+      });
+      video.addEventListener("error", () => {
+        video.pause();
+        video.hidden = true;
+        caption.hidden = true;
+        theme.querySelector(".theme-fallback").hidden = false;
+        theme.querySelector(".theme-controls").hidden = true;
+        state.userPaused = true;
+      });
+      if (observer) observer.observe(video);
+    });
+    if (motion && motion.addEventListener) motion.addEventListener("change", () => {
+      states.forEach(state => { state.manualPlay = false; state.update(); });
     });
   }
 
@@ -246,10 +338,18 @@
   /* ---------- Load ---------- */
   renderFilters();
   bindListEvents();
-  fetch("publications.json")
-    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-    .then(data => {
+  const loadJSON = url => fetch(url)
+    .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  Promise.all([
+    loadJSON("publications.json"),
+    loadJSON("img/research/manifest.json").catch(err => {
+      console.error("Could not load research montage manifest", err);
+      return { themes: {} };
+    })
+  ])
+    .then(([data, manifest]) => {
       PUBS = data.publications || [];
+      MONTAGES = manifest.themes || {};
       renderThemes();
       render();
       const fromHash = flash => {
