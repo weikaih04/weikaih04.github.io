@@ -48,40 +48,34 @@ h1 { font: 600 2.7rem/1.1 var(--display); letter-spacing: -0.02em; margin: 0 0 6
 .themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-block: 36px 24px; }
 .theme { min-width: 0; }
 .theme-media { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; }
-.theme-media video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.theme-media video { display: block; width: 100%; height: 100%; object-fit: contain; cursor: pointer; }
+.theme-media video:focus-visible { outline-offset: -3px; border-radius: 8px; }
 .theme-caption {
   position: absolute; bottom: 6px; left: 8px;
   font: 400 .75rem/1.3 var(--display); color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, .65);
 }
-.theme-media video[hidden], .theme-controls[hidden] { display: none; }
+.theme-media video[hidden] { display: none; }
 .theme-fallback { margin: 0; padding: 16px; font-size: 0.85rem; color: var(--muted); }
-.theme-controls { display: flex; justify-content: space-between; gap: 12px; margin-block: 6px 14px; font-size: 0.78rem; color: var(--muted); }
-.theme-controls button:hover { color: var(--accent); text-decoration: underline; }
-.theme h3 { margin: 0 0 10px; font-size: 1.15rem; }
+.theme h3 { margin: 12px 0 0; font-size: .875rem; }
 .theme-name {
-  text-align: left; font: 600 1.15rem/1.35 var(--display); color: var(--ink);
+  text-align: left; font: 500 .875rem/1.35 var(--display); color: var(--ink);
 }
 .theme-name:hover { color: var(--accent); }
-.theme-body { min-width: 0; font-size: 0.9rem; color: var(--ink-soft); }
-.theme-body p { margin: 0 0 4px; line-height: 1.5; text-wrap: balance; }
 p, .tldr.open { text-wrap: pretty; }
-.theme .tags { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 10px; }
+.theme .tags { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 8px; }
 .theme .tag { font-size: 0.82rem; color: var(--muted); }
 .theme .tag:hover { color: var(--accent); }
 
 @media (min-width: 681px) {
-  /* Share content-sized rows so heading and blurb wraps align every column. */
-  .themes { grid-template-rows: repeat(5, auto); row-gap: 0; }
+  /* Share the media, title and project-link rows across the three columns. */
+  .themes { grid-template-rows: repeat(3, auto); row-gap: 0; }
   .theme {
-    display: grid; grid-row: span 5; grid-template-rows: subgrid; align-items: start;
+    display: grid; grid-row: span 3; grid-template-rows: subgrid; align-items: start;
   }
-  .theme-body { display: contents; }
   .theme-media { grid-row: 1; }
-  .theme-controls { grid-row: 2; }
-  .theme h3 { grid-row: 3; }
-  .theme-body > p { grid-row: 4; }
-  .theme .tags { grid-row: 5; }
+  .theme h3 { grid-row: 2; }
+  .theme .tags { grid-row: 3; }
 }
 
 .note { margin-top: 14px; font-size: 0.88rem; color: var(--muted); }

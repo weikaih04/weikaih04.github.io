@@ -5,18 +5,15 @@
     "3d": {
       name: "3D perception & generation in the wild",
       filter: "3D Vision",
-      blurb: "Truly generalized 3D/4D representations that can scale past fixed categories and curated scenes.",
       tags: [{ id: "wilddet3d" }]
     },
     robotics: {
       name: "Vision-centric robot policies",
-      filter: "Robotics",
-      blurb: "Visual and spatial representations as the foundation for manipulation and whole-body control."
+      filter: "Robotics"
     },
     multimodal: {
       name: "VLMs for Embodied Reasoning",
       filter: "Multimodal",
-      blurb: "Understanding the physical world and reasoning about how to interact with it.",
       tags: [{ id: "molmoact2", label: "Molmo-ER" }, { id: "molmo2" }, { id: "provision" }]
     }
   };
@@ -66,17 +63,14 @@
         : `<span class="tag">${esc(p.label)}</span>`).join("");
       const label = `${t.name} overview`;
       const video = `<div class="theme-media">
-        <video id="theme-video-${k}" src="${esc(media.video)}" muted loop playsinline preload="auto" aria-label="${esc(label)} video" poster="${esc(media.poster)}" data-theme="${k}">Your browser does not support embedded video.</video>
+        <video id="theme-video-${k}" src="${esc(media.video)}" muted loop playsinline preload="auto" tabindex="0" role="button" aria-label="Play ${esc(label)} video; press Space or Enter to toggle playback" poster="${esc(media.poster)}" data-theme="${k}">Your browser does not support embedded video.</video>
         <a class="theme-caption" href="#pub-${esc(posterPaper)}" data-jump="${esc(posterPaper)}">${esc(SHORT[posterPaper] || posterPaper)}</a>
         <p class="theme-fallback" hidden>Video unavailable. <button class="theme-name" type="button" data-theme-filter="${k}">View ${esc(t.filter)} publications</button>.</p>
-        </div><div class="theme-controls">
-          <button type="button" data-theme-play aria-controls="theme-video-${k}" aria-label="Play ${esc(label)} video" data-label="${esc(label)}">Play</button>
-          <button type="button" data-video="${esc(media.video)}" aria-label="Expand ${esc(label)} video">Expand</button>
         </div>`;
       return `<div class="theme">
         ${video}
         <h3><button class="theme-name" type="button" data-theme-filter="${k}">${esc(t.name)}</button></h3>
-        <div class="theme-body"><p>${esc(t.blurb)}</p><div class="tags">${tags}</div></div></div>`;
+        <div class="tags">${tags}</div></div>`;
     }).join("");
     el.addEventListener("click", e => {
       const t = e.target.closest("[data-theme-filter]");
@@ -87,8 +81,6 @@
       }
       const j = e.target.closest("[data-jump]");
       if (j) { e.preventDefault(); revealPub(j.dataset.jump, true); }
-      const m = e.target.closest("[data-video]");
-      if (m) openLightbox(m.dataset.video);
     });
     observeThemeVideos(el);
   }
@@ -117,7 +109,6 @@
 
     el.querySelectorAll(".theme video").forEach(video => {
       const theme = video.closest(".theme");
-      const button = theme.querySelector("[data-theme-play]");
       const caption = theme.querySelector(".theme-caption");
       const media = MONTAGES[video.dataset.theme];
       const syncCaption = () => {
@@ -140,24 +131,29 @@
       states.set(video, state);
       video.muted = true;
       video.defaultPlaybackRate = video.playbackRate = 1;
-      const syncButton = () => {
+      const syncLabel = () => {
         const action = video.paused ? "Play" : "Pause";
-        button.textContent = action;
-        button.setAttribute("aria-label", `${action} ${button.dataset.label} video`);
+        video.setAttribute("aria-label", `${action} ${THEMES[video.dataset.theme].name} overview video; press Space or Enter to toggle playback`);
       };
-      video.addEventListener("play", syncButton);
-      video.addEventListener("pause", syncButton);
-      button.addEventListener("click", () => {
+      video.addEventListener("play", syncLabel);
+      video.addEventListener("pause", syncLabel);
+      syncLabel();
+      const togglePlayback = () => {
         state.userPaused = !video.paused;
         state.manualPlay = !state.userPaused;
         if (state.userPaused) video.pause(); else play();
+      };
+      video.addEventListener("click", togglePlayback);
+      video.addEventListener("keydown", event => {
+        if (event.key !== " " && event.key !== "Enter") return;
+        event.preventDefault();
+        if (!event.repeat) togglePlayback();
       });
       video.addEventListener("error", () => {
         video.pause();
         video.hidden = true;
         caption.hidden = true;
         theme.querySelector(".theme-fallback").hidden = false;
-        theme.querySelector(".theme-controls").hidden = true;
         state.userPaused = true;
       });
       if (observer) observer.observe(video);

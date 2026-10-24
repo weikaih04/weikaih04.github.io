@@ -29,18 +29,16 @@ function setup({ reduced = false, intersectionObserver = true } = {}) {
   const themes = element();
   const list = element();
   const videos = Object.entries(manifest.themes).map(([key, media]) => {
-    const button = { ...element(), dataset: { label: "Demo" }, textContent: "Play" };
     const fallback = { ...element(), hidden: true };
-    const controls = element();
     let end = 0;
     const posterPaper = media.segments.find(segment => (end += segment.length) > media.poster_seconds).paper_id;
     const caption = { ...element(), textContent: ({ wilddet3d: "WildDet3D", reflex: "Reflex", molmo2: "Molmo2" })[posterPaper],
       dataset: { jump: posterPaper }, attributes: { href: `#pub-${posterPaper}` } };
     const theme = { querySelector: selector => ({
-      "[data-theme-play]": button, ".theme-fallback": fallback, ".theme-controls": controls, ".theme-caption": caption
+      ".theme-fallback": fallback, ".theme-caption": caption
     })[selector] };
     return {
-      ...element(), dataset: { theme: key }, currentTime: 0, readyState: 0, paused: true, playCalls: 0, button, fallback, controls, caption,
+      ...element(), dataset: { theme: key }, currentTime: 0, readyState: 0, paused: true, playCalls: 0, fallback, caption,
       closest() { return theme; },
       play() {
         this.playCalls++;
@@ -94,11 +92,11 @@ test("theme-owned montages and posters describe directions and retain project ta
     ["robotics", "Vision-centric robot policies"],
     ["multimodal", "VLMs for Embodied Reasoning"]
   ]) {
-    assert.ok(themes.innerHTML.includes(`id="theme-video-${theme}" src="img/research/${theme}.mp4" muted loop playsinline preload="auto" aria-label="${name} overview video" poster="img/research/${theme}.jpg" data-theme="${theme}"`));
-    assert.ok(themes.innerHTML.includes(`data-video="img/research/${theme}.mp4" aria-label="Expand ${name} overview video"`));
-    assert.ok(themes.innerHTML.includes(`aria-label="Play ${name} overview video"`));
+    assert.ok(themes.innerHTML.includes(`id="theme-video-${theme}" src="img/research/${theme}.mp4" muted loop playsinline preload="auto" tabindex="0" role="button" aria-label="Play ${name} overview video; press Space or Enter to toggle playback" poster="img/research/${theme}.jpg" data-theme="${theme}"`));
+    assert.ok(themes.innerHTML.includes(`data-theme-filter="${theme}">${name}</button>`));
   }
   assert.doesNotMatch(themes.innerHTML, /src="img\/papers\//);
+  assert.doesNotMatch(themes.innerHTML, /theme-controls|theme-body|data-theme-play|data-video=|<p(?! class="theme-fallback")/);
   assert.match(themes.innerHTML, /data-jump="molmoact2">Molmo-ER<\/a>/);
   assert.match(themes.innerHTML, /data-jump="wilddet3d">WildDet3D<\/a>/);
   for (const video of videos) {
@@ -245,12 +243,12 @@ test("encoded frames preserve complete sources at 1x with no added footer or ove
   }
 });
 
-test("Expand opens the direction montage in the existing lightbox", () => {
-  const { themes, nodes } = setup();
-  themes.listeners.click({ target: { closest: selector => selector === "[data-video]"
-    ? { dataset: { video: "img/research/multimodal.mp4" } } : null } });
+test("publication video buttons still open the existing lightbox", () => {
+  const { list, nodes } = setup();
+  list.listeners.click({ target: { closest: selector => selector === "[data-video]"
+    ? { dataset: { video: "img/papers/molmo2.mp4" } } : null } });
   assert.equal(nodes.lightbox.open, true);
-  assert.equal(nodes.lbVideo.src, "img/research/multimodal.mp4");
+  assert.equal(nodes.lbVideo.src, "img/papers/molmo2.mp4");
   assert.equal(nodes.lbVideo.playCalls, 1);
 });
 
@@ -263,13 +261,13 @@ test("viewport playback and accessible manual pause survive publication rerender
   assert.equal(video.paused, true);
   themeObserver.enter(video);
   assert.equal(video.paused, false);
-  assert.equal(video.button.attributes["aria-label"], "Pause Demo video");
-  video.button.listeners.click();
+  assert.equal(video.attributes["aria-label"], "Pause 3D perception & generation in the wild overview video; press Space or Enter to toggle playback");
+  video.listeners.click();
   assert.equal(video.paused, true);
   themeObserver.enter(video, 0);
   themeObserver.enter(video);
   assert.equal(video.paused, true, "a manual pause persists when returning to the viewport");
-  video.button.listeners.click();
+  video.listeners.click();
   assert.equal(video.paused, false);
   render();
   render();
@@ -277,9 +275,25 @@ test("viewport playback and accessible manual pause survive publication rerender
   assert.equal(themeObserver.disconnected, undefined, "theme observer stays connected");
   themeObserver.enter(video, 0);
   assert.equal(video.paused, true);
-  assert.equal(video.button.textContent, "Play");
+  assert.match(video.attributes["aria-label"], /^Play /);
   themeObserver.enter(video);
   assert.equal(video.paused, false);
+});
+
+test("focused videos toggle with Space and Enter without scrolling or repeated toggles", () => {
+  const { videos } = setup({ reduced: true });
+  const video = videos[0];
+  let prevented = 0;
+  const key = (key, repeat = false) => video.listeners.keydown({ key, repeat, preventDefault() { prevented++; } });
+  key(" ");
+  assert.equal(video.paused, false);
+  key(" ", true);
+  assert.equal(video.paused, false);
+  key("Enter");
+  assert.equal(video.paused, true);
+  key("Escape");
+  assert.equal(prevented, 3);
+  assert.equal(video.paused, true);
 });
 
 test("reduced motion keeps the initial frame static and permits manual playback", () => {
@@ -287,7 +301,7 @@ test("reduced motion keeps the initial frame static and permits manual playback"
   const video = videos[0];
   observers[0].enter(video);
   assert.equal(video.playCalls, 0);
-  video.button.listeners.click();
+  video.listeners.click();
   assert.equal(video.paused, false);
   observers[0].enter(video, 0);
   assert.equal(video.paused, true);
@@ -295,13 +309,13 @@ test("reduced motion keeps the initial frame static and permits manual playback"
   assert.equal(video.paused, false, "manual playback may resume in view");
   motion.listeners.change();
   assert.equal(video.paused, true, "a motion preference change clears manual playback");
-  assert.equal(video.button.textContent, "Play");
+  assert.match(video.attributes["aria-label"], /^Play /);
 });
 
 test("manual playback works without IntersectionObserver", () => {
   const { videos } = setup({ intersectionObserver: false });
   assert.equal(videos[0].playCalls, 0);
-  videos[0].button.listeners.click();
+  videos[0].listeners.click();
   assert.equal(videos[0].paused, false);
 });
 
@@ -311,11 +325,10 @@ test("failed playback leaves Play available and a media error exposes the direct
   video.rejectPlay = true;
   observers[0].enter(video);
   await Promise.resolve();
-  assert.equal(video.button.textContent, "Play");
+  assert.match(video.attributes["aria-label"], /^Play /);
   video.listeners.error();
   assert.equal(video.hidden, true);
   assert.equal(video.fallback.hidden, false);
-  assert.equal(video.controls.hidden, true);
   assert.equal(video.caption.hidden, true);
 });
 
