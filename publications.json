@@ -244,7 +244,7 @@
       "selected": false,
       "tldr": "636K videos, 6.6M objects, 52M attributes, 6.7M relations—SVG2 is the first large-scale panoptic video scene graph dataset. TRASER, trained on SVG2, improves relation detection by +15–20% and object prediction by +30–40% over strongest baselines, and boosts VQA accuracy by up to +4.6% when its scene graphs augment VLMs.",
       "github_stars": 0,
-      "citations": 4
+      "citations": 5
     },
     {
       "id": "molmo2",
@@ -497,7 +497,7 @@
       "selected": false,
       "tldr": "First multi-modal tool-use benchmark—4K+ human-verified tasks with 33 tools, GPT-4V achieves only 24% success rate.",
       "github_stars": 46,
-      "citations": 56
+      "citations": 57
     }
   ]
 }
