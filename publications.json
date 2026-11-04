@@ -18,8 +18,9 @@
         "Zhongzheng Ren",
         "Ranjay Krishna"
       ],
-      "venue": "arXiv",
+      "venue": "CoRL Roboletics Workshop",
       "year": "2026",
+      "award": "Oral Presentation",
       "local_video": "img/papers/reflex.mp4",
       "playback_rate": 1,
       "arxiv_id": "2610.12772",
@@ -108,6 +109,7 @@
       "venue": "CoRL",
       "year": "2026",
       "award": "Spotlight",
+      "additional_venue": "CoRL TAG Workshop (Best Paper Award, Oral)",
       "local_video": "img/papers/molmoact2.mp4",
       "github_repo": "allenai/molmoact2",
       "links": {
