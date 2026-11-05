@@ -210,10 +210,12 @@
   }
   function venueHTML(p) {
     const venue = (p.venue === "Arxiv" ? "arXiv" : p.venue || "").replace(" (Main Conference)", "");
-    const extra = p.additional_venue ? `<span class="extra">${esc(p.additional_venue)}</span>` : "";
+    const extra = p.additional_venue && !p.additional_award ? `<span class="extra">${esc(p.additional_venue)}</span>` : "";
     const awards = (p.award || "").split(";").map(s => s.trim()).filter(Boolean)
       .map(a => `<span class="award">${esc(a)}</span>`).join("");
-    return `<p class="venue"><span class="v">${esc(`${venue} ${p.year || ""}`.trim())}</span>${extra}${awards}</p>`;
+    const workshop = p.additional_venue && p.additional_award
+      ? `<p class="venue"><span class="v">${esc(p.additional_venue)}</span><span class="award">${esc(p.additional_award)}</span></p>` : "";
+    return `<p class="venue"><span class="v">${esc(`${venue} ${p.year || ""}`.trim())}</span>${awards}${extra}</p>${workshop}`;
   }
   function linksHTML(p) {
     const rank = k => { const i = LINK_ORDER.indexOf(k); return i < 0 ? LINK_ORDER.length : i; };

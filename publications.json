@@ -109,7 +109,8 @@
       "venue": "CoRL",
       "year": "2026",
       "award": "Spotlight",
-      "additional_venue": "CoRL TAG Workshop (Best Paper Award)",
+      "additional_venue": "TAG Workshop",
+      "additional_award": "Best Paper Award",
       "local_video": "img/papers/molmoact2.mp4",
       "github_repo": "allenai/molmoact2",
       "links": {
