@@ -54,7 +54,7 @@
         "Jiafei Duan",
         "Ranjay Krishna"
       ],
-      "venue": "arXiv",
+      "venue": "Technical Report",
       "year": "2026",
       "local_video": "img/papers/gam.mp4",
       "playback_rate": 1,
@@ -155,7 +155,7 @@
         "Zhongzheng Ren§",
         "Ranjay Krishna§"
       ],
-      "venue": "Arxiv",
+      "venue": "Technical Report",
       "year": "2026",
       "local_video": "img/papers/wilddet3d.mp4",
       "github_repo": "allenai/WildDet3D",
