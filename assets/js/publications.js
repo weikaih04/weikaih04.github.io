@@ -215,7 +215,9 @@
       .map(a => `<span class="award">${esc(a)}</span>`).join("");
     const workshop = p.additional_venue && p.additional_award
       ? `<p class="venue"><span class="v">${esc(p.additional_venue)}</span><span class="award">${esc(p.additional_award)}</span></p>` : "";
-    return `<p class="venue"><span class="v">${esc(`${venue} ${p.year || ""}`.trim())}</span>${awards}${extra}</p>${workshop}`;
+    const workshops = (p.additional_venues || []).map(v =>
+      `<p class="venue"><span class="v">${esc(v.venue)}</span>${v.award ? `<span class="award">${esc(v.award)}</span>` : ""}</p>`).join("");
+    return `<p class="venue"><span class="v">${esc(`${venue} ${p.year || ""}`.trim())}</span>${awards}${extra}</p>${workshop}${workshops}`;
   }
   function linksHTML(p) {
     const rank = k => { const i = LINK_ORDER.indexOf(k); return i < 0 ? LINK_ORDER.length : i; };
