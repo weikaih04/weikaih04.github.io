@@ -209,6 +209,19 @@
     return `<span class="media"></span>`;
   }
   function venueHTML(p) {
+    if (p.venue_display) {
+      const display = p.venue_display;
+      const rows = display.rows.map(row => {
+        const title = row.title ? ` title="${esc(row.title)}"` : "";
+        const label = row.url
+          ? `<a class="workshop-name" href="${esc(row.url)}"${title}>${esc(row.label)}</a>`
+          : `<span class="workshop-name"${title}>${esc(row.label)}</span>`;
+        const honor = row.award ? `<span class="award">${esc(row.award)}</span>`
+          : row.note ? `<span class="workshop-note">${esc(row.note)}</span>` : "";
+        return `<li>${label}${honor}</li>`;
+      }).join("");
+      return `<div class="workshop-venues"><p class="workshop-heading">${esc(display.heading)}</p><ul>${rows}</ul></div>`;
+    }
     const venue = (p.venue === "Arxiv" ? "arXiv" : p.venue || "").replace(" (Main Conference)", "");
     const extra = p.additional_venue && !p.additional_award ? `<span class="extra">${esc(p.additional_venue)}</span>` : "";
     const awards = (p.award || "").split(";").map(s => s.trim()).filter(Boolean)

@@ -31,6 +31,25 @@
           "award": "Best Poster Award"
         }
       ],
+      "venue_display": {
+        "heading": "CoRL 2026 Workshops",
+        "rows": [
+          {
+            "label": "RoboLetics",
+            "award": "Best Paper Award"
+          },
+          {
+            "label": "Contact-Rich Loco-Manipulation",
+            "title": "Open Problems in Contact-Rich Loco-Manipulation",
+            "url": "https://contact-rich-loco-manipulation.github.io/program/#best-poster",
+            "award": "Best Poster Award"
+          },
+          {
+            "label": "SimBench2Real",
+            "note": "Oral"
+          }
+        ]
+      },
       "local_video": "img/papers/reflex.mp4",
       "playback_rate": 1,
       "arxiv_id": "2610.12772",
