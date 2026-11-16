@@ -125,7 +125,7 @@
       },
       "selected": true,
       "tldr": "SOTA VLAs by AI2—fully open weights, code, and data, including 720+ hours of bimanual demonstrations. 87.1% success on real-world zero-shot Franka tasks vs. 45.2% for π0.5.",
-      "github_stars": 825,
+      "github_stars": 826,
       "citations": 0
     },
     {
@@ -171,7 +171,7 @@
       },
       "selected": true,
       "tldr": "Unified promptable 3D detection model supporting text, box, and point prompts with optional depth input. Trained on 1M+ in-the-wild images with 13.5K categories. Deployed on iPhone, Meta Quest, and robotics platforms.",
-      "github_stars": 643,
+      "github_stars": 644,
       "citations": 0
     },
     {
