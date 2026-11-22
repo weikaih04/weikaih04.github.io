@@ -42,7 +42,7 @@ test("Reflex groups workshops once, orders awards first, and renders Oral as a n
   const group = html.match(/<div class="workshop-venues">(.*?)<\/div>/)[1];
   assert.equal((group.match(/CoRL 2026 Workshops/g) || []).length, 1);
   assert.deepEqual(Array.from(group.matchAll(/<li>(.*?)<\/li>/g), match => match[1]), [
-    '<span class="workshop-name">RoboLetics</span><span class="award">Best Paper Award</span>',
+    '<a class="workshop-name" href="https://roboletics.github.io/corl2026/#awards">RoboLetics</a><span class="award">Best Paper Award</span>',
     '<a class="workshop-name" href="https://contact-rich-loco-manipulation.github.io/program/#best-poster" title="Open Problems in Contact-Rich Loco-Manipulation">Contact-Rich Loco-Manipulation</a><span class="award">Best Poster Award</span>',
     '<span class="workshop-name">SimBench2Real</span><span class="workshop-note">Oral</span>'
   ]);

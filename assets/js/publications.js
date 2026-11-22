@@ -12,7 +12,7 @@
       filter: "Robotics"
     },
     multimodal: {
-      name: "Multimodal Interactive VLMs",
+      name: "VLMs for Embodied Reasoning",
       filter: "Multimodal",
       tags: [{ id: "molmoact2", label: "Molmo-ER" }, { id: "molmo2" }, { id: "provision" }]
     }
